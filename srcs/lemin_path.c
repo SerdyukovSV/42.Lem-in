@@ -26,7 +26,24 @@ void        push_path(t_path **path, int room)
     *path = tmp;
 }
 
-// void        adding_path()
+int         isduplicate(t_path **path, int val, int len)
+{
+    t_path  *tmp;
+    int     i;
+
+    i = 0;
+    while (i < len)
+    {
+        tmp = path[i];
+        while (tmp)
+        {
+            if (tmp->room == val)
+                return (1);
+            tmp = tmp->next;
+        }
+    }
+    return (0);
+}
 
 t_path      **lemin_creat_paths(int len)
 {
