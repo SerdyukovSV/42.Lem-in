@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/07 18:06:29 by gartanis          #+#    #+#              #
-#    Updated: 2020/06/21 13:41:20 by marvin           ###   ########.fr        #
+#    Updated: 2020/06/22 13:35:49 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ CFLAGS 	:= -Wall -Werror -Wextra
 CC 		:= gcc
 LIBF	:= libft/*.c
 SRCF 	:= srcs/main.c srcs/lemin_init.c srcs/lemin_get_rooms.c srcs/lemin_get_links.c \
-			srcs/lemin_creat_adjrooms.c srcs/lemin_get_ants.c srcs/lemin_paths_search.c \
-			srcs/lemin_queue.c
+			srcs/lemin_creat_adjrooms.c srcs/lemin_get_ants.c srcs/lemin_breadth_first_search.c \
+			srcs/lemin_queue.c srcs/lemin_path.c
 OBJF 	:= $(addprefix obj/, $(notdir $(SRCF:.c=.o)))
 INC		:= includes/lemin.h
 OBJDIR	:= obj

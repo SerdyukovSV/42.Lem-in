@@ -22,8 +22,9 @@ int main(int argc, char **argv)
     if ((fd = open(argv[1], O_RDONLY)) == -1)
         ft_error(ERR);
     lemin = lemin_init(fd);
-    
+    lemin->parent = lemin_creat_paths(lemin->rooms->total);
     breadth_first_search(lemin, lemin->adjrms, lemin->rooms->start->id);
+    lemin_get_paths(lemin, lemin->rooms->end->id);
 
     return (0);
 }

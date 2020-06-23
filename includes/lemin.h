@@ -93,7 +93,10 @@ int         dequeue(t_queue *queue);
 ** search for routes to go through an ant farm (BFS algorithm)
 */
 
+t_path      **lemin_creat_paths(int len);
+void        push_path(t_path **path, int room);
 void        breadth_first_search(t_lemin* farm, t_adjrms *adj, int start);
+void        lemin_get_paths(t_lemin *lem, int final);
 
 
 #endif
