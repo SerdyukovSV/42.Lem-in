@@ -1,30 +1,40 @@
 #include "../includes/lemin.h"
 
-void    ft_error(char *str)
+void    ft_error(int errcode)
 {
-    if (str != NULL)
-    {
-        if (!ft_strcmp(str, NOARG))
-            printf("Error: %s\n", str);
-        else
-            perror(str);
-    }
+    static char *err[] = {
+        [ERR] = "Error",
+        [NOARG] = "Missing arg",
+        [INVDLINK] = "Invalid link",
+        [INVDCOMM] = "Invalid command",
+        [INVDROOM] = "Invalid room",
+        [NOPATH] = "No paths"
+    };
+    if (errcode >= 0)
+        printf("%s%s\n", !errcode ? "" : "Error:", err[errcode]);
+    else
+        perror(err[errcode]);
     exit(EXIT_FAILURE);
 }
 
-int main(int argc, char **argv)
+int main(int ac, char **av)
 {
-    int fd;
-    t_lemin *lemin;
+    t_lemin lemin;
+    char    **str;
+    int     fd;
 
-    if (argc < 2)
+    if (ac < 2)
         ft_error(NOARG);
-    if ((fd = open(argv[1], O_RDONLY)) == -1)
+    str = lemin_read(av);
+    if (lemin_validate(str))
+    {
+        lm_strdel(str);
         ft_error(ERR);
-    lemin = lemin_init(fd);
-    lemin->parent = lemin_creat_paths(lemin->rooms->total);
-    breadth_first_search(lemin, lemin->adjrms, lemin->rooms->start->id);
-    lemin_get_paths(lemin, lemin->rooms->end->id);
+    }
+    lemin_init(&lemin, str);
+    // lemin->parent = lemin_creat_paths(lemin->rooms->total);
+    // breadth_first_search(lemin, lemin->adjrms, lemin->rooms->start->id);
+    // lemin_get_paths(lemin, lemin->rooms->end->id);
 
     return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:32:58 by gartanis          #+#    #+#             */
-/*   Updated: 2020/06/14 19:50:22 by marvin           ###   ########.fr       */
+/*   Updated: 2020/04/23 11:51:08 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-// # include "ft_printf.h"
+# include "ft_printf.h"
 
-# define BUFF_SIZE 8
+# define BUFF_SIZE 8192
 
 typedef struct		s_list
 {
@@ -28,6 +28,7 @@ typedef struct		s_list
 }					t_list;
 
 long double			ft_power(long double nbr, int n);
+size_t				ft_wordcount(char const *s, char c);
 int					ft_strchrpos(const char *str, int c);
 char				*ft_strrev(char *src);
 char				*ft_dectostr(int *arr, int sign, int len);
@@ -96,6 +97,5 @@ int					ft_iscntrl(int c);
 int					ft_isgraph(int c);
 int					ft_islower(int c);
 int					ft_isupper(int c);
-size_t				ft_wordcount(char const *s, char c);
 
 #endif
