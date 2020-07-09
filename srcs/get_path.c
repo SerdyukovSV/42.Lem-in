@@ -1,12 +1,12 @@
 #include "../includes/lemin.h"
 
-static int  adj_length(t_adjacent *adj, int room)
+static int  adj_length(t_links *adj, int room)
 {
     t_node  *tmp;
     int     len;
 
     len = 0;
-    tmp = adj->adjacent[room];
+    tmp = adj->adjace[room];
     while (tmp)
     {
         len++;
@@ -65,9 +65,9 @@ void        lemin_get_paths(t_lemin *lem, int final)
     int         p;
     int         i;
 
-    len = adj_length(lem->adjrms, final);
+    len = adj_length(lem->links, final);
     lem->paths = creat_paths(len);
-    if (!lem->adjrms->visited[final])
+    if (!lem->links->visited[final])
         ft_error(NOPATH);
     i = 0;
     tmp = lem->parent;

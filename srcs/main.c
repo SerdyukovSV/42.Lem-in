@@ -11,7 +11,7 @@ void    ft_error(int errcode)
         [NOPATH] = "No paths"
     };
     if (errcode >= 0)
-        printf("%s%s\n", !errcode ? "" : "Error:", err[errcode]);
+        printf("%s%s\n", !errcode ? "" : "Error: ", err[errcode]);
     else
         perror(err[errcode]);
     exit(EXIT_FAILURE);
@@ -31,9 +31,9 @@ int main(int ac, char **av)
         lm_strdel(str);
         ft_error(ERR);
     }
-    lemin_init(&lemin, str);
-    // lemin->parent = lemin_creat_paths(lemin->rooms->total);
-    // breadth_first_search(lemin, lemin->adjrms, lemin->rooms->start->id);
+    lemin_init(&lemin, &*str);
+    lemin.parent = creat_paths(lemin.rooms->total);
+    bfs(&lemin, lemin.links, lemin.rooms->start->id);
     // lemin_get_paths(lemin, lemin->rooms->end->id);
 
     return (0);

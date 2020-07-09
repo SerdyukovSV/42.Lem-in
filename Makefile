@@ -14,9 +14,8 @@ TARGET	:= lemin
 CFLAGS 	:= -Wall -Werror -Wextra
 CC 		:= gcc
 LIBF	:= libft/*.c libft/includes/*.h
-SRCF 	:= srcs/main.c srcs/init.c srcs/get_rooms.c srcs/get_links.c \
-			srcs/creat_adjrooms.c srcs/get_ants.c srcs/breadth_first_search.c \
-			srcs/queue.c srcs/path.c srcs/validate.c srcs/lem_read.c
+SRCF 	:= srcs/main.c srcs/lem_read.c srcs/lem_validate.c srcs/lem_init.c srcs/get_ants.c srcs/get_rooms.c srcs/get_links.c \
+			srcs/bfs.c srcs/queue.c srcs/get_path.c
 OBJF 	:= $(addprefix obj/, $(notdir $(SRCF:.c=.o)))
 INC		:= includes/lemin.h
 OBJDIR	:= obj
