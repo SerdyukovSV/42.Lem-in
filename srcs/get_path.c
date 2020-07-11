@@ -1,100 +1,51 @@
 #include "../includes/lemin.h"
 
-static int  adj_length(t_links *adj, int room)
+static int delete_link(t_links *link, int start, int delete)
 {
-    t_node  *tmp;
-    int     len;
+    t_node *tmp;
 
-    len = 0;
-    tmp = adj->adjace[room];
-    while (tmp)
+    tmp = link->adjace[start];
+    if (tmp && tmp->id == delete)
     {
-        len++;
-        tmp = tmp->next;
+        link->adjace[start] = tmp->next;
+        if (!link->adjace[start])
+            return (0);
+        return (1);
     }
-    return (len);
-}
-
-void        push_path(t_path **path, int room)
-{
-    t_path *tmp;
-
-    if (!(tmp = malloc(sizeof(t_path))))
-        ft_error(ERR);
-    tmp->room = room;
-    tmp->next = *path;
-    *path = tmp;
-}
-
-int         isduplicate(t_path **path, int val, int len)
-{
-    t_path  *tmp;
-    int     i;
-
-    i = 0;
-    while (i < len)
+    else
     {
-        tmp = path[i];
         while (tmp)
         {
-            if (tmp->room == val)
+            if (tmp->next->id == delete)
+            {
+                tmp->next = tmp->next->next;
                 return (1);
+            }
             tmp = tmp->next;
         }
     }
     return (0);
 }
 
-t_path      **creat_paths(int len)
+void        lem_get_paths(t_lemin *lemin, int *parent)
 {
-    t_path  **path;
-    int     i;
+    t_node      *tmp;
+    int         start;
+    int         fin;
 
-    if (!(path = malloc(sizeof(t_path *) * len)))
-        ft_error(ERR);
-    i = -1;
-    while (++i < len)
-        path[i] = NULL;
-    return (path);
-}
-
-void        lemin_get_paths(t_lemin *lem, int final)
-{
-    t_path      **tmp;
-    int         len;
-    int         p;
-    int         i;
-
-    len = adj_length(lem->links, final);
-    lem->paths = creat_paths(len);
-    if (!lem->links->visited[final])
+    printf("count = %d\n", lemin->count);
+    fin = lemin->rooms->end->id;
+    start = lemin->rooms->start->id;
+    if (!lemin->links->visited[fin])
         ft_error(NOPATH);
-    i = 0;
-    tmp = lem->parent;
-    while (i < len)
+    lemin->paths[lemin->count] = room_dup(lemin->rooms->hroom[fin]);
+    while (parent[fin] != -1)
     {
-        push_path(&lem->paths[i], final);
-        p = final;
-        while (tmp[p] && tmp[p]->room != -1)
-        {
-            push_path(&lem->paths[i], tmp[p]->room);
-            // if (tmp[p]->next)
-                tmp[p] = tmp[p]->next;
-            p = lem->paths[i]->room;
-        }
-        i++;
+        tmp = room_dup(lemin->rooms->hroom[parent[fin]]);
+        tmp->next = lemin->paths[lemin->count];
+        lemin->paths[lemin->count] = tmp;
+        fin = parent[fin];
     }
-    // i = 0;
-    // while (i < len)
-    // {
-    //     printf("Path[%d] : %s", i, lem->adjrms->rooms[lem->paths[i]->room]->name);
-    //     lem->paths[i] = lem->paths[i]->next;
-    //     while (lem->paths[i])
-    //     {
-    //         printf("->%s", lem->adjrms->rooms[lem->paths[i]->room]->name);
-    //         lem->paths[i] = lem->paths[i]->next;
-    //     }
-    //     i++;
-    //     printf("\n");
-    // }
+    if (delete_link(lemin->links, start, lemin->paths[lemin->count++]->next->id))
+        bfs(lemin, lemin->links, lemin->rooms->start->id);
 }

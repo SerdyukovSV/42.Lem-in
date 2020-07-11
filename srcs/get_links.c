@@ -1,6 +1,6 @@
 #include "../includes/lemin.h"
 
-static t_node   *room_dup(t_node *room)
+t_node   *room_dup(t_node *room)
 {
     t_node *cpy;
 

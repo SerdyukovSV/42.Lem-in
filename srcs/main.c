@@ -3,15 +3,15 @@
 void    ft_error(int errcode)
 {
     static char *err[] = {
-        [ERR] = "Error",
-        [NOARG] = "Missing arg",
+        [ERR] = "ERROR",
+        [NOARG] = "missing argument",
         [INVDLINK] = "Invalid link",
         [INVDCOMM] = "Invalid command",
         [INVDROOM] = "Invalid room",
         [NOPATH] = "No paths"
     };
     if (errcode >= 0)
-        printf("%s%s\n", !errcode ? "" : "Error: ", err[errcode]);
+        printf("%s: %s\n", !errcode ? "" : err[0], err[errcode]);
     else
         perror(err[errcode]);
     exit(EXIT_FAILURE);
@@ -32,9 +32,18 @@ int main(int ac, char **av)
         ft_error(ERR);
     }
     lemin_init(&lemin, &*str);
-    lemin.parent = creat_paths(lemin.rooms->total);
     bfs(&lemin, lemin.links, lemin.rooms->start->id);
-    // lemin_get_paths(lemin, lemin->rooms->end->id);
-
+    lemin.paths = cmp_paths(lemin.rooms, lemin.paths);
+    int i = -1;
+    while (lemin.paths[++i])
+    {
+        printf("Path[%d] = ", i);
+        while (lemin.paths[i])
+        {
+            printf("\e[93m->%d", lemin.paths[i]->id);
+            lemin.paths[i] = lemin.paths[i]->next;
+        }
+        printf("\e[0m\n");
+    }
     return (0);
 }

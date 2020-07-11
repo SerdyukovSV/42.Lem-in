@@ -24,11 +24,6 @@ int g_id;
 /*
 ** Data structures
 */
-typedef struct      s_path
-{
-    int             room;
-    struct s_path   *next;
-}                   t_path;
 
 typedef struct      s_queue
 {
@@ -66,8 +61,9 @@ typedef struct      s_lemin
     int             ants;
     t_rooms         *rooms;
     t_links         *links;
-    t_path          **parent;
-    t_path          **paths;
+    t_node          **paths;
+    int             size;
+    int             count;
 
 }                   t_lemin;
 
@@ -98,10 +94,10 @@ int         dequeue(t_queue *queue);
 ** search for routes to go through an ant farm (BFS algorithm)
 */
 
-t_path      **creat_paths(int len);
-void        push_path(t_path **path, int room);
-void        bfs(t_lemin* farm, t_links *adj, int start);
-void        lemin_get_paths(t_lemin *lem, int final);
+t_node      *room_dup(t_node *room);
+void        bfs(t_lemin* lemin, t_links *link, int start);
+void        lem_get_paths(t_lemin *lemin, int *parent);
+t_node      **cmp_paths(t_rooms *rooms, t_node **paths);
 
 
 #endif

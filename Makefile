@@ -11,11 +11,11 @@
 # **************************************************************************** #
 
 TARGET	:= lemin
-CFLAGS 	:= -Wall -Werror -Wextra
+CFLAGS 	:= -Wall -Werror -Wextra -g
 CC 		:= gcc
 LIBF	:= libft/*.c libft/includes/*.h
 SRCF 	:= srcs/main.c srcs/lem_read.c srcs/lem_validate.c srcs/lem_init.c srcs/get_ants.c srcs/get_rooms.c srcs/get_links.c \
-			srcs/bfs.c srcs/queue.c srcs/get_path.c
+			srcs/bfs.c srcs/queue.c srcs/get_path.c srcs/cmp_path.c
 OBJF 	:= $(addprefix obj/, $(notdir $(SRCF:.c=.o)))
 INC		:= includes/lemin.h
 OBJDIR	:= obj
