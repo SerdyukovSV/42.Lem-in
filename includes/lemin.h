@@ -38,6 +38,7 @@ typedef struct      s_node
     int             id;
     int             x;
     int             y;
+    int             ant;
     struct s_node   *next;
 }                   t_node;
 
@@ -61,6 +62,7 @@ typedef struct      s_lemin
     int             ants;
     t_rooms         *rooms;
     t_links         *links;
+    t_queue         *queue;
     t_node          **paths;
     int             size;
     int             count;
@@ -78,6 +80,7 @@ void        lm_strdel(char **str);
 char        **lemin_read(char *av[]);
 int         lemin_validate(char *str[]);
 void        lemin_init(t_lemin *lemin, char *str[]);
+t_node      **creat_paths(int size);
 int         get_ants(char *str);
 t_rooms     *get_rooms(char ***str);
 t_links     *get_links(t_rooms *room, char **str);
@@ -95,9 +98,9 @@ int         dequeue(t_queue *queue);
 */
 
 t_node      *room_dup(t_node *room);
-void        bfs(t_lemin* lemin, t_links *link, int start);
-void        lem_get_paths(t_lemin *lemin, int *parent);
-t_node      **cmp_paths(t_rooms *rooms, t_node **paths);
+void        get_paths(t_lemin* lemin, t_links *link, int start);
+t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
+void        lem_play(t_lemin *lemin);
 
 
 #endif

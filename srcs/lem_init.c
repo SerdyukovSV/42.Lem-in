@@ -33,7 +33,7 @@ static int  get_size_path(t_links *link, int start, int final)
     return ((i > k) ? k : i);
 }
 
-static t_node   **creat_paths(int size)
+t_node   **creat_paths(int size)
 {
     t_node  **path;
     int     i;
@@ -58,6 +58,5 @@ void    lemin_init(t_lemin *lemin, char *str[])
     lemin->links = get_links(lemin->rooms, str);
     tmp = lemin->rooms;
     lemin->size = get_size_path(lemin->links, tmp->start->id, tmp->end->id);
-    // printf("size = %d\n", lemin->size);
     lemin->paths = creat_paths(lemin->size);
 }

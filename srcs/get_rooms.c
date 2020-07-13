@@ -25,6 +25,7 @@ static void fill_room(t_node *room, char *str)
     room->name = ft_strdup(tmp[0]);
     room->x = ft_atoi(tmp[1]);
     room->y = ft_atoi(tmp[2]);
+    room->ant = 0;
     room->id = g_id++;
     lm_strdel(tmp);
 }
