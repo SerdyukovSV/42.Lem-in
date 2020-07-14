@@ -33,20 +33,23 @@ int main(int ac, char **av)
     lemin_init(&lemin, &*str);
     get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     lemin.paths = new_paths(&lemin, lemin.paths, 0);
-    // int i = -1;
-    // t_node **tmp;
-    // tmp = lemin.paths;
-    // while (tmp[++i])
-    // {
-    //     printf("Path[%d] = ", i);
-    //     while (tmp[i])
-    //     {
-    //         printf("\e[93m->%s", tmp[i]->name);
-    //         tmp[i] = tmp[i]->next;
-    //     }
-    //     printf("\e[0m\n");
-    // }
-    lem_play(&lemin);
+    int i = -1;
+    t_node *tmp;
+    while (lemin.paths[++i])
+    {
+        tmp = lemin.paths[i];
+        while (tmp)
+        {
+            printf("Path[%d] = ", i);
+            while (tmp)
+            {
+                printf("\e[93m->%s", tmp->name);
+                tmp = tmp->next;
+            }
+            printf("\e[0m\n");
+        }
+    }
+    // lem_play(&lemin);
     return (0);
 }
 
