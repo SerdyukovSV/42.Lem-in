@@ -33,6 +33,7 @@ static int cmp_paths(t_node *shortpath, t_node *paths, int fin)
 
 t_node **new_paths(t_lemin *lemin, t_node **paths, int start)
 {
+    // printf("\e[91mnew_paths\e[0m\n");
     t_node  **new_p;
     int     duplicate;
     int     i;

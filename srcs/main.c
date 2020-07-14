@@ -17,6 +17,20 @@ void    ft_error(int errcode)
     exit(EXIT_FAILURE);
 }
 
+static int path_len(t_node *path)
+{
+    size_t i;
+
+    i = 0;
+    while (path)
+    {
+        i++;
+        path = path->next;
+    }
+    return (i);
+    
+}
+
 int main(int ac, char **av)
 {
     t_lemin lemin;
@@ -32,7 +46,7 @@ int main(int ac, char **av)
     }
     lemin_init(&lemin, &*str);
     get_paths(&lemin, lemin.links, lemin.rooms->start->id);
-    lemin.paths = new_paths(&lemin, lemin.paths, 0);
+    // lemin.paths = new_paths(&lemin, lemin.paths, 0);
     int i = -1;
     t_node *tmp;
     while (lemin.paths[++i])
@@ -40,7 +54,7 @@ int main(int ac, char **av)
         tmp = lemin.paths[i];
         while (tmp)
         {
-            printf("Path[%d] = ", i);
+            printf("Path[%d] | len[%d] = ", i, path_len(lemin.paths[i]));
             while (tmp)
             {
                 printf("\e[93m->%s", tmp->name);
@@ -49,19 +63,6 @@ int main(int ac, char **av)
             printf("\e[0m\n");
         }
     }
-    // lem_play(&lemin);
+    lem_play(&lemin);
     return (0);
 }
-
-
-// int i = -1;
-//     while (lemin.paths[++i])
-//     {
-//         printf("Path[%d] = ", i);
-//         while (lemin.paths[i])
-//         {
-//             printf("\e[93m->%d", lemin.paths[i]->id);
-//             lemin.paths[i] = lemin.paths[i]->next;
-//         }
-//         printf("\e[0m\n");
-//     }

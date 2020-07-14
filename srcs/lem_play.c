@@ -1,10 +1,24 @@
 #include "../includes/lemin.h"
 
+static int path_len(t_node *path)
+{
+    size_t i;
+
+    i = 0;
+    while (path)
+    {
+        i++;
+        path = path->next;
+    }
+    return (i);
+    
+}
+
 void    lem_play(t_lemin *lemin)
 {
-    // printf("lem_play\n");
     t_node *ant[lemin->ants];
     int     count;
+    int     line;
     int i;
     int k;
 
@@ -12,32 +26,26 @@ void    lem_play(t_lemin *lemin)
     while (++i < lemin->ants)
         ant[i] = NULL;
     count = 0;
+    line = 0;
     while (count != lemin->ants)
     {
-        // system("sleep 0.5");
-        // printf("\e[93mlemin->ants = %d\e[0m\n", lemin->ants);
-        i = 0;
-        while (i < lemin->ants)
+        i = -1;
+        while (++i < lemin->ants)
         {
-            // printf("i = %d\n", i);
-            // system("sleep 0.5");
             if (!ant[i])
             {
-                // printf("ant[%d] = %s\n", i, ant[i]);
-                // system("sleep 0.5");
                 k = 0;
-                while (lemin->paths[k])
+                while (lemin->paths[k] && k < 1)
                 {
-                    // printf("lemin->paths[%d]->name = %s\n", k, lemin->paths[k]->name);
-                    // system("sleep 0.5");
-                    if (!lemin->paths[k]->next->ant)
-                    {
-                        ant[i] = lemin->paths[k];
-                        // printf("ant[%d]->name = %s\n", i, ant[i]->name);
-                        // system("sleep 0.5");
-                        break ;
-                    }
-                    k++;
+                    // if (path_len(lemin->paths[k]) <= (lemin->ants - count))
+                    // {
+                        if (!lemin->paths[k]->next->ant)
+                        {
+                            ant[i] = lemin->paths[k];
+                            break ;
+                        }
+                        k++;
+                    // }
                 }
             }
             if (ant[i] && ant[i]->next)
@@ -58,8 +66,9 @@ void    lem_play(t_lemin *lemin)
                     printf("L%d-%s ", i + 1, ant[i]->name);
                 }
             }
-            i++;
         }
+        line++;
         printf("\n");
     }
+    printf("\e[92mlines = %d\e[0m\n", line);
 }
