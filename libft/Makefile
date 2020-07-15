@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/12 22:24:34 by gartanis          #+#    #+#              #
-#    Updated: 2020/07/15 23:06:55 by marvin           ###   ########.fr        #
+#    Updated: 2020/07/15 23:58:21 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,11 @@ INC			:= includes/
 OBJS		:= $(FILES:%.c=$(OBJ_DIR)%.o)
 
 YELLOW 		:= \033[33;1m
+YELLOW_2 		:= "\033[33;1m"
 GREEN 		:= \033[32;1m
 WHITE		:= \033[39;1m
 EOC			:= \033[00m
+EOC_2			:= "\r"
 
 all: obj $(NAME)
 
@@ -40,11 +42,12 @@ obj:
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
-	@echo "\n$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)"
+	@printf "$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)"
 
-$(OBJ_DIR)%.o: $(FILES)%.c
-	@printf $(YELLOW) " - Compiling $< into $@" $(EOC)
+$(OBJ_DIR)%.o: %.c
+	@printf $(YELLOW_2)" - Compiling $< into $@\r"
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC)
+	
 
 clean:
 	@rm -rf $(OBJ) obj includes/*.gch
