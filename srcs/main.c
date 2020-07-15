@@ -49,7 +49,7 @@ int main(int ac, char **av)
     // lemin.paths = new_paths(&lemin, lemin.paths, 0);
     int i = -1;
     t_node *tmp;
-    while (lemin.paths[++i])
+    while (lemin.paths[++i] && i < 4)
     {
         tmp = lemin.paths[i];
         while (tmp)
@@ -57,7 +57,7 @@ int main(int ac, char **av)
             printf("Path[%d] | len[%d] = ", i, path_len(lemin.paths[i]));
             while (tmp)
             {
-                printf("\e[93m->%s", tmp->name);
+                printf("\e[93m->%d", tmp->id);
                 tmp = tmp->next;
             }
             printf("\e[0m\n");

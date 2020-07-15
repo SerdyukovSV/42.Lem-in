@@ -14,10 +14,21 @@ static int path_len(t_node *path)
     
 }
 
+static int solve_path(int len1, int len2, int ant)
+{
+    // printf("\e[91msolve_path\e[0m\n");
+    // printf("\e[91mlen1 = %d len2 = %d ant = %d\e[0m\n", len1, len2, ant);
+    // printf("%d < %d\n", len2, (len1 + (ant - 1)));
+
+    return (len1 <= (len2 + (ant - 1)));
+    // return ((len1 + len2) <= (len2 + (ant - 1)));
+}
+
 void    lem_play(t_lemin *lemin)
 {
     t_node *ant[lemin->ants];
     int     count;
+    int     count2;
     int     line;
     int i;
     int k;
@@ -26,6 +37,7 @@ void    lem_play(t_lemin *lemin)
     while (++i < lemin->ants)
         ant[i] = NULL;
     count = 0;
+    count2 = 0;
     line = 0;
     while (count != lemin->ants)
     {
@@ -35,17 +47,24 @@ void    lem_play(t_lemin *lemin)
             if (!ant[i])
             {
                 k = 0;
-                while (lemin->paths[k] && k < 1)
+                while (lemin->paths[k] && /* !ant[i] */ k < 2)
                 {
-                    // if (path_len(lemin->paths[k]) <= (lemin->ants - count))
-                    // {
+                    if (!k && !lemin->paths[k]->next->ant)
+                    {
+                        ant[i] = lemin->paths[k];
+                        count2++;
+                        break ;
+                    }
+                    else if (k > 0 && solve_path(path_len(lemin->paths[k]) - 1, path_len(lemin->paths[0]) - 1, lemin->ants - count2))
+                    {
                         if (!lemin->paths[k]->next->ant)
                         {
                             ant[i] = lemin->paths[k];
+                            count2++;
                             break ;
                         }
-                        k++;
-                    // }
+                    }
+                    k++;
                 }
             }
             if (ant[i] && ant[i]->next)
@@ -56,14 +75,14 @@ void    lem_play(t_lemin *lemin)
                     ant[i] = ant[i]->next;
                     ant[i]->ant++;
                     count++;
-                    printf("L%d-%s ", i + 1, ant[i]->name);
+                    printf("L%d-%d ", i + 1, ant[i]->id);
                 }
                 else if (ant[i]->next->ant == 0)
                 {
                     ant[i]->ant = 0;
                     ant[i] = ant[i]->next;
                     ant[i]->ant = 1;
-                    printf("L%d-%s ", i + 1, ant[i]->name);
+                    printf("L%d-%d ", i + 1, ant[i]->id);
                 }
             }
         }

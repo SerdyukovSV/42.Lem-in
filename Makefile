@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-TARGET	:= lemin
+TARGET	:= lem-in
 CFLAGS 	:= -Wall -Werror -Wextra -g
 CC 		:= gcc
 LIBF	:= libft/*.c libft/includes/*.h
