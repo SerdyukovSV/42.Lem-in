@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:32:58 by gartanis          #+#    #+#             */
-/*   Updated: 2020/04/23 11:51:08 by marvin           ###   ########.fr       */
+/*   Updated: 2020/07/15 22:15:05 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "ft_printf.h"
+// # include "ft_printf.h"
 
 # define BUFF_SIZE 8192
 
