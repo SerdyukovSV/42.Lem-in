@@ -42,7 +42,7 @@ obj:
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
-	@printf "$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)"
+	@printf "\n$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)"
 
 $(OBJ_DIR)%.o: %.c
 	@printf $(YELLOW_2)" - Compiling $< into $@\r"

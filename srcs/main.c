@@ -44,12 +44,13 @@ int main(int ac, char **av)
         lm_strdel(str);
         ft_error(ERR);
     }
+    // printf("\e[93mstep_1\n");
+    // system("sleep 0.5");
     lemin_init(&lemin, &*str);
     get_paths(&lemin, lemin.links, lemin.rooms->start->id);
-    // lemin.paths = new_paths(&lemin, lemin.paths, 0);
     int i = -1;
     t_node *tmp;
-    while (lemin.paths[++i] && i < 4)
+    while (lemin.paths[++i] && i < 5)
     {
         tmp = lemin.paths[i];
         while (tmp)
