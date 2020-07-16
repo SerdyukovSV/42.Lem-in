@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   validate.c                                         :+:      :+:    :+:   */
+/*   lem_validate.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gartanis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 13:34:00 by gartanis          #+#    #+#             */
-/*   Updated: 2020/07/08 13:34:02 by gartanis         ###   ########.fr       */
+/*   Updated: 2020/07/17 01:33:02 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,6 @@ static int is_link(char *str)
 
 static int is_room(char *str)
 {
-    int i;
-
-    i = 0;
     if (ft_wordcount(str, ' ') == 3)
     {
         str = ft_strchr(str, ' ') + 1;

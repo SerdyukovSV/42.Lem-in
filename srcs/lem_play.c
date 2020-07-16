@@ -18,7 +18,7 @@ static int set_anttopath(t_lemin *lem, int *p_ant)
 {
     int step[lem->count];
     int i;
-    int j;
+    // int j;
 
     i = -1;
     // printf("lem->count = %d | sizeof(step) = %lu\n", lem->count, sizeof(step));

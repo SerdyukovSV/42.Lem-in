@@ -8,32 +8,32 @@ static int  isEmpty(t_queue* queue)
         return 0;
 }
 
-static int  delete_link(t_links *link, int start, int delete)
-{
-    t_node *tmp;
+// static int  delete_link(t_links *link, int start, int delete)
+// {
+//     t_node *tmp;
 
-    tmp = link->adjace[start];
-    if (tmp && tmp->id == delete)
-    {
-        link->adjace[start] = tmp->next;
-        if (!link->adjace[start])
-            return (0);
-        return (1);
-    }
-    else
-    {
-        while (tmp)
-        {
-            if (tmp->next->id == delete)
-            {
-                tmp->next = tmp->next->next;
-                return (1);
-            }
-            tmp = tmp->next;
-        }
-    }
-    return (0);
-}
+//     tmp = link->adjace[start];
+//     if (tmp && tmp->id == delete)
+//     {
+//         link->adjace[start] = tmp->next;
+//         if (!link->adjace[start])
+//             return (0);
+//         return (1);
+//     }
+//     else
+//     {
+//         while (tmp)
+//         {
+//             if (tmp->next->id == delete)
+//             {
+//                 tmp->next = tmp->next->next;
+//                 return (1);
+//             }
+//             tmp = tmp->next;
+//         }
+//     }
+//     return (0);
+// }
 
 void print_lst(t_node *path, t_links *link)
 {
@@ -99,11 +99,11 @@ static void add_path(t_lemin *lemin, int *parent)
 {
     // printf("\e[91madd_path\e[0m\n");
     t_node      *tmp;
-    int         start;
+    // int         start;
     int         fin;
 
     fin = lemin->rooms->end->id;
-    start = lemin->rooms->start->id;
+    // start = lemin->rooms->start->id;
     if (!lemin->links->visited[fin])
         return ;
     lemin->paths[lemin->count] = room_dup(lemin->rooms->hroom[fin]);
