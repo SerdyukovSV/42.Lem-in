@@ -10,52 +10,50 @@ static int pathlen(t_node *path)
         i++;
         path = path->next;
     }
+    i -= i > 0 ? 1 : 0;
     return (i);
     
 }
 
-static int set_anttopath(t_lemin *lem, int *p_ant)
+static void set_anttopath(t_lemin *lem, int *p_ant)
 {
+    // printf("\e[91mset_anttopath\e[0m\n");
     int step[lem->count];
     int i;
-    // int j;
+    int j;
 
-    i = -1;
-    // printf("lem->count = %d | sizeof(step) = %lu\n", lem->count, sizeof(step));
-    ft_bzero(step, sizeof(step));
-    while (++i < lem->count)
-        printf("step[%d] = %d\n", i, step[i]);
     i = 0;
+    j = 1;
+    ft_bzero(step, sizeof(step));
     p_ant[i] = lem->ants;
-    step[i] = pathlen(lem->paths[i]) + p_ant[i] - 2;
-    printf("p_ant[%d] = %d | step[%d] = %d\n", i, p_ant[i], i, step[i]);
-    while (i++ < lem->count)
+    step[i] = pathlen(lem->paths[i]) + p_ant[i] - (p_ant[i] ? 1 : 0);
+    while (j < lem->count)
     {
-        system("sleep 0.5");
-        step[i] = pathlen(lem->paths[i]) + step[i] - (step[i] ? 2 : 1);
-        printf("step[%d] %d > step[%d] %d\n", i - 1, step[i - 1], i, step[i]);
-        if (step[i - 1] > step[i])
+        step[j] = pathlen(lem->paths[j]) + p_ant[j] - (p_ant[j] ? 1 : 0);
+        if (step[i] > step[j])
         {
-            p_ant[i]++;
-            step[i] = pathlen(lem->paths[i]) + p_ant[i] - 2;
-            p_ant[i - 1]--;
-            step[i - 1]--;
-            printf("p_ant[%d] = %d | step[%d] = %d\n", i, p_ant[i], i, step[i]);
+            p_ant[j] += 1;
+            step[j] = pathlen(lem->paths[j]) + p_ant[j] - (p_ant[j] ? 1 : 0);
+            p_ant[i]--;
+            step[i]--;
             i = 0;
+            j = 1;
+        }
+        else
+        {
+            i++;
+            j++;
         }
     }
-    i = 0;
-    while (p_ant[i])
-    {
-        // printf("p_ant[%d] = %d\n", i, p_ant[i]);
-        i++;
-    }
-    return (i);
+    i = -1;
+    while (++i < lem->count && p_ant[i])
+        printf("\e[92mp_ant[%d] = %d\n", i, p_ant[i]);
+    lem->size = i;
 }
 
 void    lem_play(t_lemin *lemin)
 {
-    // printf("lem_play\n");
+    // printf("\e[91mlem_play\e[0m\n");
     t_node *ant[lemin->ants];
     int     count;
     int     line;
@@ -69,14 +67,17 @@ void    lem_play(t_lemin *lemin)
     count = 0;
     line = 0;
     ft_bzero(path_ant, sizeof(path_ant));
-    int j = set_anttopath(lemin, path_ant);
+    set_anttopath(lemin, path_ant);
     while (count != lemin->ants)
     {
+        // printf("\e[93mstep_2\e[0m\n");
+        // printf("lemin->size = %d\n", lemin->size);
+        // system("sleep 0.05");
         i = -1;
         while (++i < lemin->ants)
         {
             k = -1;
-            while (!ant[i] && ++k < j)
+            while (!ant[i] && ++k < lemin->size)
             {
                 if (path_ant[k] && !lemin->paths[k]->next->ant)
                 {

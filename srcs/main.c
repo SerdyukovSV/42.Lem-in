@@ -27,6 +27,7 @@ static int path_len(t_node *path)
         i++;
         path = path->next;
     }
+    i -= i > 0 ? 1 : 0;
     return (i);
     
 }
@@ -44,13 +45,11 @@ int main(int ac, char **av)
         lm_strdel(str);
         ft_error(ERR);
     }
-    // printf("\e[93mstep_1\n");
-    // system("sleep 0.5");
     lemin_init(&lemin, &*str);
     get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     int i = -1;
     t_node *tmp;
-    while (lemin.paths[++i] && i < 5)
+    while (lemin.paths[++i])
     {
         tmp = lemin.paths[i];
         while (tmp)
@@ -64,6 +63,6 @@ int main(int ac, char **av)
             printf("\e[0m\n");
         }
     }
-    lem_play(&lemin);
+    // lem_play(&lemin);
     return (0);
 }

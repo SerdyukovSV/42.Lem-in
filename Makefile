@@ -11,23 +11,23 @@
 # **************************************************************************** #
 
 TARGET	:= lem-in
-LIBFT	:= libft.a
 CFLAGS 	:= -Wall -Werror -Wextra
 CC 		:= gcc
 
 # Source and object direct
+LIBFT	:= ./libft/libft.a
 INC		:= ./includes/
 LFT_DIR := ./libft/
 OBJ_DIR	:= ./obj/
+SRC_DIR	:= ./srcs/
 
 # Source files
-SRC 	:= srcs/main.c srcs/lem_read.c srcs/lem_validate.c srcs/lem_init.c \
-			srcs/get_ants.c srcs/get_rooms.c srcs/get_links.c srcs/queue.c \
-			srcs/get_paths.c srcs/cmp_paths.c srcs/lem_play.c
-# Object files
+SRCS 	:= main.c lem_read.c lem_validate.c lem_init.c \
+			get_ants.c get_rooms.c get_links.c queue.c \
+			get_paths.c cmp_paths.c lem_play.c
 
-SRCF	:= $(notdir $(SRC))
-OBJF	:= $(SRCF:%.c=$(OBJ_DIR)%.o)
+# Object files
+OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
 
 YELLOW 	:= \033[33;1m
 GREEN 	:= \033[32;1m
@@ -42,12 +42,13 @@ obj:
 $(LIBFT):
 	@make -C $(LFT_DIR)
 
-$(OBJ_DIR): $(SRC)%.c
-	@printf "$(YELLOW) - Compiling $< into $@\r"
-	@$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
-
 $(TARGET): $(OBJF)
-	@$(CC) $^ -o $@ $(LFT_DIR)$(LIBFT)
+	@$(CC) $^ -o $@ $(LIBFT)
+	@printf "\n$(WHITE)$(TARGET)$(EOC)    $(GREEN)compiling completed$(EOC)\n"
+
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	@printf " - Compiling $< into $@\r"
+	@$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
 
 clean:
 	@rm -rf *.o obj includes/lemin.h.gch
@@ -62,3 +63,6 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean fclean re all
+
+# @printf "$(YELLOW) - Compiling $< into $@\r"
+# @$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
