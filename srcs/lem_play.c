@@ -15,7 +15,7 @@ static int pathlen(t_node *path)
     
 }
 
-static void set_anttopath(t_lemin *lem, int *p_ant)
+static void search_max_flow(t_lemin *lem, int *p_ant)
 {
     // printf("\e[91mset_anttopath\e[0m\n");
     int step[lem->count];
@@ -67,12 +67,9 @@ void    lem_play(t_lemin *lemin)
     count = 0;
     line = 0;
     ft_bzero(path_ant, sizeof(path_ant));
-    set_anttopath(lemin, path_ant);
+    search_max_flow(lemin, path_ant);
     while (count != lemin->ants)
     {
-        // printf("\e[93mstep_2\e[0m\n");
-        // printf("lemin->size = %d\n", lemin->size);
-        // system("sleep 0.05");
         i = -1;
         while (++i < lemin->ants)
         {
@@ -109,31 +106,3 @@ void    lem_play(t_lemin *lemin)
     }
     printf("\e[92mlines #%d\e[0m\n", line);
 }
-
-
-// static int set_anttopath(t_lemin *lem, int *p_ant)
-// {
-//     int max;
-//     int i;
-//     int j;
-
-//     i = 0;
-//     max = 0;
-//     while (i < lem->count && max < lem->ants)
-//         max += pathlen(lem->paths[i++]) - 1;
-//     j = -1;
-//     max = 0;
-//     while (++j < i)
-//     {
-//         p_ant[j] = pathlen(lem->paths[i - 1]) - pathlen(lem->paths[j]) + 1;
-//         max += p_ant[j];
-//     }
-//     j = 0;
-//     while (lem->ants > max)
-//     {
-//         (j < i) ? p_ant[j]++ : 0;
-//         (j < i) ? max++ : 0;
-//         (j < i) ? j++ : (j = 0);
-//     }
-//     return (i);
-// }
