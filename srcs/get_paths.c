@@ -125,7 +125,8 @@ void        get_paths(t_lemin* lemin, t_links *link, int start)
     t_node      *adjacent;
     int         parent[lemin->rooms->total];
 
-    ft_bzero(link->visited, sizeof(parent));
+    ft_bzero(link->visited, sizeof(int) * lemin->rooms->total);
+    ft_bzero(parent, sizeof(int) * lemin->rooms->total);
     lemin->queue = creat_queue();
     enqueue(lemin->queue, start);
     parent[start] = -1;

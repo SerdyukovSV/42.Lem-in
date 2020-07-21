@@ -24,7 +24,7 @@ SRC_DIR	:= ./srcs/
 # Source files
 SRCS 	:= main.c lem_read.c lem_validate.c lem_init.c \
 			get_ants.c get_rooms.c get_links.c queue.c \
-			get_paths.c cmp_paths.c lem_play.c
+			get_paths_3_NEW.c cmp_paths.c lem_play.c
 
 # Object files
 OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))

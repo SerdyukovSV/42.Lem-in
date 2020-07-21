@@ -8,12 +8,13 @@ t_node   *room_dup(t_node *room)
         return (NULL);
     if (!(cpy = malloc(sizeof(t_node))))
         ft_error(ERR);
-    cpy->id = room->id;
-    cpy->ant = room->ant;
     cpy->name = room->name;
-    cpy->next = NULL;
+    cpy->path = room->path;
+    cpy->ant = room->ant;
+    cpy->id = room->id;
     cpy->x = room->x;
     cpy->y = room->y;
+    cpy->next = NULL;
     return (cpy);
 }
 

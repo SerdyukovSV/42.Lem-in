@@ -19,6 +19,9 @@
 # define END            "end"
 # define SIZE           (16384)
 
+# define DEL             (1)
+# define SET             (0)
+
 int g_id;
 
 /*
@@ -32,6 +35,13 @@ typedef struct      s_queue
     int             rear;
 }                   t_queue;
 
+typedef struct      s_parent
+{
+    int             id;
+    int             path;
+    struct s_parent *next;
+}                   t_parent;
+
 typedef struct      s_node
 {
     char            *name;
@@ -39,6 +49,7 @@ typedef struct      s_node
     int             x;
     int             y;
     int             ant;
+    int             path;
     struct s_node   *next;
 }                   t_node;
 
@@ -63,7 +74,9 @@ typedef struct      s_lemin
     t_rooms         *rooms;
     t_links         *links;
     t_queue         *queue;
+    t_parent        **parent;
     t_node          **paths;
+    t_node          **spurpath;
     int             size;
     int             count;
 
@@ -98,9 +111,16 @@ int         dequeue(t_queue *queue);
 */
 
 t_node      *room_dup(t_node *room);
-void        get_paths(t_lemin* lemin, t_links *link, int start);
-t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
+// t_parent    *addparent(t_parent *parent, int idroom);
+// void        get_paths(t_lemin* lemin, t_links *link, int start);
+void        get_paths(t_lemin* lemin);
+t_node      **new_paths(t_lemin *lemin, t_node **paths);
+// t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
 void        lem_play(t_lemin *lemin);
+int path_len(t_node *path);
 
+
+////////
+void print_paths(t_node *paths, int i);
 
 #endif

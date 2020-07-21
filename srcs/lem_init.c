@@ -29,8 +29,20 @@ static int  get_size_path(t_links *link, int start, int final)
         tmp = tmp->next;
         k++;
     }
-    // printf("i = %d | k = %d\n", i, k);
+    printf("start = %d | end = %d\n", i, k);
     return ((i > k) ? k : i);
+}
+
+t_parent *addparent(t_parent *parent, int idroom)
+{
+    t_parent *tmp;
+
+    if (!(tmp = malloc(sizeof(t_parent))))
+        ft_error(ERR);
+    tmp->id = idroom;
+    tmp->path = 0;
+    tmp->next = parent;
+    return (tmp);
 }
 
 t_node   **creat_paths(int size)
@@ -50,7 +62,9 @@ t_node   **creat_paths(int size)
 void    lemin_init(t_lemin *lemin, char *str[])
 {
     t_rooms *tmp;
+    int     i;
 
+    i = -1;
     g_id = 0;
     lemin->count = 0;
     lemin->ants = get_ants(str[0]);
@@ -58,5 +72,4 @@ void    lemin_init(t_lemin *lemin, char *str[])
     lemin->links = get_links(lemin->rooms, str);
     tmp = lemin->rooms;
     lemin->size = get_size_path(lemin->links, tmp->start->id, tmp->end->id);
-    lemin->paths = creat_paths(lemin->size);
 }

@@ -17,7 +17,7 @@ void    ft_error(int errcode)
     exit(EXIT_FAILURE);
 }
 
-static int path_len(t_node *path)
+int path_len(t_node *path)
 {
     size_t i;
 
@@ -30,6 +30,59 @@ static int path_len(t_node *path)
     i -= i > 0 ? 1 : 0;
     return (i);
     
+}
+
+int path_len_2(t_node *path)
+{
+    size_t i;
+
+    i = 0;
+    while (path)
+    {
+        i++;
+        path = path->next;
+    }
+
+    return (i);
+    
+}
+
+void print_paths(t_node *paths, int i)
+{
+    while (paths)
+    {
+        printf("Path[%d] | len[%d] = ", i, path_len(paths));
+        while (paths)
+        {
+            printf("->%s", paths->name);
+            paths = paths->next;
+        }
+        printf("\n");
+    }
+    printf("\e[0m");
+}
+
+void print_paths_2(t_node **paths)
+{
+    int i = -1;
+    t_node *tmp;
+
+    while (paths[++i])
+    {
+        tmp = paths[i];
+        while (tmp)
+        {
+            printf("Path[%d][%d] = ", i, path_len_2(paths[i]));
+            while (tmp)
+            {
+                printf("->%s", tmp->name);
+                // printf("\e[93m->%s", tmp->name);
+                tmp = tmp->next;
+            }
+            // printf("\e[0m\n");
+            printf("\n");
+        }
+    }
 }
 
 int main(int ac, char **av)
@@ -46,23 +99,14 @@ int main(int ac, char **av)
         ft_error(ERR);
     }
     lemin_init(&lemin, &*str);
-    get_paths(&lemin, lemin.links, lemin.rooms->start->id);
+    // get_paths(&lemin, lemin.links, lemin.rooms->start->id);
+    get_paths(&lemin);
+    lemin.paths = new_paths(&lemin, lemin.paths);
+    print_paths_2(lemin.paths);
     int i = -1;
-    t_node *tmp;
     while (lemin.paths[++i])
-    {
-        tmp = lemin.paths[i];
-        while (tmp)
-        {
-            printf("Path[%d] | len[%d] = ", i, path_len(lemin.paths[i]));
-            while (tmp)
-            {
-                printf("\e[93m->%d", tmp->id);
-                tmp = tmp->next;
-            }
-            printf("\e[0m\n");
-        }
-    }
+        ;
+    // lemin.count = i;
     // lem_play(&lemin);
     return (0);
 }

@@ -17,14 +17,14 @@ static int pathlen(t_node *path)
 
 static void search_max_flow(t_lemin *lem, int *p_ant)
 {
-    // printf("\e[91mset_anttopath\e[0m\n");
-    int step[lem->count];
+    printf("\e[91msearch_max_flow\e[0m\n");
+    int step[1000];
     int i;
     int j;
 
     i = 0;
     j = 1;
-    ft_bzero(step, sizeof(step));
+    ft_bzero(step, sizeof(int) * 1000);
     p_ant[i] = lem->ants;
     step[i] = pathlen(lem->paths[i]) + p_ant[i] - (p_ant[i] ? 1 : 0);
     while (j < lem->count)
@@ -46,18 +46,18 @@ static void search_max_flow(t_lemin *lem, int *p_ant)
         }
     }
     i = -1;
-    while (++i < lem->count && p_ant[i])
-        printf("\e[92mp_ant[%d] = %d\n", i, p_ant[i]);
+    while (p_ant[++i])
+        /* printf("\e[92mp_ant[%d] = %d\e[0m\n", i, p_ant[i]) */;
     lem->size = i;
 }
 
 void    lem_play(t_lemin *lemin)
 {
-    // printf("\e[91mlem_play\e[0m\n");
+    printf("\e[91mlem_play\e[0m\n");
     t_node *ant[lemin->ants];
     int     count;
     int     line;
-    int     path_ant[lemin->count];
+    int     path_ant[1000];
     int i;
     int k;
 
@@ -66,10 +66,12 @@ void    lem_play(t_lemin *lemin)
         ant[i] = NULL;
     count = 0;
     line = 0;
-    ft_bzero(path_ant, sizeof(path_ant));
+    ft_bzero(path_ant, sizeof(int) * 1000);
     search_max_flow(lemin, path_ant);
     while (count != lemin->ants)
     {
+        // system("sleep 0.5");
+        // printf("step_1\n");
         i = -1;
         while (++i < lemin->ants)
         {
