@@ -122,5 +122,6 @@ int path_len(t_node *path);
 
 ////////
 void print_paths(t_node *paths, int i);
+void print_paths_2(t_node **paths);
 
 #endif

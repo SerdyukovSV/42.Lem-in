@@ -31,6 +31,7 @@ OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
 
 YELLOW 	:= \033[33;1m
 GREEN 	:= \033[32;1m
+DBLUE 	:= \033[34m
 WHITE	:= \033[39;1m
 EOC		:= \033[00m
 
@@ -47,7 +48,7 @@ $(TARGET): $(OBJF)
 	@printf "\n$(WHITE)$(TARGET)$(EOC)    $(GREEN)compiling completed$(EOC)\n"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
-	@printf " - Compiling $< into $@\r"
+	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
 	@$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
 
 clean:

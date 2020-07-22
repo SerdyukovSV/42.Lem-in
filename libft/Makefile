@@ -30,6 +30,7 @@ OBJS		:= $(FILES:%.c=$(OBJ_DIR)%.o)
 YELLOW 		:= \033[33;1m
 GREEN 		:= \033[32;1m
 WHITE		:= \033[39;1m
+DBLUE 		:= \033[34m
 EOC			:= \033[00m
 
 all: obj $(NAME)
@@ -43,7 +44,7 @@ $(NAME): $(OBJS)
 	@printf "\n$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)\n"
 
 $(OBJ_DIR)%.o: %.c
-	@printf " - Compiling $< into $@\r"
+	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC)
 	
 

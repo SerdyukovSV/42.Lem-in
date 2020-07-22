@@ -27,7 +27,7 @@ int path_len(t_node *path)
         i++;
         path = path->next;
     }
-    i -= i > 0 ? 1 : 0;
+    // i -= i > 0 ? 1 : 0;
     return (i);
     
 }
@@ -51,7 +51,7 @@ void print_paths(t_node *paths, int i)
 {
     while (paths)
     {
-        printf("Path[%d] | len[%d] = ", i, path_len(paths));
+        printf("Path[%d][%d] = ", i, path_len(paths));
         while (paths)
         {
             printf("->%s", paths->name);
@@ -72,15 +72,13 @@ void print_paths_2(t_node **paths)
         tmp = paths[i];
         while (tmp)
         {
-            printf("Path[%d][%d] = ", i, path_len_2(paths[i]));
+            printf("\e[93mPath[%d][%d] = ", i, path_len_2(paths[i]));
             while (tmp)
             {
                 printf("->%s", tmp->name);
-                // printf("\e[93m->%s", tmp->name);
                 tmp = tmp->next;
             }
-            // printf("\e[0m\n");
-            printf("\n");
+            printf("\n\e[0m");
         }
     }
 }
@@ -101,8 +99,11 @@ int main(int ac, char **av)
     lemin_init(&lemin, &*str);
     // get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     get_paths(&lemin);
-    lemin.paths = new_paths(&lemin, lemin.paths);
+    // lemin.paths = new_paths(&lemin, lemin.paths);
+    // printf("+++++++++++++++++++++\n");
     print_paths_2(lemin.paths);
+    printf("---------------------\n");
+    print_paths_2(lemin.spurpath);
     int i = -1;
     while (lemin.paths[++i])
         ;
