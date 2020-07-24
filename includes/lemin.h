@@ -75,7 +75,7 @@ typedef struct      s_lemin
     t_links         *links;
     t_queue         *queue;
     t_parent        **parent;
-    t_node          **paths;
+    t_node          **shortpath;
     t_node          **spurpath;
     int             size;
     int             count;
@@ -114,6 +114,7 @@ t_node      *room_dup(t_node *room);
 // t_parent    *addparent(t_parent *parent, int idroom);
 // void        get_paths(t_lemin* lemin, t_links *link, int start);
 void        get_paths(t_lemin* lemin);
+
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
 // t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
 void        lem_play(t_lemin *lemin);
