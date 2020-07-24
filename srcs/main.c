@@ -62,26 +62,36 @@ void print_paths(t_node *paths, int i)
     printf("\e[0m");
 }
 
-void print_paths_2(t_node **paths)
-{
-    int i = -1;
-    t_node *tmp;
+// void print_paths_2(t_lemin *lemin)
+// {
+//     int i;
+//     t_path **spurpath;
+//     t_node *primpath;
+//     t_node *tmp;
 
-    while (paths[++i])
-    {
-        tmp = paths[i];
-        while (tmp)
-        {
-            printf("Path[%d][%d]:", i, path_len_2(paths[i]));
-            while (tmp)
-            {
-                printf(" %s", tmp->name);
-                tmp = tmp->next;
-            }
-            printf("\n");
-        }
-    }
-}
+
+//     primpath = lemin->primpath;
+//     spurpath = lemin->spurpath;
+//     printf("Path[0][%d]:", path_len_2(primpath));
+//     while (primpath)
+//     {
+//         printf(" %s", primpath->name);
+//         primpath = primpath->next;
+//     }
+//     printf("\n");
+//     i = -1;
+//     while (spurpath[++i])
+//     {
+//         tmp = spurpath[i]->shortpath;
+//         printf("Path[%d][%d]:", i, path_len_2(tmp));
+//         while (tmp)
+//         {
+//             printf(" %s", tmp->name);
+//             tmp = tmp->next;
+//         }
+//         printf("\n");
+//     }
+// }
 
 int main(int ac, char **av)
 {
@@ -100,10 +110,8 @@ int main(int ac, char **av)
     // get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     get_paths(&lemin);
     // lemin.paths = new_paths(&lemin, lemin.paths);
-    printf("+++++++++++++++++++++\n");
-    print_paths_2(lemin.shortpath);
-    printf("---------------------\n");
-    print_paths_2(lemin.spurpath);
+    // printf("---------------------\n");
+    // print_paths_2(&lemin);
     // int i = -1;
     // while (lemin.shortpath[++i])
     //     ;

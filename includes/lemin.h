@@ -35,12 +35,11 @@ typedef struct      s_queue
     int             rear;
 }                   t_queue;
 
-typedef struct      s_parent
+typedef struct      s_path
 {
-    int             id;
-    int             path;
-    struct s_parent *next;
-}                   t_parent;
+    int             len;
+    int             path[256];
+}                   t_path;
 
 typedef struct      s_node
 {
@@ -71,12 +70,15 @@ typedef struct      s_rooms
 typedef struct      s_lemin
 {
     int             ants;
+    int             start;
+    int             final;
     t_rooms         *rooms;
     t_links         *links;
     t_queue         *queue;
-    t_parent        **parent;
-    t_node          **shortpath;
-    t_node          **spurpath;
+    // t_node          *primpath;
+    t_path          *primpath;
+    t_path          **shortpaths;
+    t_path          **spurpaths;
     int             size;
     int             count;
 
@@ -111,9 +113,13 @@ int         dequeue(t_queue *queue);
 */
 
 t_node      *room_dup(t_node *room);
-// t_parent    *addparent(t_parent *parent, int idroom);
-// void        get_paths(t_lemin* lemin, t_links *link, int start);
 void        get_paths(t_lemin* lemin);
+
+/*
+** compare paths 
+*/
+
+int         cmp_paths(t_path **spurpaths, t_path *newpath);
 
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
 // t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
@@ -123,6 +129,6 @@ int path_len(t_node *path);
 
 ////////
 void print_paths(t_node *paths, int i);
-void print_paths_2(t_node **paths);
+void print_paths_2(t_lemin *lemin);
 
 #endif
