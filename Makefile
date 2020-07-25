@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 TARGET	:= lem-in
-CFLAGS 	:= -Wall -Werror -Wextra
+CFLAGS 	:= -Wall -Werror -Wextra -g
 CC 		:= gcc
 
 # Source and object direct

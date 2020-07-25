@@ -1,38 +1,29 @@
-392
-
-Path[0][20] = 78=97
-Path[1][25] = 73=97
-Path[3][44] = 54=97
-Path[5][46] = 52=97
-Path[9][56] = 42=97
-Path[10][58] = 40=97
-Path[12][62] = 36=97
-Path[18][84] = 14=97
-
-20=66=85
-25=52=76
-47=30=76
-48=29=76
-51=26=76
-56=21=76
-62=15=76
-63=14=76
-64=13=76
-69=8=76
-71=6=76
-73=4=76
-76=10=85
-
-
-
-
-
-
-
-
-cmp:
-----------
-
-
-
-
+Primepath[0][21]: H_q7 Yyv8 Wnj6 Vbc1 Gxs5 Sx_6 Dth7 I__4 Vqg8 Mbe5 Sn_3 Obm9 Vzf2 Ile9 Pti1 Qrp2 Erx7 Ygz3 Cdq8 Wqt6 Nh_6
+Spurpaths[0][21]: H_q7 Yyv8 Xuc2 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
+Spurpaths[1][26]: H_q7 Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
+Spurpaths[2][40]: H_q7 Mg_0 Shd1 Xod5 Jn_8 Dpn7 Qgm1 Xhb4 Mrv8 Vrm0 Egu7 Mx_6 Xfj6 Bu_3 Ohu7 Osu5 Ucf3 Pmq3 Uwc5 Rla6 Pnd4 Vkn5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
+Spurpaths[3][44]: H_q7 Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Vkn5 Pnd4 Rla6 Uwc5 Pmq3 Kqt8 Pnw3 Fit4 Jxf9 Ynw1 Mfy1 Tzo0 Wwe0 Mcv0 Z__8 Clm2 Tgl5 Dka9 Ol_1 Hzm8 Yof9 Uzp2 Yzb7 Bga1 Pln8 Jne3 Heb9 Hwt5 Hpb5 Igh5 G__1 Ghu0 Cjy8 Xfj7 Nh_6
+Spurpaths[4][45]: H_q7 Jwy0 Wqx2 Muo0 Wrk4 Yt_5 Too9 Hrm9 Mbz6 Yzd6 Phk9 Dpw2 Idy1 Cvn6 Oer5 Qw_1 Rw_6 Sf_9 Hcr0 Ggb0 F_i9 Tbj7 Szt6 Cga0 Jin4 Qp_0 O_c1 Ter9 Qdw0 Hok6 Pnn7 Box9 Vbt6 Ulc8 P_h1 Tme0 Zxw6 Rkh8 Hex0 Dtr1 Gbs6 Atk2 Ixf4 Wzo8 Nh_6
+Spurpaths[5][46]: H_q7 Cni9 B__8 Nlv9 Mww9 Pfy5 Qpc6 Yhw5 Ctg6 Hhs5 Gqv9 Zer7 Ywr7 Xwz3 Xhj5 Teg9 Ued1 Mjo4 Do_9 Ykc4 Pyw1 Yfx8 Vdm7 Rtd3 Guw5 Kle5 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
+Spurpaths[6][47]: H_q7 Dgv5 Sbg4 P_l9 Gsu4 W_w5 Hkq5 Sd_4 Tdc4 Wen8 Kgc3 Alm0 Kcf9 Bfe9 Awh9 Oqj1 Rnb4 Nm_6 Dyu9 Cue5 Dio1 Vuc4 Pix0 Vdm7 Rtd3 Guw5 Kle5 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
+Spurpaths[7][49]: H_q7 Ezt6 Gof8 Xen8 Jaj7 Ooz2 Bin1 K_s7 Riv7 Wmz3 Wd_4 Nkb5 Fv_7 Dru6 F_e8 Ced2 Uwe7 Vbl9 A__3 Yoq6 Xw_5 G_n8 Rev1 Clr8 H_v0 Z_v2 Ffr0 Eaz9 W_b4 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
+Spurpaths[8][50]: H_q7 Cni9 B__8 Nlv9 Mww9 Pfy5 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
+Spurpaths[9][55]: H_q7 Xct5 Bon8 Fj_2 Vkt6 Wzt6 Oki6 B__8 Nlv9 Mww9 Pfy5 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
+Spurpaths[10][57]: H_q7 Uvh3 Ydu8 D_c2 Nru7 Jsl5 Tfn3 Cjn9 Nhd7 Fdy7 P_o5 Eie1 Eqn6 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
+Spurpaths[11][61]: H_q7 Qtd0 Inf6 Wgm1 Oqx7 Ols2 Axx6 Wnh3 G_b1 Ttk0 Eoj7 P_z1 Wnt7 Upr3 Isx3 Cef1 Brr2 Gdb9 Zbd3 Yqd7 Qcb9 Ajc7 Ran2 Pba0 Tef8 Mtb4 Aw_9 Edb3 Bbl5 Zxd5 Mxi2 Dqz0 Tda6 Wwj7 Omt9 Due3 Vt_0 Mxd9 O_c6 Utx2 Dpy6 Onv3 Yaf5 Ynn8 Qya2 A_a5 J_m7 Zzp4 Hxh5 Oot9 Yua3 Oiy1 Jm_7 Qua3 Ntx9 Pik4 Ttp3 Ytp5 Xvf8 Tei2 Nh_6
+Spurpaths[12][63]: H_q7 Fvv8 Wqq2 Tem8 Ir_4 Hvc3 Yep2 Goa1 Dit0 Kgk2 Znu6 Pxr4 Hys7 Asv2 Aye7 Ukl4 Bso6 Xxo5 Cwo7 Rae3 Hhs5 Ruw1 Cvj9 Nsf6 Hw_3 Zwl6 Vsp4 Oai4 Qcl8 Vv_2 Nfw6 Wsa9 Hen4 Mjr3 Kun8 Nqd2 H_v3 Bgb1 Qqu3 Nzb7 Mvn9 Xh_8 Agq2 Wki8 X_m1 Anc6 Yrl4 M_a7 R_j1 Hz_9 Sry1 Qch4 Jba0 Wkx3 Ygb7 Att8 Xvc0 Ign9 Nkd4 Hit7 Zc_1 Yh_7 Nh_6
+Spurpaths[13][74]: H_q7 Eb_9 Ccs5 Vbq9 A_d7 Aso3 Fjm0 Dkp9 Kzs0 Zje2 O_z9 Mkj7 W_n0 Dns5 Uqi1 Mcg0 Bus1 Pfy5 Sif9 Ilm2 Zs_6 Oeh1 Knw3 Awk1 Tcd2 Rxu7 Tgd4 Smj0 Cqx1 Fv_4 B_o4 W_y3 Nal2 Tq_3 Mqc7 Xl_5 O_g6 W_v6 Tts0 Tgl6 Mlb6 Dcr8 Vjh0 Vbq6 Wzx9 Ipm0 De_7 Joi7 Tpk5 Rrk5 B_c4 Hie2 Nxc8 Pce3 H_x9 Xot7 Nth3 Qcn5 Hpg6 D_h8 Zpi1 Yjh6 Sh_0 Ukc4 Dr_8 Sh_1 O_d6 Xwy8 Xdv7 Uzo0 Zxk4 Xrm4 Qyi4 Nh_6
+Spurpaths[14][76]: H_q7 Mnb0 Kms8 Tvk4 Rzo3 Exr1 Bbw4 Xqh7 Eeq9 Gpj7 Ymj6 Kcg0 Phr6 Obg3 Gu_2 Qdw2 Ogi1 Atw7 Xzc4 U_c8 Kxr5 Si_6 A_u3 Afn8 Bio6 Fmq4 Udy5 Jwm3 Uhb7 Pjo2 Bdg6 Cmv3 Dkc4 Hwb7 Ppr5 Rud8 Rgf1 Jiw4 Wtz1 Ezh0 M_p2 Mxi2 Zxd5 Pbs5 Ftf9 O__6 Scr7 Sdh3 Pj_2 Zpu1 Ijs0 Ubd4 Xtq9 Ai_1 Uns0 Ko_3 Oys4 Xjh2 Xmq8 Jjb4 Gcj3 Vkh3 Jpo1 Pfk6 Qnp0 Tuk5 Fuq8 Ukb6 Ubm3 Skp6 A__4 Gvn9 Dua5 Sfi5 Mtz5 Nh_6
+Spurpaths[15][83]: H_q7 Bye1 Fw_1 Vwf5 Ncd8 Zwv0 Fek5 Mpm1 Psd1 Kt_1 Wmq5 Gno1 Jvb7 Eji8 Pan6 Beg2 Eaf8 Mof1 Io_9 Dlx5 Gx_0 Oys2 Pgf9 Tgr3 Brm1 Rvh8 Agi1 Zrd7 Srf8 Ibk8 Pau3 Hhl8 Syh1 Z_u3 Ike6 Tfr6 Zkm6 Usn5 Ao_8 Cpj5 Z_v1 Opk3 Hjj9 Juf0 Rkh8 Zxw6 Tme0 P_h1 Xu_6 Vbg1 Twp5 Zsl5 Gce1 Bii3 Ecr7 Fhc4 Pqv8 Nke4 Dnf6 Obh6 Rex7 Xqa3 Rfx1 Pjy3 Yn_0 Tya6 Huk8 Ced8 Jsa2 Qsa1 Fsh3 Jgu1 Ynj7 Dam3 Qzw3 Bnj8 Xdv4 Mj_2 Fpo8 Fky5 O_h4 Jeh3 Nh_6
+Spurpaths[16][84]: H_q7 Bye1 Fw_1 Vwf5 Ncd8 Zwv0 Fek5 Mpm1 Psd1 Kt_1 Wmq5 Gno1 Jvb7 Eji8 Pan6 Beg2 Eaf8 Mof1 Io_9 Dlx5 Gx_0 Oys2 Pgf9 Tgr3 Brm1 Rvh8 Agi1 Zrd7 Srf8 Ibk8 Pau3 Hhl8 Syh1 Z_u3 Ike6 Tfr6 Zkm6 Usn5 Ao_8 Cpj5 Z_v1 Opk3 Hjj9 Juf0 Rkh8 Zxw6 Tme0 P_h1 Ulc8 Vbt6 Box9 Okj5 Kn_8 N_b4 Zaj9 Mum0 Tjn1 Nfb7 Snn2 Kqp3 Pnk3 Jnm0 Oyb6 Q_p0 Dkb7 Pyg3 Ppr2 Pgz6 R_e1 Had2 Ujy9 Hwv8 W_v7 Mwa0 Jyw5 Xiu3 Xwf9 Iib1 Fmu0 Dnz2 Rz_2 Nuf3 Hdo8 Nh_6
+Spurpaths[17][85]: H_q7 Hyn4 Bpk8 Som8 Sgd9 Dw_7 Cyp0 Vpq3 Kh_7 Adk5 Okz7 Zdc1 Bis5 Vny8 Gzv4 Vbx6 Tnf2 Rs_6 Woh9 Yuo3 Yhw5 Fxh0 Srr0 G_r8 Hpz7 Nob2 Ptp8 Hdk2 Zv_4 Vwg4 Qjj0 Iwq7 Noa5 Yph4 Bvc3 Xlt2 Mhg7 Qaa2 Nwm6 Dzp4 Vij7 Kui3 Scn1 Vsh7 Tdd2 Cau6 Czr1 R_k3 Uhz2 Txe6 Jjn3 Syn9 Oli6 Wik7 Heh5 Ow_9 Mtb2 Ehd8 Fzy0 Mnz7 Zje6 Vzt2 Uit0 Zzd7 Ull9 Hzh3 Be_7 Cdc7 Aro5 Qzt3 Fvu2 Ovj5 Coi4 Xdp3 A_h6 Bit9 Xio8 Mbh5 Mhs0 Tbb3 X_h9 Jr_7 Ubl4 Ohh1 Nh_6
+Spurpaths[18][85]: H_q7 Hyn4 Bpk8 Som8 Sgd9 Dw_7 Cyp0 Vpq3 Kh_7 Adk5 Okz7 Zdc1 Bis5 Vny8 Gzv4 Vbx6 Tnf2 Rs_6 Woh9 Yuo3 Yhw5 Qpc6 Pfy5 Mww9 Nlv9 Zba1 O_f0 Bza7 Su_8 Dlk8 Hxu7 Snz3 Nkj2 Vfc2 Iez0 Bbd3 Taw4 Fnl4 Zyr8 Huu8 Cec4 Pby0 Vcx4 Idx7 Qgm5 Hr_8 Yxa3 Bll4 Mqo4 Jsk6 Iem8 Xok2 Kzs9 Wvj5 Fan7 Kx_6 Cvi1 Imw8 Xmf7 Eqt3 V_n1 Jkh3 Pws3 A_k0 Zox6 Gpl9 I_f4 Zbg7 Tvm4 Bap2 Tw_2 Kmz0 Pig5 Bii6 Hxr1 Skx5 Dpk4 Bv_1 S__8 Puw5 Jym2 Ggu3 Iad2 Avm7 Nh_6
+Spurpaths[19][87]: H_q7 Hyn4 Bpk8 Som8 Sgd9 Dw_7 Cyp0 Vpq3 Kh_7 Adk5 Okz7 Zdc1 Bis5 Vny8 Gzv4 Vbx6 Tnf2 Rs_6 Woh9 Yuo3 Yhw5 Qpc6 Pfy5 Mww9 Nlv9 B__8 J_o0 Zdf3 Zdj2 Kqw0 Z_f0 Apb2 Qlm2 Iic1 Yhx8 Apk4 Ye_7 Opm9 Rjm2 Zrd4 Rgz1 Vvt4 Tff7 Wil6 Ilb1 Fs_6 Vng7 Ml_1 Hse1 Huh4 Kb_2 Ugi0 To_9 Vuz3 Xaa9 Xul0 Yky1 Vaj6 Jdv1 Ily6 Hvi0 Kqm7 Ifo1 Jpg1 Xne4 Aci6 Pca1 Zu_6 Ewb4 Aul8 Qep9 Y_l3 Ucx4 Kbs7 Dnc4 Xju5 Hwn5 Nye0 Xgg5 Nfh9 Mvo4 Ikg1 Yhk5 Bha4 Rmi4 Cms6 Nh_6
+Spurpaths[20][96]: H_q7 Ipc9 Siq9 Ddd1 Kli3 Tkg9 Oqg0 Sux6 Tzo2 Wwg6 Ile5 Rwy7 Djy1 Bw_6 Kar2 Efq6 Rdw9 Tpo0 Vwt7 Jqq5 Xji3 Oeq5 Xms3 C_e9 Hbm6 Oab8 Xjg5 Xyb3 Uan0 Ssn7 Iow7 Wkm1 Acx0 Niy1 Fnf0 X_e0 Sku5 Vwe6 Erx0 J_c5 Rw_8 Hto7 C_z1 Enq0 G_o7 U_t9 Chs5 Epo7 Ykh9 Fm_7 I__6 Tle7 Wno8 Yrd2 Gif7 Keb4 Udb2 Qn_7 Due3 Cpg5 Gxh6 Ter9 Ikd1 Hhz2 Cjx2 Cue1 Bqv6 Bc_0 Jyy6 Yes0 I_s9 Mnd0 Cvh8 Rai3 Dgh6 Xsu2 Pem1 Yvf4 Fps5 Gs_4 Fmt8 Boc2 Hub7 Zrt7 Zeg4 Wfa9 Nyx4 Cp_5 Pcx2 Gvr7 Kwh1 Bde2 Fvz0 Hrt9 Pvf8 Nh_6
+Spurpaths[21][103]: H_q7 Dxi3 Rij0 Bnr1 Rbl2 Yxa0 Hf_5 Nld7 Nlo9 Sta2 Kxb4 Dhr5 Kiz7 Ji_5 Ddr7 Pty6 E_l0 Akx6 Z_y7 Imj8 Ogl4 Ne_8 Equ4 Mzo2 Nw_9 Ksi5 Zw_8 Qvg0 K_j4 Xgw8 Vpz6 Ccp5 W__5 Cxj5 Ukp7 Abp7 Gaa0 Xhe8 Not4 Cxz5 Bes9 Zsp9 Ix_6 Hjv3 Rzy9 Hyc0 I_i7 Nab6 Nwt5 Zso9 Ybf8 Kat1 Jva8 Ogm4 Qxh1 Uiw4 Qfn8 Tsp3 Ywr7 Yso7 K_h6 Fyc5 Nt_2 Xla5 Krs0 Boy7 Kwc3 Spf4 Scr3 Hjs1 Ppx0 Cro5 Seu6 Vqb0 Cnq5 Fva0 Pvg5 Sel4 Ob_5 Cyr4 Yeh4 Cnk3 Iil3 Fvb8 Ngl0 Qgo7 Hfl9 Fku7 Tlk2 Hi_7 Sii0 Bwd6 Flg6 C_s9 Psf0 Pot8 Ttu2 Eqv5 Ccm3 Gxt9 I_b8 Yfo0 Nh_6
+Spurpaths[22][105]: H_q7 Hcm3 Orp2 Jop7 Ija8 Fuu4 Ilg2 Ngl7 Psb3 Cf_3 V_h0 Rzq7 S_r3 Wkl8 Q_j2 Tiv4 Ead3 Yoq8 Qjl7 Yvs7 Acm8 Jpj9 Ok_8 Vrh4 Hej3 Fyn7 U_r5 Vzv0 Rhw4 Cpa8 O_g8 Ovl4 Zyq3 H_n1 Bgr7 Hxu4 W_x8 Mxe9 Ayq4 Otj0 Vhj3 Pvm7 S_l5 Zbx0 Djz9 Tik5 Cew0 Bp_5 Exr9 Eof1 Pqt6 Wc_0 V_o8 Tae7 U__8 Mkv5 Vxk9 Ezl1 Md_6 Ick6 Pvt1 Slo9 Q_k8 Q_i0 Gbf7 Pkc5 Fwh4 E_h0 Jfb6 Qgt2 Tyv7 Hoi8 Qya7 S_l2 Kkr2 Qqx9 R_l8 Zru3 Gdd0 Ks_9 N_a3 Yn_4 Zcx7 Ed_2 Rxd5 Dkg2 Drb5 Ate2 Yig7 Vf_4 Xpv6 Nlu0 W_y1 Uze7 Boq8 Xir6 Ptm5 Uts7 Clv4 Uui3 Ybf7 Fwu6 Unz7 Atp6 Nh_6
+Spurpaths[23][108]: H_q7 Oyz1 Wet5 Qys3 Bqk9 Ur_3 Mio1 Flr2 Jtm7 Rqq0 Kin3 Zcp3 Fza0 Aow7 Dbs4 N_r6 Cok0 Hem0 Xs_7 U_e2 Bxc3 Cqy5 Hwf8 Qfi0 Had6 Uhy3 Muz6 Rfi7 G_q9 Eeq0 Ucf4 Ba_1 Al_1 Qwe3 Otv7 Rla6 Fwk7 Bgr9 Nxw0 Vme9 Iwy0 Ycw0 Yau0 Axh7 Odl6 Iip5 Ked9 Nqd1 Eaq8 P_a3 Fai7 Ceq8 Xh_2 Nti6 Yfa9 Zvg3 Pfv3 Ber2 Scx5 Gam0 Awm9 Sci5 Ydg1 Tzx3 Dqs2 Ooc6 Fru0 Fiv9 Itk3 Ufc4 Hdq7 A__1 Uhs4 Xwf1 G__9 Tma0 Esb0 Xzz0 Fng4 Jvn2 Aah1 Jsd8 Dpa4 Cvw5 Xe_9 Oqf8 Xv_0 Ulk7 Wnl8 T_y0 Nez7 Uwg8 Uov3 Wz_4 Gt_7 Mek7 Mek3 J_t9 Dff8 Jae3 Hwi5 O_y4 Zcx8 Vfr9 Gqb0 Rfz9 Ver8 Nh_6
+Spurpaths[24][117]: H_q7 Vso6 Kma1 Hzy5 Pax0 Dat0 Zjs0 Afu1 Hnd4 Phx1 Gww6 Dzy8 N_u5 Fgy8 Fgr2 Mut0 Acx6 Uok7 H_z3 Ez_0 Zzx4 Tqd7 Dqc4 Sho2 Vwp3 Owk5 Y_b0 Fky4 Bta7 Dzj1 B_m4 Ebb0 Apz6 Fzv8 Ehi0 K_l2 Nee8 A_y2 Iog7 Ki_0 Mxy9 Xir7 Zgo7 Zup0 Pdz7 Fi_6 Vwl7 D_a2 Obs7 Xmt8 Iok3 Ail3 Pnw3 Ma_6 Iwn4 Igo1 Ctc0 Afj8 Yj_9 Gba2 Rme6 Wya2 O_u2 Onb5 Xnq7 Ofs1 Csd1 Spx7 Ajm3 F_h1 Mqg7 Ujj6 Itr6 Kot0 Odr7 O_c8 Bkl2 Uyw3 D_t1 Yfn3 Coo6 Ndy5 Nbl2 Scy3 Jkw0 Drf0 Vwt4 Msz2 N_v3 Nus1 Yba4 Fjo3 Uxc7 Us_4 Eka3 Dav4 Zqg8 Evk3 Z_a7 Qee3 Reh1 Gp_3 Nxa7 Sne5 Zut5 C_s1 Qgy3 Yp_1 Fv_2 Api5 Hxr2 Dek3 Alr2 Hq_8 Ido2 Uah9 Nh_6
+Spurpaths[25][117]: H_q7 Qyo8 Jak4 Wue4 Msa4 Wun7 Esb7 Yta8 Dow9 A_q5 Rhb0 Cqx9 Uhr5 Xck3 Xbu4 W_y8 Cqe3 Sze6 Wtf8 Iry9 Otg0 D_k4 Ghr1 Qsv1 Frs9 Xs_4 Nom5 Xdp9 Doh1 Foy0 Cqg2 Mqu5 Nxb2 Tuo9 Hzk3 Ule3 Trb5 Yov2 Phn1 Nsi9 Uwj8 Cgs2 Dea8 Qqf0 Rnn7 Nlb8 Tqa4 Qom3 Yyr5 Pcq3 Bwj2 Mjd5 Uvy6 Mzm6 Nb_5 Qk_7 Jm_8 Cke4 Bxh5 Rwn5 Aql2 Kdl7 Ft_8 Pii2 Aru4 Dcu2 Jmr5 Fff7 Job3 Vgi1 Gci5 Ft_4 Tvi3 Msa5 Xte3 Jse0 Jnh5 Xsr9 Ygc3 Xao6 Mw_6 Vq_5 Rib3 Vzp3 Vky0 Ayg5 Wgt0 Svi8 Xfa5 Pcn7 Uta6 Iax4 X_h1 Etc1 Fcq8 Tcd1 Gbn7 H_n6 Iit0 Cqz1 Zel0 Vw_7 Ibq2 W_s2 Zdm7 Ejy3 Y_c4 E_u2 Mfu5 Mvz3 Onj7 G_c4 E_s0 Rie1 Bln7 Zet0 Nh_6
+Spurpaths[26][119]: H_q7 Xq_8 Syj7 Ktu6 Vlh4 Hvg9 Zfl2 Tjv8 Vsf7 Rqx6 Tgc8 Bkh0 Gal7 Nhz8 Mlk7 Ejr6 Aur3 C_i0 Zwo9 Xuw1 Aqp1 Try6 Yas9 Ing2 Tuz2 Xa_5 Xxn5 Xm_6 Cqt7 Odh9 E_j1 Qon8 O_b6 Jjz6 Scr0 Agy1 Srd6 Suq9 Vth5 Khu2 Kmy3 Ckn4 Xxv8 Rtc4 Wls9 Nv_9 Aul6 B_w7 Zkd7 Tr_7 Hbh8 X_p4 Xej3 Kug2 Jmp9 M_x9 Fhn0 Xux2 Wkm4 Tzw7 Bqu7 Olo3 Kle5 Guw5 Rtd3 Vdm7 Jlh8 Dfk6 Dxf9 Bol0 Hgj4 Cku3 Xqr8 Qqx0 Kum8 Ny_3 Qir7 Jjn2 Krf5 Yxl5 Kty8 Eyv6 Pye3 Ayx1 Mhg0 S_t5 Jdk4 Ztj4 Xvr2 Bnf8 Bal9 Vna7 Vty6 Mxs8 Ruf8 So_8 W_m3 Fny0 Nov1 Rmj2 Ue_1 Eyz0 Dm_2 Tuq1 Mzo3 Hj_3 Mum1 Qqb4 Usk5 Emt6 Ihf4 Ysh0 Fps8 Rlg4 Rvo4 Hzl5 Nxg6 Oat4 Nh_6
+Spurpaths[27][121]: H_q7 Vgu8 Oxo3 Zfr2 Hxn5 Dks3 Uh_4 Qb_5 Dnh6 Vip1 Yuc9 Khf6 R__6 Vkq0 Cbd4 Qgp6 Pct8 Xox0 Xjm2 Hgc4 Kw_9 Umj7 Fpj1 Iwc3 Ar_5 Ksz1 Auc1 Xjv6 Ans9 Qdl1 Kjx9 K_h1 Iys1 Wdk5 Oeb6 Bq_7 Tpg3 Gvf4 Eq_4 Zid9 Mbz5 Kg_1 Dbz8 X_m0 Grl3 Qzp6 Bed5 Hoy8 Fam2 Kif2 Ixf4 Kcw6 Jjf1 Jwx9 Wey9 Ia_7 Yiy7 Chj6 Faz8 Eal1 Efv1 Onb1 Rpa5 Rps0 K_c1 Wcc8 Hzg6 Zyg0 Wao9 Nyf7 Zco4 Iq_7 Fvb5 A__2 Meb3 Utu4 Vg_7 Yvb7 Odu5 Tis1 Yvu9 Wcz9 Vzr7 Tqc1 Nhi7 Pel9 D_l7 Rgm2 V_f9 Omm6 Xsp7 Epm7 Gxi7 Nco1 Jsh6 Pok8 Dws0 Rhk9 I_f9 Ab_1 Guw4 Zpm2 Bbf1 Fno9 Dvd2 Kn_4 Cyw9 Axd7 Kgv4 Cit6 Ipb7 Orx9 Pqx1 Kny9 Zuk0 Vio5 Tas6 Fja9 Bmt4 Wbn7 Nh_6

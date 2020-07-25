@@ -47,51 +47,52 @@ int path_len_2(t_node *path)
     
 }
 
-void print_paths(t_node *paths, int i)
+void print_paths(t_path *paths)
 {
-    while (paths)
-    {
-        printf("Path[%d][%d] = ", i, path_len(paths));
-        while (paths)
-        {
-            printf("->%s", paths->name);
-            paths = paths->next;
-        }
-        printf("\n");
-    }
-    printf("\e[0m");
+    int i;
+
+    i = -1;
+    printf("\e[91mPath:");
+    while (++i < paths->len)
+        printf(" %d", paths->path[i]);
+    printf("\e[0m\n");
 }
 
-// void print_paths_2(t_lemin *lemin)
-// {
-//     int i;
-//     t_path **spurpath;
-//     t_node *primpath;
-//     t_node *tmp;
+void print_paths_2(t_lemin *lemin)
+{
+    t_node  **rooms;
+    int     *tmp;
+    int     i;
+    int     j;
 
-
-//     primpath = lemin->primpath;
-//     spurpath = lemin->spurpath;
-//     printf("Path[0][%d]:", path_len_2(primpath));
-//     while (primpath)
-//     {
-//         printf(" %s", primpath->name);
-//         primpath = primpath->next;
-//     }
-//     printf("\n");
-//     i = -1;
-//     while (spurpath[++i])
-//     {
-//         tmp = spurpath[i]->shortpath;
-//         printf("Path[%d][%d]:", i, path_len_2(tmp));
-//         while (tmp)
-//         {
-//             printf(" %s", tmp->name);
-//             tmp = tmp->next;
-//         }
-//         printf("\n");
-//     }
-// }
+    rooms = lemin->rooms->hroom;
+    tmp = lemin->primpath->path;
+    i = -1;
+    printf("\e[92mPrimepath[0][%d]:", lemin->primpath->len);
+    while (++i < lemin->primpath->len)
+        printf(" %s", rooms[tmp[i]]->name);
+    printf("\e[0m\n");
+    i = -1;
+    while (lemin->shortpaths[++i])
+    {
+        j = -1;
+        tmp = lemin->shortpaths[i]->path;
+        printf("\e[93mShortpath[%d][%d]:", i, lemin->shortpaths[i]->len);
+        while (++j < lemin->shortpaths[i]->len)
+            printf(" %s", rooms[tmp[j]]->name);
+        printf("\e[0m\n");
+    }
+    i = -1;
+    while (lemin->spurpaths[++i])
+    {
+        j = -1;
+        tmp = lemin->spurpaths[i]->path;
+        printf("\e[91mSpurpaths[%d][%d]:", i, lemin->spurpaths[i]->len);
+        while (++j < lemin->spurpaths[i]->len)
+            printf(" %s", rooms[tmp[j]]->name);
+        printf("\e[0m\n");
+    }
+}
 
 int main(int ac, char **av)
 {
