@@ -57,4 +57,5 @@ void    lemin_init(t_lemin *lemin, char *str[])
     lemin->start = lemin->rooms->start->id;
     lemin->final = lemin->rooms->end->id;
     lemin->size = get_size_path(lemin->links, lemin->start, lemin->final);
+    // printf("size = %d\n", lemin->size);
 }

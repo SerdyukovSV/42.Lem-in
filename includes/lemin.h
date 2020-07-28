@@ -76,6 +76,7 @@ typedef struct      s_lemin
     t_links         *links;
     t_queue         *queue;
     // t_node          *primpath;
+    int             *visitroom;
     t_path          *primpath;
     t_path          **shortpaths;
     t_path          **spurpaths;
@@ -119,7 +120,7 @@ void        get_paths(t_lemin* lemin);
 ** compare paths 
 */
 
-int  cmp_paths(t_path **spurpaths, t_path *newpath, int **link, t_lemin *lem);
+int  cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin);
 
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
 // t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
@@ -128,7 +129,7 @@ int path_len(t_node *path);
 
 
 ////////
-void print_paths(t_path *paths);
+void print_paths(t_path *paths, t_lemin *lemin);
 void print_paths_2(t_lemin *lemin);
 
 #endif

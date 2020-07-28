@@ -47,14 +47,14 @@ int path_len_2(t_node *path)
     
 }
 
-void print_paths(t_path *paths)
+void print_paths(t_path *paths, t_lemin *lemin)
 {
     int i;
 
     i = -1;
-    printf("\e[91mPath:");
+    printf("\e[91mPath[%d]:", paths->len);
     while (++i < paths->len)
-        printf(" %d", paths->path[i]);
+        printf(" %s", lemin->rooms->hroom[paths->path[i]]->name);
     printf("\e[0m\n");
 }
 
@@ -67,11 +67,11 @@ void print_paths_2(t_lemin *lemin)
 
     rooms = lemin->rooms->hroom;
     tmp = lemin->primpath->path;
-    i = -1;
-    printf("\e[92mPrimepath[0][%d]:", lemin->primpath->len);
-    while (++i < lemin->primpath->len)
-        printf(" %s", rooms[tmp[i]]->name);
-    printf("\e[0m\n");
+    // i = -1;
+    // printf("\e[92mPrimepath[0][%d]:", lemin->primpath->len);
+    // while (++i < lemin->primpath->len)
+    //     printf(" %s", rooms[tmp[i]]->name);
+    // printf("\e[0m\n");
     i = -1;
     while (lemin->shortpaths[++i])
     {

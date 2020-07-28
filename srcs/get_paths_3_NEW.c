@@ -34,22 +34,63 @@ static void     sort_spurpaths(t_path **paths)
     }
 }
 
-static int      setlink(t_links *links, int curr, int next, int set)
+static int      setlink(t_lemin *lemin, int curr, int next, int set)
 {
-    // printf("setlink = %s | %d-%d\n", set ? "OFF" : "ON", curr, next);
+    // system("sleep 0.05");
+    printf("\e[93msetlink\e[0m\n");
+    // printf("setlink = %s | %s(%d)-%s(%d)\n", set ? "OFF" : "ON", lemin->rooms->hroom[curr]->name, curr, lemin->rooms->hroom[next]->name, next);
+    int     i;
+    int     j;
     t_node  *tmp;
+    t_path  **shortpaths;
 
-    tmp = links->adjace[curr];
-    while (tmp)
+    i = -1;
+    shortpaths = lemin->shortpaths;
+    while (shortpaths[++i])
     {
-        if (tmp->id == next)
+        j = 0;
+        while (j < shortpaths[i]->len)
         {
-            tmp->path = set;
-            return (1);
+            if (shortpaths[i]->path[j++] == curr)
+            {
+                next = shortpaths[i]->path[j];
+                tmp = lemin->links->adjace[curr];
+                while (tmp)
+                {
+                    if (tmp->id == next)
+                    {
+                        printf("%s = %d\n", tmp->name, set);
+                        tmp->path = set;
+                        break ;
+                    }
+                    tmp = tmp->next;
+                }
+                break ;
+            }
         }
-        tmp = tmp->next;
     }
     return (0);
+}
+
+static int      setvertex(t_lemin *lemin, int *path, int current)
+{
+    // printf("setvertex | %s - %s\n", lemin->rooms->hroom[path[0]]->name, lemin->rooms->hroom[current]->name);
+    int i;
+
+    i = -1;
+    while (path[++i] != current)
+    {
+        // printf("%s - ", lemin->rooms->hroom[path[i]]->name);
+        lemin->links->visited[path[i]] = 1;
+    }
+    i = -1;
+    while (lemin->visitroom[++i] != -1)
+    {
+        lemin->links->visited[lemin->visitroom[i]] = 1;
+        // printf("\e[96mlinks->visited[%d] = %d\e[0m\n", lemin->visitroom[i], lemin->links->visited[lemin->visitroom[i]]);
+    }
+    // printf("\n");
+    return (i);
 }
 
 static void     search_path(t_lemin *lem, t_queue *queue, int *parent, int current)
@@ -57,7 +98,7 @@ static void     search_path(t_lemin *lem, t_queue *queue, int *parent, int curre
     // printf("search_path\n");
     t_node      *tmp;
 
-    ft_bzero(lem->links->visited, sizeof(int) * lem->rooms->total);
+    // ft_bzero(lem->links->visited, sizeof(int) * lem->rooms->total);
     ft_bzero(parent, sizeof(int) * lem->rooms->total);
     enqueue(queue, current);
     parent[current] = -1;
@@ -84,7 +125,7 @@ static void     search_path(t_lemin *lem, t_queue *queue, int *parent, int curre
 
 static void     rebuildgraph(t_lemin *lemin, t_path *shortpath, int set)
 {
-    // printf("rebuildgraph\n");
+    printf("rebuildgraph\n");
     int *tmp;
     int i;
 
@@ -92,14 +133,14 @@ static void     rebuildgraph(t_lemin *lemin, t_path *shortpath, int set)
     tmp = shortpath->path;
     while (tmp[i + 1] != -1)
     {
-        setlink(lemin->links, tmp[i], tmp[i + 1], set);
+        setlink(lemin, tmp[i], tmp[i + 1], set);
         i++;
     }
 }
 
-static int      get_newshort(t_path **shortpaths, t_path **spurpaths, t_lemin *lem)
+static int      get_newshort(t_path **shortpaths, t_path **spurpaths, t_lemin *lemin)
 {
-    // printf("get_newshort\n");
+    printf("get_newshort\n");
     int     i;
     int     j;
     int     k;
@@ -107,24 +148,59 @@ static int      get_newshort(t_path **shortpaths, t_path **spurpaths, t_lemin *l
 
     i = 0;
     edge = NULL;
-    j = get_count(spurpaths);
+    // j = get_count(spurpaths);
     k = get_count(shortpaths);
+    cmp_paths(shortpaths, spurpaths[i], lemin);
     sort_spurpaths(spurpaths);
-    while (i < j)
+    shortpaths[k] = spurpaths[i];
+    j = 0;
+    while (i < k)
     {
-        if (!cmp_paths(shortpaths, spurpaths[i], &edge, lem))
+        // if (!cmp_paths(shortpaths, spurpaths[i], lemin))
+        // {
+        //     shortpaths[k] = spurpaths[i];
+        //     while (i < j)
+        //     {
+        //         spurpaths[i] = spurpaths[i + 1];
+        //         spurpaths[i + 1] = NULL;
+        //         i++;
+        //     }
+        //     return (1);
+        // }
+        if (spurpaths[j] && spurpaths[j]->path[1] == shortpaths[i]->path[1])
         {
-            shortpaths[k] = spurpaths[i];
-            return (1);
+            j++;
+            i = 0;
         }
         i++;
     }
-    return (0);
+    i = get_count(spurpaths);
+    if (j < i)
+    {
+        shortpaths[k] = spurpaths[j];
+        while (j < i)
+        {
+            spurpaths[j] = spurpaths[j + 1];
+            spurpaths[j + 1] = NULL;
+            j++;
+        }
+    }
+    else
+    {
+        shortpaths[k] = spurpaths[0];
+        i = -1;
+        while (++i < j)
+        {
+            spurpaths[i] = spurpaths[i + 1];
+            spurpaths[i + 1] = NULL;
+        }
+    }
+    return (1);
 }
 
 static t_path   *get_newpath(int *parent, int fin)
 {
-    // printf("\e[92mget_newpath\e[0m\n");
+    printf("\e[92mget_newpath\e[0m\n");
     t_path  *newpath;
     int     tmp[256];
     int     i;
@@ -146,39 +222,71 @@ static t_path   *get_newpath(int *parent, int fin)
     return (newpath);
 }
 
-static int      get_spurpaths(t_lemin *lemin, t_path *shortpath, int *parent)
+static t_path   *pathjoin(t_path *rootpath, t_path *newpath, int cur)
 {
-    // printf("\e[92mget_spurpaths\e[0m\n");
+    printf("\e[92mpathjoin\e[0m\n");
+    t_path  *tmp;
+    int     i;
+    int     j;
+
+    tmp = malloc(sizeof(t_path));
+    ft_memset(tmp->path, -1, sizeof(int) * 256);
+    tmp->len = 0;
+    if (newpath)
+    {
+        i = -1;
+        while (rootpath->path[++i] != cur)
+            tmp->path[i] = rootpath->path[i];
+        j = 0;
+        while (j < newpath->len)
+            tmp->path[i++] = newpath->path[j++];
+        tmp->len = i;
+        free(newpath);
+    }
+    return (tmp);
+}
+
+static int      get_spurpaths(t_lemin *lemin, t_path *rootpath, int *parent)
+{
+    // printf("\e[91mget_spurpaths\e[0m\n");
     t_path  *new;
+    t_path **spurpaths;
     int     *tmp;
-    int     *edge;
     int     i;
 
     i = -1;
-    edge = NULL;
-    tmp = shortpath->path;
+    tmp = rootpath->path;
+    spurpaths = lemin->spurpaths;
     while (tmp[++i + 1] != -1)
     {
-        setlink(lemin->links, tmp[i], tmp[i + 1], DEL);
-        search_path(lemin, creat_queue(), parent, lemin->start);
+        ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
+        setlink(lemin, tmp[i], tmp[i + 1], DEL);
+        setvertex(lemin, rootpath->path, tmp[i]);
+        search_path(lemin, creat_queue(), parent, tmp[i]);
         if (lemin->links->visited[lemin->final])
         {
-            if ((new = get_newpath(parent, lemin->final))->len < 128)
+            if ((new = get_newpath(parent, lemin->final)))
             {
-                if (!cmp_paths(lemin->spurpaths, new, &edge, lemin))
-                    lemin->spurpaths[get_count(lemin->spurpaths)] = new;
+                if ((new = pathjoin(rootpath, new, tmp[i]))->len < 256)
+                {
+                    if (!cmp_paths(lemin->shortpaths, new, lemin) && !cmp_paths(spurpaths, new, lemin))
+                    {
+                        // printf("\e[94madd path\e[0m\n");
+                        spurpaths[get_count(spurpaths)] = new;
+                        // print_paths(new, lemin);
+                    }
+                }
             }
-            else
-                return (0);
         }
-        setlink(lemin->links, tmp[i], tmp[i + 1], SET);
+        // setlink(lemin, tmp[i], tmp[i + 1], SET);
     }
+    rebuildgraph(lemin, rootpath, SET);
     return (1);
 }
 
 static void     get_shortpaths(t_lemin *lemin, int *parent)
 {
-    // printf("\e[92mget_shortpaths\e[0m\n");
+    printf("\e[92mget_shortpaths\e[0m\n");
     t_path  **shortpaths;
     t_path  **spurpaths;
     int     prim;
@@ -187,22 +295,30 @@ static void     get_shortpaths(t_lemin *lemin, int *parent)
     shortpaths = lemin->shortpaths;
     spurpaths = lemin->spurpaths;
     i = 0;
-    prim = 0;
+    prim = 45;
+    // print_paths_2(lemin);
     while (get_spurpaths(lemin, shortpaths[i], parent))
     {
-        if (!prim++)
-        {
-            rebuildgraph(lemin, shortpaths[i], DEL);
-            shortpaths[i] = NULL;
-            if (get_newshort(shortpaths, spurpaths, lemin))
-                rebuildgraph(lemin, shortpaths[i], SET);
-        }
-        if (!lemin->links->visited[lemin->final])
+        // if (lemin->count < get_count(spurpaths))
+        // {
+        //     lemin->count = get_count(spurpaths);
+        //     // rebuildgraph(lemin, shortpaths[i], DEL);
+        get_newshort(shortpaths, spurpaths, lemin);
+        // printf("\e[96mstartroom = %s(%d)\e[0m\n", lemin->rooms->hroom[shortpaths[i]->path[1]]->name, lemin->rooms->hroom[shortpaths[i]->path[1]]->id);
+        lemin->visitroom[i] = shortpaths[i]->path[1];
+        // printf("\e[96mvisitroom[%d] = %d\e[0m\n", i, lemin->visitroom[i]);
+        i++;
+            // if (get_newshort(shortpaths, spurpaths, lemin))
+                /* rebuildgraph(lemin, shortpaths[++i], SET) */;
+        // }
+        // else
+        // {
+        //     printf("\e[94mbreak\e[0m\n");
+        //     break ;
+        // }
+        // print_paths_2(lemin);
+        if (!prim--)
             break ;
-        if (shortpaths[i])
-            rebuildgraph(lemin, shortpaths[i], DEL);
-        if (get_newshort(shortpaths, spurpaths, lemin))
-            rebuildgraph(lemin, shortpaths[++i], SET);
     }
 }
 
@@ -210,12 +326,17 @@ void        get_paths(t_lemin* lemin)
 {
     // printf("\e[92mget_paths\e[0m\n");
     int parent[lemin->rooms->total];
+    int visitroom[lemin->size + 1000];
 
+    // printf("size = %d\n", lemin->size);
+    ft_memset(visitroom, -1, sizeof(visitroom));
+    lemin->visitroom = visitroom;
     lemin->primpath = NULL;
     lemin->spurpaths = malloc(sizeof(t_path *) * 500);
     lemin->shortpaths = malloc(sizeof(t_path *) * 100);
     if (!lemin->shortpaths || !lemin->spurpaths)
         ft_error(ERR);
+    ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
     search_path(lemin, creat_queue(), parent, lemin->start);
     if (lemin->links->visited[lemin->final])
     {
@@ -225,44 +346,3 @@ void        get_paths(t_lemin* lemin)
     }
     print_paths_2(lemin);
 }
-
-
-// static int      get_spurpaths(t_lemin *lemin, t_path *shortpath, int *parent)
-// {
-//     printf("\e[92mget_spurpaths\e[0m\n");
-//     t_path  *new;
-//     int     *tmp;
-//     int     *edge;
-//     int     i;
-
-//     i = -1;
-//     edge = NULL;
-//     tmp = shortpath->path;
-//     while (tmp[++i + 1] != -1)
-//     {
-//         setlink(lemin->links, tmp[i], tmp[i + 1], DEL);
-//         search_path(lemin, creat_queue(), parent, lemin->start);
-//         if (!lemin->links->visited[lemin->final])
-//         {
-//             setlink(lemin->links, tmp[i], tmp[i + 1], SET);
-//             continue ;
-//         }
-//         if ((new = get_newpath(parent, lemin->final))->len < 256)
-//         {
-//             print_paths(new);
-//             if (!cmp_paths(lemin->spurpaths, new, &edge, lemin))
-//                 lemin->spurpaths[get_count(lemin->spurpaths)] = new;
-//             else
-//             {
-//                 printf("\e[95medge = %d-%d\e[0m\n", *edge, *(edge + 1));
-//                 setlink(lemin->links, *edge, *(edge + 1), DEL);
-//                 --i;
-//                 continue ;
-//             }
-//         }
-//         else
-//             return (0);
-//         setlink(lemin->links, tmp[i], tmp[i + 1], SET);
-//     }
-//     return (1);
-// }

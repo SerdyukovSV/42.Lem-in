@@ -1,14 +1,14 @@
 #include "../includes/lemin.h"
 
-int  cmp_paths(t_path **spurpaths, t_path *newpath, int **link, t_lemin *lem)
+int  cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin)
 {
     // printf("\e[92mcmp_paths\e[0m\n");
     int     i;
     int     j;
     int     equal;
 
-    int k;
-    k = lem->count;
+    int g;
+    g = lemin->count;
     while (*spurpaths)
     {
         i = -1;
@@ -17,11 +17,10 @@ int  cmp_paths(t_path **spurpaths, t_path *newpath, int **link, t_lemin *lem)
         {
             j = -1;
             while (++j < newpath->len)
-                if (newpath->path[j] == (*spurpaths)->path[i] /* && newpath->path[j] != lem->final && newpath->path[j] != lem->start */)
+                if (newpath->path[j] == (*spurpaths)->path[i]/*  && newpath->path[j] != lemin->start && newpath->path[j] != lemin->final */)
                 {
-                    *link = &newpath->path[j - 1];
-                    equal++;
                     // return (1);
+                    equal++;
                 }
         }
         if (equal == (*spurpaths)->len)
