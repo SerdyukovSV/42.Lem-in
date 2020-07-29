@@ -1,0 +1,41 @@
+
+Path[25][21][1]: H_q7 Yyv8 Wnj6 Vbc1 Gxs5 Sx_6 Dth7 I__4 Vqg8 Mbe5 Sn_3 Obm9 Vzf2 Ile9 Pti1 Qrp2 Erx7 Ygz3 Cdq8 Wqt6 Nh_6
+Path[11][26][8]: H_q7 Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
+Path[13][48][17]: H_q7 Mg_0 Shd1 Xod5 Jn_8 Dpn7 Qgm1 Xhb4 Mrv8 Vrm0 Egu7 Mx_6 Xfj6 Bu_3 Ohu7 Osu5 Ucf3 Pmq3 Kqt8 Pnw3 Fit4 Jxf9 Ynw1 Mfy1 Tzo0 Wwe0 Mcv0 Z__8 Clm2 Tgl5 Dka9 Ol_1 Hzm8 Yof9 Uzp2 Yzb7 Bga1 Pln8 Jne3 Heb9 Hwt5 Hpb5 Igh5 G__1 Ghu0 Cjy8 Xfj7 Nh_6
+Path[23][53][50]: H_q7 Vgu8 Oxo3 Zfr2 Hxn5 Dks3 Uh_4 Qb_5 Dnh6 Vip1 Yuc9 Khf6 R__6 Vkq0 Cbd4 Qgp6 Pct8 Xox0 Xjm2 Hgc4 Kw_9 Umj7 Fpj1 Iwc3 Ar_5 Ksz1 Auc1 Xjv6 Ans9 Qdl1 Kjx9 K_h1 Iys1 Wdk5 Oeb6 Bq_7 Tpg3 Gvf4 Eq_4 Zid9 Mbz5 Kg_1 Dbz8 X_m0 Grl3 Qzp6 Bed5 Hoy8 Fam2 Kif2 Ixf4 Wzo8 Nh_6
+Path[19][56][27]: H_q7 Jwy0 Wqx2 Muo0 Wrk4 Yt_5 Too9 Hrm9 Mbz6 Yzd6 Phk9 Dpw2 Idy1 Cvn6 Oer5 Qw_1 Rw_6 Sf_9 Hcr0 Ggb0 F_i9 Tbj7 Szt6 Cga0 Jin4 Qp_0 O_c1 Ter9 Gxh6 Cpg5 Due3 Vt_0 Mxd9 O_c6 Utx2 Dpy6 Onv3 Yaf5 Ynn8 Qya2 A_a5 J_m7 Zzp4 Hxh5 Oot9 Yua3 Oiy1 Jm_7 Qua3 Ntx9 Pik4 Ttp3 Ytp5 Xvf8 Tei2 Nh_6
+Path[40][57][13]: H_q7 Uvh3 Ydu8 D_c2 Nru7 Jsl5 Tfn3 Cjn9 Nhd7 Fdy7 P_o5 Eie1 Eqn6 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
+Path[2][63][20]: H_q7 Fvv8 Wqq2 Tem8 Ir_4 Hvc3 Yep2 Goa1 Dit0 Kgk2 Znu6 Pxr4 Hys7 Asv2 Aye7 Ukl4 Bso6 Xxo5 Cwo7 Rae3 Hhs5 Ruw1 Cvj9 Nsf6 Hw_3 Zwl6 Vsp4 Oai4 Qcl8 Vv_2 Nfw6 Wsa9 Hen4 Mjr3 Kun8 Nqd2 H_v3 Bgb1 Qqu3 Nzb7 Mvn9 Xh_8 Agq2 Wki8 X_m1 Anc6 Yrl4 M_a7 R_j1 Hz_9 Sry1 Qch4 Jba0 Wkx3 Ygb7 Att8 Xvc0 Ign9 Nkd4 Hit7 Zc_1 Yh_7 Nh_6
+Path[32][64][2]: H_q7 Cni9 B__8 J_o0 Zdf3 Zdj2 Kqw0 Z_f0 Apb2 Qlm2 Iic1 Yhx8 Apk4 Ye_7 Opm9 Rjm2 Zrd4 Rgz1 Vvt4 Tff7 Wil6 Ilb1 Fs_6 Vng7 Ml_1 Hse1 Huh4 Kb_2 Ugi0 To_9 Vuz3 Xaa9 Xul0 Yky1 Vaj6 Jdv1 Ily6 Hvi0 Kqm7 Ifo1 Jpg1 Xne4 Aci6 Pca1 Zu_6 Ewb4 Aul8 Qep9 Y_l3 Ucx4 Kbs7 Dnc4 Xju5 Hwn5 Nye0 Xgg5 Nfh9 Mvo4 Ikg1 Yhk5 Bha4 Rmi4 Cms6 Nh_6
+Path[16][73][30]: H_q7 Qtd0 Inf6 Wgm1 Oqx7 Ols2 Axx6 Wnh3 G_b1 Ttk0 Eoj7 P_z1 Wnt7 Upr3 Isx3 Cef1 Brr2 Gdb9 Zbd3 Yqd7 Qcb9 Ajc7 Ran2 Pba0 Tef8 Mtb4 Aw_9 Edb3 Bbl5 Zxd5 Mxi2 Aax1 Fxj5 Q_i9 Zym7 Jyd3 Iwz7 Ynm5 Tmq1 Xm_3 Dic0 Vum9 Jrp1 Hva9 Rzs6 Pjx8 Hrg0 Hin3 Djr4 Rk_2 Gma9 Wje1 Zpx0 Zxv5 Qic8 Qoo8 Hbx9 G_y9 Tf_8 Uoq2 Gdh3 I_p7 Hui8 Qvi6 Ius0 Gdt7 Jlv1 Xhe5 Bjs0 Uam3 Jhc1 Uez2 Nh_6
+Path[41][74][17]: H_q7 Eb_9 Ccs5 Vbq9 A_d7 Aso3 Fjm0 Dkp9 Kzs0 Zje2 O_z9 Mkj7 W_n0 Dns5 Uqi1 Mcg0 Bus1 Pfy5 Sif9 Ilm2 Zs_6 Oeh1 Knw3 Awk1 Tcd2 Rxu7 Tgd4 Smj0 Cqx1 Fv_4 B_o4 W_y3 Nal2 Tq_3 Mqc7 Xl_5 O_g6 W_v6 Tts0 Tgl6 Mlb6 Dcr8 Vjh0 Vbq6 Wzx9 Ipm0 De_7 Joi7 Tpk5 Rrk5 B_c4 Hie2 Nxc8 Pce3 H_x9 Xot7 Nth3 Qcn5 Hpg6 D_h8 Zpi1 Yjh6 Sh_0 Ukc4 Dr_8 Sh_1 O_d6 Xwy8 Xdv7 Uzo0 Zxk4 Xrm4 Qyi4 Nh_6
+
+Path[37][49][45]: H_q7 Ezt6 Gof8 Xen8 Jaj7 Ooz2 Bin1 K_s7 Riv7 Wmz3 Wd_4 Nkb5 Fv_7 Dru6 F_e8 Ced2 Uwe7 Vbl9 A__3 Yoq6 Xw_5 G_n8 Rev1 Clr8 H_v0 Z_v2 Ffr0 Eaz9 W_b4 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
+-Path[10][75][71]: H_q7 Vob4 Wkm6 Ssm5 Uji4 F_u7 Vcs4 Xxq2 Bfg0 Od_9 Poj6 Sdp5 Kt_9 Uxy2 Tei9 Nxu1 Pwj2 Uzf3 Xjp4 Wbz2 Kux7 Fif7 Xsj2 O_a6 Gah8 Vcd2 B_u8 Jth4 Vsb3 Aff1 Dtz2 Sf_1 Uzw2 Prs1 V_g8 Pbq7 Uht2 Ehb1 Tgp2 Enf9 Aue0 Byd8 Xgh6 Omu0 Amx9 Sdv2 Vmo5 Qiz5 U_d5 Atb8 Nfu2 Bax9 Ksm2 Fgr7 Qbv0 Fb_5 Tni1 Xql6 Qri5 Zc_6 Rl_4 Aye5 Aoq6 Axd1 Xeg1 Hhb7 Vbc9 Ktb8 Chd0 Phr0 Ino2 Aqa1 Uae4 Kdh0 Nh_6
+
+Path[5][77][23]: H_q7 Dgv5 Sbg4 P_l9 Gsu4 W_w5 Hkq5 Sd_4 Tdc4 Wen8 Kgc3 Alm0 Kcf9 Bfe9 Awh9 Oqj1 Rnb4 Nm_6 Dyu9 Cue5 Dio1 Vuc4 Pix0 Vdm7 Jlh8 Dfk6 Dxf9 Bol0 Hgj4 Cku3 Xqr8 Qqx0 Kum8 Ny_3 Qir7 Jjn2 Krf5 Yxl5 Kty8 Eyv6 Pye3 Ayx1 Mhg0 S_t5 Jdk4 Ztj4 Xvr2 Bnf8 Bal9 Vna7 Vty6 Mxs8 Ruf8 So_8 W_m3 Fny0 Nov1 Rmj2 Ue_1 Eyz0 Dm_2 Tuq1 Mzo3 Hj_3 Mum1 Qqb4 Usk5 Emt6 Ihf4 Ysh0 Fps8 Rlg4 Rvo4 Hzl5 Nxg6 Oat4 Nh_6
+Path[28][83][44]: H_q7 Bye1 Fw_1 Vwf5 Ncd8 Zwv0 Fek5 Mpm1 Psd1 Kt_1 Wmq5 Gno1 Jvb7 Eji8 Pan6 Beg2 Eaf8 Mof1 Io_9 Dlx5 Gx_0 Oys2 Pgf9 Tgr3 Brm1 Rvh8 Agi1 Zrd7 Srf8 Ibk8 Pau3 Hhl8 Syh1 Z_u3 Ike6 Tfr6 Zkm6 Usn5 Ao_8 Cpj5 Z_v1 Opk3 Hjj9 Juf0 Rkh8 Zxw6 Tme0 P_h1 Xu_6 Vbg1 Twp5 Zsl5 Gce1 Bii3 Ecr7 Fhc4 Pqv8 Nke4 Dnf6 Obh6 Rex7 Xqa3 Rfx1 Pjy3 Yn_0 Tya6 Huk8 Ced8 Jsa2 Qsa1 Fsh3 Jgu1 Ynj7 Dam3 Qzw3 Bnj8 Xdv4 Mj_2 Fpo8 Fky5 O_h4 Jeh3 Nh_6
+
+
+
+
+392
+------
+20-66=85
+25-61=85
+47-39=85
+48-38=85
+52-34=85
+55-31=85
+56-30=85
+62-24=85
+63-24=86
+72-15=86
+73-14=86
+76-11=86
+82-5=86
+
+-74-14=87
+
+
+
