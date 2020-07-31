@@ -41,6 +41,12 @@ typedef struct      s_path
     int             path[256];
 }                   t_path;
 
+typedef struct      s_shortpath
+{
+    t_path          *rootpath;
+    t_path          **spurpaths;
+}                   t_shortpath;
+
 typedef struct      s_node
 {
     char            *name;
@@ -77,9 +83,11 @@ typedef struct      s_lemin
     t_queue         *queue;
     // t_node          *primpath;
     int             *visitroom;
-    t_path          *primpath;
-    t_path          **shortpaths;
-    t_path          **spurpaths;
+    t_shortpath     **shortpaths;
+    // t_path          *primpath;
+    // t_path          **shortpaths;
+    // t_path          **spurpaths;
+
     int             size;
     int             count;
 

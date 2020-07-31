@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/lem-in",
-            "args": ["yens.txt"],
+            "args": ["test_lemin"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

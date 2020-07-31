@@ -68,55 +68,55 @@ int match_paths(t_path **paths, t_path *current, int fin)
     return (equal);
 }
 
-int sortpaths(t_lemin *lemin)
-{
-    printf("sortpaths\n");
-    t_path *tmp[lemin->size][100];
-    t_path **paths;
-    t_node *node;
-    int i;
-    int j;
-    int k;
+// int sortpaths(t_lemin *lemin)
+// {
+//     printf("sortpaths\n");
+//     t_path *tmp[lemin->size][100];
+//     t_path **paths;
+//     t_node *node;
+//     int i;
+//     int j;
+//     int k;
 
-    j = 0;
-    node = lemin->links->adjace[lemin->start];
-    while (node)
-    {
-        k = 0;
-        i = -1;
-        paths = lemin->shortpaths;
-        while (paths[++i])
-        {
-            if (paths[i]->path[1] == node->id)
-                tmp[j][k++] = paths[i];
-        }
-        i = -1;
-        paths = lemin->spurpaths;
-        while (paths[++i])
-        {
-            if (paths[i]->path[1] == node->id)
-                tmp[j][k++] = paths[i];
-        }
-        node = node->next;
-        tmp[j][k] = NULL;
-        j++;
-    }
-    i = -1;
-    while (++i < lemin->size && tmp[i])
-    {
-        // printf("\e[93msize = %d\e[0m\n", i);
-        j = 0;
-        if (tmp[i][j])
-            printf("%s\n", lemin->rooms->hroom[tmp[i][j]->path[1]]->name);
-        while (tmp[i][j])
-        {
-            k = -1;
-            printf("Path[%d][%d][%d]:", i, tmp[i][j]->len, match_paths(tmp[i], tmp[i][j], lemin->final));
-            while (++k < tmp[i][j]->len)
-                printf(" %s", lemin->rooms->hroom[tmp[i][j]->path[k]]->name);
-            printf("\n");
-            j++;
-        }
-    }
-    return (1);
-}
+//     j = 0;
+//     node = lemin->links->adjace[lemin->start];
+//     while (node)
+//     {
+//         k = 0;
+//         i = -1;
+//         paths = lemin->shortpaths;
+//         while (paths[++i])
+//         {
+//             if (paths[i]->path[1] == node->id)
+//                 tmp[j][k++] = paths[i];
+//         }
+//         i = -1;
+//         paths = lemin->spurpaths;
+//         while (paths[++i])
+//         {
+//             if (paths[i]->path[1] == node->id)
+//                 tmp[j][k++] = paths[i];
+//         }
+//         node = node->next;
+//         tmp[j][k] = NULL;
+//         j++;
+//     }
+//     i = -1;
+//     while (++i < lemin->size && tmp[i])
+//     {
+//         // printf("\e[93msize = %d\e[0m\n", i);
+//         j = 0;
+//         if (tmp[i][j])
+//             printf("%s\n", lemin->rooms->hroom[tmp[i][j]->path[1]]->name);
+//         while (tmp[i][j])
+//         {
+//             k = -1;
+//             printf("Path[%d][%d][%d]:", i, tmp[i][j]->len, match_paths(tmp[i], tmp[i][j], lemin->final));
+//             while (++k < tmp[i][j]->len)
+//                 printf(" %s", lemin->rooms->hroom[tmp[i][j]->path[k]]->name);
+//             printf("\n");
+//             j++;
+//         }
+//     }
+//     return (1);
+// }
