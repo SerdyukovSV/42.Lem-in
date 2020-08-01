@@ -1,16 +1,5 @@
 #include "../includes/lemin.h"
 
-// static int      get_count(t_path **paths)
-// {
-//     // printf("get_count\n");
-//     int i;
-
-//     i = 0;
-//     while (paths[i])
-//         i++;
-//     return (i);
-// }
-
 static void     sort_spurpaths(t_shortpath **shortpaths)
 {
     // printf("sort_spurpaths\n");
@@ -258,7 +247,7 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
         {
             new = get_newpath(parent, lemin->final);
             new = pathjoin(rootpath, new, rootpath->path[i]);
-            if (!cmp_paths(spurpaths, new, lemin))
+            if (!cmp_paths(spurpaths, new, lemin) && new->len < 90)
             {
                 // printf("add path\n");
                 // print_paths(new, lemin);
@@ -273,19 +262,21 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
 static t_path   *get_rootpath(t_lemin *lemin, t_node **start)
 {
     // printf("\e[92mget_rootpath\e[0m\n");
-    printf("\e[94mstart = %s\e[0m\n", (*start)->name);
+    // printf("\e[94mstart = %s\e[0m\n", (*start)->name);
     int parent[lemin->rooms->total];
+    t_path *new;
 
     ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
     search_path(lemin, creat_queue(), parent, (*start)->id);
     if (lemin->links->visited[lemin->final])
-        return (get_newpath(parent, lemin->final));
-    else
     {
-        lemin->size--;
-        // (*start) = (*start)->next;
-        return (get_rootpath(lemin, &(*start)->next));
+        if ((new = get_newpath(parent, lemin->final))->len < 90)
+            return (new);
+        else
+            return (get_rootpath(lemin, &(*start)->next));
     }
+    else
+        return (get_rootpath(lemin, &(*start)->next));
 }
 
 static void     get_shortpaths(t_lemin *lemin, int *parent, t_node *start)
@@ -295,14 +286,12 @@ static void     get_shortpaths(t_lemin *lemin, int *parent, t_node *start)
     int         i;
 
     i = 0;
-    // lemin->size = 2;
     shortpaths = malloc(sizeof(t_shortpath *) * lemin->size + 1);
     ft_memset(shortpaths, 0, sizeof(t_shortpath *) * (lemin->size + 1));
     while (start)
     {
         shortpaths[i] = (t_shortpath *)malloc(sizeof(t_shortpath));
         shortpaths[i]->rootpath = get_rootpath(lemin, &start);
-        // print_paths(shortpaths[i]->rootpath, lemin);
         shortpaths[i]->spurpaths = malloc(sizeof(t_path *) * \
                                     (shortpaths[i]->rootpath->len + 1));
         ft_memset(shortpaths[i]->spurpaths, 0, sizeof(t_path *) * \
@@ -327,5 +316,5 @@ void        get_paths(t_lemin* lemin)
     // printf("\e[93mEND\e[0m\n");
     sort_spurpaths(lemin->shortpaths);
     sort_rootpaths(lemin->shortpaths);
-    print_paths_2(lemin);
+    // print_paths_2(lemin);
 }

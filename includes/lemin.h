@@ -39,6 +39,7 @@ typedef struct      s_path
 {
     int             len;
     int             path[256];
+    int             dupl;
 }                   t_path;
 
 typedef struct      s_shortpath
@@ -129,6 +130,7 @@ void        get_paths(t_lemin* lemin);
 */
 
 int  cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin);
+void duplicate_paths(t_shortpath **shortpaths);
 int sortpaths(t_lemin *lemin);
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
 // t_node      **new_paths(t_lemin *lemin, t_node **paths, int start);
