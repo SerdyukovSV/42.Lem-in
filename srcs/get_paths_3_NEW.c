@@ -186,6 +186,7 @@ static t_path   *get_newpath(int *parent, int fin)
     if (!(newpath = malloc(sizeof(t_path))))
         return (NULL);
     i = 0;
+    newpath->dupl = -1;
     ft_memset(tmp, -1, sizeof(int) * 256);
     ft_memset(newpath->path, -1, sizeof(int) * 256);
     tmp[i] = fin;
@@ -210,6 +211,7 @@ static t_path   *pathjoin(t_path *rootpath, t_path *newpath, int cur)
     tmp = malloc(sizeof(t_path));
     ft_memset(tmp->path, -1, sizeof(int) * 256);
     tmp->len = 0;
+    tmp->dupl = -1;
     if (newpath)
     {
         i = -1;
@@ -273,10 +275,13 @@ static t_path   *get_rootpath(t_lemin *lemin, t_node **start)
         if ((new = get_newpath(parent, lemin->final))->len < 90)
             return (new);
         else
-            return (get_rootpath(lemin, &(*start)->next));
+        {
+            (*start) = (*start)->next;
+            return (get_rootpath(lemin, start));
+        }
     }
     else
-        return (get_rootpath(lemin, &(*start)->next));
+        return (get_rootpath(lemin, start));
 }
 
 static void     get_shortpaths(t_lemin *lemin, int *parent, t_node *start)

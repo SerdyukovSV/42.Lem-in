@@ -52,7 +52,7 @@ void print_paths(t_path *paths, t_lemin *lemin)
     int i;
 
     i = -1;
-    printf("\e[91mPath[%d]:", paths->len);
+    printf("\e[91mPath[%d][%d]:", paths->len, paths->dupl);
     while (++i < paths->len)
         printf(" %s", lemin->rooms->hroom[paths->path[i]]->name);
     printf("\e[0m\n");
@@ -107,7 +107,8 @@ int main(int ac, char **av)
     lemin_init(&lemin, &*str);
     // get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     get_paths(&lemin);
-    duplicate_paths(lemin.shortpaths);
+    // duplicate_paths(lemin.shortpaths);
+    choice_paths(&lemin);
     print_paths_2(&lemin);
     // lemin.paths = new_paths(&lemin, lemin.paths);
     // printf("---------------------\n");

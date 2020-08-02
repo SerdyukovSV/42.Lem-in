@@ -1,32 +1,19 @@
 #include "./includes/lemin.h"
 
-static int  cmp_spurpaths(t_path **spurpaths, t_path *newpath)
-{
-    int     i;
-    int     j;
-    int     equal;
-
-    while (*spurpaths)
-    {
-        i = -1;
-        equal = 0;
-        while (++i < (*spurpaths)->len)
-        {
-            j = -1;
-            while (++j < newpath->len)
-                if (newpath->path[j] == (*spurpaths)->path[i])
-                    equal++;
-        }
-        if (equal == (*spurpaths)->len)
-            return (1);
-        spurpaths++;
-    }
-    return (0);
-}
-
 int main(int ac, char **av)
 {
+    int i;
+    int j;
+
+    i = -1;
+    j = 0;
+    while (++i < 30)
+    {
+        printf("1 << %d %d\n", i, i << i);
+    }
     
-    printf("%s\n", ((void *)0));
+    if (j & 7)
+        printf("j & 10 = %d\n", (j & 7));
+    printf("j = %d\n", j);
     return (0);
 }

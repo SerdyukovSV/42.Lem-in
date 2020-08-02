@@ -28,7 +28,7 @@ Root[75][75]:   Rgl5 Rin0 Gvf1 Fyy0 Czo4 Qso7 Fjw1 Xrp3 Brh8 Mps0 Dt_3 Epp9 Sew4
 73-16
 75-14
 76-13
-82-7
+82-7=88
 
 
 
