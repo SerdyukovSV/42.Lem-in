@@ -1,23 +1,40 @@
 #include "../includes/lemin.h"
 
-static void sort_paths(t_path **paths)
+// static void sort_paths(t_path **paths)
+// {
+//     t_path  *tmp;
+//     int     i;
+//     int     j;
+
+//     i = -1;
+//     while (paths[++i])
+//     {
+//         j = -1;
+//         while (paths[++j])
+//         {
+//             if (paths[j + 1] && paths[j]->dupl > paths[j + 1]->dupl)
+//             {
+//                 tmp = paths[j];
+//                 paths[j] = paths[j + 1];
+//                 paths[j + 1] = tmp;
+//             }
+//         }
+//     }
+// }
+
+static void replaceroot(t_shortpath **shortpath)
 {
     t_path  *tmp;
     int     i;
-    int     j;
 
     i = -1;
-    while (paths[++i])
+    while ((*shortpath)->spurpaths[++i])
     {
-        j = -1;
-        while (paths[++j])
+        if ((*shortpath)->rootpath->dupl > (*shortpath)->spurpaths[i]->dupl)
         {
-            if (paths[j + 1] && paths[j]->dupl > paths[j + 1]->dupl)
-            {
-                tmp = paths[j];
-                paths[j] = paths[j + 1];
-                paths[j + 1] = tmp;
-            }
+            tmp = (*shortpath)->rootpath;
+            (*shortpath)->rootpath = (*shortpath)->spurpaths[i];
+            (*shortpath)->spurpaths[i] = tmp;
         }
     }
 }
@@ -25,20 +42,21 @@ static void sort_paths(t_path **paths)
 static int  is_duplicate(int src, t_path *dst)
 {
     // printf("\e[93mis_duplicate\e[0m : ");
-    // printf(" %s\n", rooms->hroom[dst->path[0]]->name);
     int i;
 
     i = -1;
-    while (++i < dst->len)
-        if (dst->path[i] == src)
-            return (1);
+    if (dst)
+    {
+        while (++i < dst->len)
+            if (dst->path[i] == src)
+                return (1);
+    }
     return (0);
 }
 
-static int  get_duplicate(t_path *src, t_path **all, int len)
+static int  get_duplicate(t_path *src, t_path **all)
 {
     // printf("\e[91mget_duplicate\e[0m\n");
-    // int tmp[100];
     int dup;
     int i;
     int j;
@@ -48,9 +66,9 @@ static int  get_duplicate(t_path *src, t_path **all, int len)
     while (++i < src->len - 1)
     {
         j = -1;
-        while (++j < len)
+        while (all[++j])
         {
-            if (all[j] && all[j] != src/*  && !tmp[j] */)
+            if (all[j] != src)
                 if (is_duplicate(src->path[i], all[j]))
                     dup++;
         }
@@ -73,26 +91,92 @@ static void duplicate_paths(t_shortpath *shortpath)
     j = -1;
     while (allpaths[++j])
     {
-        allpaths[j]->dupl = get_duplicate(allpaths[j], allpaths, i + 1);
+        allpaths[j]->dupl = get_duplicate(allpaths[j], allpaths);
     }
-    sort_paths(allpaths);
+}
+
+static void get_uniquepaths(t_path **paths)
+{
+    // printf("\e[93mget_uniquepaths\e[0m\n");
+    int     i;
+    int     j;
+    int     k;
+
+    i = -1;
+    while (paths[++i])
+    {
+        j = -1;
+        while (++j < paths[i]->len - 1)
+        {
+            k = i;
+            while (paths[++k])
+            {
+                if (is_duplicate(paths[i]->path[j], paths[k]))
+                {
+                    paths[k] = NULL;
+                    while (paths[k + 1])
+                    {
+                        paths[k] = paths[k + 1];
+                        paths[++k] = NULL;
+                    }
+                    k = i;
+                }
+            }
+        }
+    }
+}
+
+static t_path **remaining_paths(t_lemin *lemin, t_path **paths)
+{
+    int i;
+    int j;
+    int len;
+
+    len = 0;
+    while (paths[len])
+        len++;
+    i = 0;
+    while (lemin->shortpaths[i])
+    {
+        j = -1;
+        while (lemin->shortpaths[i]->spurpaths[++j])
+            if (!get_duplicate(lemin->shortpaths[i]->spurpaths[j], paths))
+                paths[len++] = lemin->shortpaths[i]->spurpaths[j];
+        i++;
+    }
+    return (paths);
 }
 
 t_shortpath *choice_paths(t_lemin *lemin)
 {
-    // t_shortpath *shortpaths;
+    t_path **paths;
     int         i;
+    int         j;
 
-    i = 0;
-    // shortpaths = malloc(sizeof(t_shortpath));
-    // shortpaths->rootpath = lemin->shortpaths[i]->rootpath;
-    // shortpaths->spurpaths = malloc(sizeof(t_path *) * 100);
-    // while (lemin->shortpaths[++i])
-    //     shortpaths->spurpaths[i - 1] = lemin->shortpaths[i]->rootpath;
-    // shortpaths->spurpaths[i - 1] = NULL;
+    paths = malloc(sizeof(t_path *) * 100);
     i = -1;
     while (lemin->shortpaths[++i])
+    {
         duplicate_paths(lemin->shortpaths[i]);
-
+        replaceroot(&lemin->shortpaths[i]);
+    }
+    sort_rootpaths(lemin->shortpaths);
+    i = -1;
+    while (lemin->shortpaths[++i])
+        paths[i] = lemin->shortpaths[i]->rootpath;
+    paths[i] = NULL;
+    get_uniquepaths(paths);
+    j = -1;
+    while (paths[++j])
+        paths[j]->dupl = get_duplicate(paths[j], paths);
+    j = -1;
+    printf("-----------------------------\n");
+    while (paths[++j])
+        print_paths(paths[j], lemin);
+    paths = remaining_paths(lemin, paths);
+    j = -1;
+    printf("------------remaining_paths-----------\n");
+    while (paths[++j])
+        print_paths(paths[j], lemin);
     return (NULL);
 }

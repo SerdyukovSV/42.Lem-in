@@ -109,7 +109,7 @@ int main(int ac, char **av)
     get_paths(&lemin);
     // duplicate_paths(lemin.shortpaths);
     choice_paths(&lemin);
-    print_paths_2(&lemin);
+    // print_paths_2(&lemin);
     // lemin.paths = new_paths(&lemin, lemin.paths);
     // printf("---------------------\n");
     // print_paths_2(&lemin);

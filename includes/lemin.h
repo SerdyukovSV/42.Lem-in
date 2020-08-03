@@ -132,7 +132,10 @@ void        get_paths(t_lemin* lemin);
 int         cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin);
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
 t_shortpath *choice_paths(t_lemin *lemin);
-int         sortpaths(t_lemin *lemin);
+// int         sortpaths(t_lemin *lemin);
+void     sort_rootpaths(t_shortpath **shortpaths);
+void     sort_spurpaths(t_shortpath **shortpaths);
+
 void        lem_play(t_lemin *lemin);
 int         path_len(t_node *path);
 

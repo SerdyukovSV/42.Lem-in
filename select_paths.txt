@@ -1,6 +1,7 @@
 Root[20][2]:    Yyv8 Wnj6 Vbc1 Gxs5 Sx_6 Dth7 I__4 Vqg8 Mbe5 Sn_3 Obm9 Vzf2 Ile9 Pti1 Qrp2 Erx7 Ygz3 Cdq8 Wqt6 Nh_6
 Root[25][9]:    Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
 Spur[47][54]:   Mg_0 Shd1 Xod5 Jn_8 Dpn7 Qgm1 Xhb4 Mrv8 Vrm0 Egu7 Mx_6 Xfj6 Bu_3 Ohu7 Osu5 Ucf3 Pmq3 Kqt8 Pnw3 Fit4 Jxf9 Ynw1 Mfy1 Tzo0 Wwe0 Mcv0 Z__8 Clm2 Tgl5 Dka9 Ol_1 Hzm8 Yof9 Uzp2 Yzb7 Bga1 Pln8 Jne3 Heb9 Hwt5 Hpb5 Igh5 G__1 Ghu0 Cjy8 Xfj7 Nh_6
+
 Spur[55][308]:  Jwy0 Wqx2 Muo0 Wrk4 Yt_5 Too9 Hrm9 Mbz6 Yzd6 Phk9 Dpw2 Idy1 Cvn6 Oer5 Qw_1 Rw_6 Sf_9 Hcr0 Ggb0 F_i9 Tbj7 Szt6 Cga0 Jin4 Qp_0 O_c1 Ter9 Gxh6 Cpg5 Due3 Vt_0 Mxd9 O_c6 Utx2 Dpy6 Onv3 Yaf5 Ynn8 Qya2 A_a5 J_m7 Zzp4 Hxh5 Oot9 Yua3 Oiy1 Jm_7 Qua3 Ntx9 Pik4 Ttp3 Ytp5 Xvf8 Tei2 Nh_6
 Spur[56][238]:  Uvh3 Ydu8 D_c2 Nru7 Jsl5 Tfn3 Cjn9 Nhd7 Fdy7 P_o5 Eie1 Eqn6 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
 Spur[72][433]: Qtd0 Inf6 Wgm1 Oqx7 Ols2 Axx6 Wnh3 G_b1 Ttk0 Eoj7 P_z1 Wnt7 Upr3 Isx3 Cef1 Brr2 Gdb9 Zbd3 Yqd7 Qcb9 Ajc7 Ran2 Pba0 Tef8 Mtb4 Aw_9 Edb3 Bbl5 Zxd5 Mxi2 Aax1 Fxj5 Q_i9 Zym7 Jyd3 Iwz7 Ynm5 Tmq1 Xm_3 Dic0 Vum9 Jrp1 Hva9 Rzs6 Pjx8 Hrg0 Hin3 Djr4 Rk_2 Gma9 Wje1 Zpx0 Zxv5 Qic8 Qoo8 Hbx9 G_y9 Tf_8 Uoq2 Gdh3 I_p7 Hui8 Qvi6 Ius0 Gdt7 Jlv1 Xhe5 Bjs0 Uam3 Jhc1 Uez2 Nh_6
@@ -27,8 +28,8 @@ Root[75][75]:   Rgl5 Rin0 Gvf1 Fyy0 Czo4 Qso7 Fjw1 Xrp3 Brh8 Mps0 Dt_3 Epp9 Sew4
 72-17
 73-16
 75-14
-76-13
-82-7=88
+76-14
+82-8=88
 
 
 
