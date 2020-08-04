@@ -183,7 +183,7 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
     int     j;
 
     i = -1;
-    j = 0;
+    j = 1;
     rootpath = shortpath->rootpath;
     spurpaths = shortpath->spurpaths;
     while (++i < rootpath->len && rootpath->path[i + 1] != -1)
@@ -198,8 +198,6 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
             new = pathjoin(rootpath, new, rootpath->path[i]);
             if (!cmp_paths(spurpaths, new, lemin) && new->len < 90)
             {
-                // printf("add path\n");
-                // print_paths(new, lemin);
                 spurpaths[j++] = new;
                 setlink_spur(lemin, spurpaths[j - 1], rootpath->path[i], DEL);
             }
@@ -211,7 +209,6 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
 static t_path   *get_rootpath(t_lemin *lemin, t_node **start)
 {
     // printf("\e[92mget_rootpath\e[0m\n");
-    // printf("\e[94mstart = %s\e[0m\n", (*start)->name);
     int parent[lemin->rooms->total];
     t_path *new;
 
@@ -248,6 +245,7 @@ static void     get_shortpaths(t_lemin *lemin, int *parent, t_node *start)
                                     (shortpaths[i]->rootpath->len + 1));
         ft_memset(shortpaths[i]->spurpaths, 0, sizeof(t_path *) * \
                                     (shortpaths[i]->rootpath->len + 1));
+        shortpaths[i]->spurpaths[0] = shortpaths[i]->rootpath;
         get_spurpaths(lemin, shortpaths[i], parent);
         start = start->next;
         i++;

@@ -41,6 +41,8 @@ Path[83][135]: Ezt6 Gof8 Xen8 Jaj7 Ooz2 Bin1 K_s7 Riv7 Wmz3 Wd_4 Nkb5 Fv_7 Dru6 
 73-15=87
 76-11=86
 83-4=86
+total -=750=-
+
 
 ---
 20-68
