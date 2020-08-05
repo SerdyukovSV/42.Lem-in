@@ -1,5 +1,23 @@
 #include "../includes/lemin.h"
 
+static void     possible_paths(t_lemin *lemin, t_path *rootpath)
+{
+    t_node  *tmp;
+    int     i;
+
+    i = -1;
+    lemin->possible = 0;
+    while (++i < rootpath->len)
+    {
+        tmp = lemin->links->adjace[rootpath->path[i]];
+        while (tmp)
+        {
+            lemin->possible++;
+            tmp = tmp->next;
+        }
+    }
+}
+
 static void     setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set)
 {
     // printf("\e[93msetlink_spur\e[0m\n");
@@ -182,25 +200,29 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
     int     i;
     int     j;
 
-    i = -1;
     j = 1;
     rootpath = shortpath->rootpath;
     spurpaths = shortpath->spurpaths;
-    while (++i < rootpath->len && rootpath->path[i + 1] != -1)
+    while (lemin->possible > 0)
     {
-        ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
-        setvertex(lemin, rootpath->path[i], DEL);
-        setlink_root(lemin, &rootpath->path[i], DEL);
-        search_path(lemin, creat_queue(), parent, rootpath->path[i]);
-        if (lemin->links->visited[lemin->final])
+        i = -1;
+        while (++i < rootpath->len && rootpath->path[i + 1] != -1)
         {
-            new = get_newpath(parent, lemin->final);
-            new = pathjoin(rootpath, new, rootpath->path[i]);
-            if (!cmp_paths(spurpaths, new, lemin) && new->len < 90)
+            ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
+            setvertex(lemin, rootpath->path[i], DEL);
+            setlink_root(lemin, &rootpath->path[i], DEL);
+            search_path(lemin, creat_queue(), parent, rootpath->path[i]);
+            if (lemin->links->visited[lemin->final])
             {
-                spurpaths[j++] = new;
-                setlink_spur(lemin, spurpaths[j - 1], rootpath->path[i], DEL);
+                new = get_newpath(parent, lemin->final);
+                new = pathjoin(rootpath, new, rootpath->path[i]);
+                if (!cmp_paths(spurpaths, new, lemin) && new->len < 90)
+                {
+                    spurpaths[j++] = new;
+                    setlink_spur(lemin, spurpaths[j - 1], rootpath->path[i], DEL);
+                }
             }
+            lemin->possible--;
         }
     }
     rebuildgraph(lemin, shortpath, SET);
@@ -241,11 +263,10 @@ static void     get_shortpaths(t_lemin *lemin, int *parent, t_node *start)
     {
         shortpaths[i] = (t_shortpath *)malloc(sizeof(t_shortpath));
         shortpaths[i]->rootpath = get_rootpath(lemin, &start);
-        shortpaths[i]->spurpaths = malloc(sizeof(t_path *) * \
-                                    (shortpaths[i]->rootpath->len + 1));
-        ft_memset(shortpaths[i]->spurpaths, 0, sizeof(t_path *) * \
-                                    (shortpaths[i]->rootpath->len + 1));
+        shortpaths[i]->spurpaths = malloc(sizeof(t_path *) * 100);
+        ft_memset(shortpaths[i]->spurpaths, 0, sizeof(t_path *) * 100);
         shortpaths[i]->spurpaths[0] = shortpaths[i]->rootpath;
+        possible_paths(lemin, shortpaths[i]->rootpath);
         get_spurpaths(lemin, shortpaths[i], parent);
         start = start->next;
         i++;

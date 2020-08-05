@@ -1,6 +1,6 @@
 #include "../includes/lemin.h"
 
-static int      countpaths(t_path **paths)
+static int      paths_count(t_path **paths)
 {
     int i;
 
@@ -8,6 +8,25 @@ static int      countpaths(t_path **paths)
     while (paths[i])
         i++;
     return (i);
+}
+
+static t_path   **new_unique(t_path **p1, t_path **p2)
+{
+    printf("new_unique\n");
+    int i;
+
+    i = 0;
+    if (paths_count(p1) > paths_count(p2))
+    {
+        printf("p1 > p2\n");
+        while (p1[i])
+        {
+            if (p1[i] != p2[i])
+                p2[i] = p1[i];
+            i++;
+        }
+    }
+    return (p2);
 }
 
 static int      is_duplicate(t_path *src, t_path *dst)
@@ -46,90 +65,104 @@ static int      is_unique(t_path *spur, t_path **paths)
     return (1);
 }
 
-static t_path   **get_uniquepaths(t_path **paths, t_path **unique, t_lemin *lemin)
+t_path          **uniquepaths(t_path **paths, t_path **unique, int pos, t_lemin *lemin)
 {
+    printf("uniquepaths\n");
     t_path  *tmp[100];
     int     i;
-    int     j;
     int     k;
-    int len;
 
-    i = -1;
-    while (paths[++i])
+    print_paths(*paths, lemin);
+    // printf("\n");
+    while (*paths != unique[pos])
     {
-        system("sleep 0.5");
-        j = -1;
-        k = 0;
-        len = 0;
+        system("sleep 1");
+        i = 0;
+        k = pos - 1;
         ft_memset(tmp, 0, sizeof(t_path *) * 100);
-        tmp[k] = paths[i];
-        len += tmp[k]->len;
-        print_paths(tmp[k], lemin);
-        k++;
-        while (paths[++j])
+        ft_memcpy(tmp, unique, sizeof(t_path *) * (pos - 1));
+        printf("tmp = \n");
+        print_paths(*tmp, lemin);
+        printf("\n");
+        while (paths[i])
         {
-            // system("sleep 0.05");
-            if (is_unique(paths[j], tmp))
-            {
-                tmp[k] = paths[j];
-                len += tmp[k]->len;
-                print_paths(tmp[k], lemin);
-                k++;
-            }
+            if (is_unique(paths[i], tmp))
+                tmp[k++] = paths[i];
+            i++;
         }
-        printf("\e[93mcount = %d | ant = %d | len = %d | step = %d\e[0m\n", countpaths(tmp), lemin->ants, len, ((len / countpaths(tmp)) + (lemin->ants / countpaths(tmp))));
-        if (countpaths(tmp) > countpaths(unique))
-        {
-            printf("tmp = new\n");
-            unique = tmp;
-        }
+        i = -1;
+        while (tmp[++i])
+            print_paths(tmp[i], lemin);
+        unique = new_unique(tmp, unique);
+        paths++;
     }
+    if (*paths)
+        return (uniquepaths(paths, unique, pos + 1, lemin));
     return (unique);
 }
 
-static t_path **bestpaths(t_lemin *lemin, t_shortpath **shortpaths)
+static t_path **bestpaths(t_lemin *lemin, t_path **paths)
 {
     t_path  **unique;
-    t_path  *paths[1000];
+    int     i;
+    int     k;
+
+    k = lemin->ants;
+    k = 0;
+    i = -1;
+    unique = malloc(sizeof(t_path *) * 100);
+    ft_memset(unique, 0, sizeof(t_path *) * 100);
+    while (paths[++i])
+        if (is_unique(paths[i], unique))
+            unique[k++] = paths[i];
+    unique[k] = NULL;
+    unique = uniquepaths(paths, unique, 1, lemin);
+    i = -1;
+    while (unique[++i])
+        print_paths(unique[i], lemin);
+    return (NULL);
+}
+
+t_shortpath *choice_paths(t_lemin *lemin)
+{
+    t_path  *paths[2000];
     int     i;
     int     j;
     int     k;
 
     k = 0;
     i = -1;
-    unique = malloc(sizeof(t_path *) * 100);
-    ft_memset(unique, 0, sizeof(t_path *) * 100);
-    while (shortpaths[++i])
+    while (lemin->shortpaths[++i])
     {
         j = -1;
-        while (shortpaths[i]->spurpaths[++j])
-            paths[k++] = shortpaths[i]->spurpaths[j];
+        while (lemin->shortpaths[i]->spurpaths[++j])
+            paths[k++] = lemin->shortpaths[i]->spurpaths[j];
     }
     paths[k] = NULL;
-    unique = get_uniquepaths(paths, unique, lemin);
-    i = lemin->ants;
-    // i = -1;
-    // while (unique[++i])
-    //     print_paths(unique[i], lemin);
+    bestpaths(lemin, paths);
     return (NULL);
 }
 
-t_shortpath *choice_paths(t_lemin *lemin)
-{
-    t_path **paths;
-    // int         i;
-    int         len;
 
-    len = 0;
-    // paths = malloc(sizeof(t_path *) * 100);
-    paths = bestpaths(lemin, lemin->shortpaths);
-    // i = -1;
-    // while (paths[++i])
-    //     len += paths[i]->len;
-    // printf("count = %d | len = %d | step = %d\n", i, len, ((len / i) + (lemin->ants / i) - 1));
-    // printf("------------unique_paths-----------\n");
-    // i = -1;
-    // while (paths[++i])
-    //     print_paths(paths[i], lemin);
-    return (NULL);
-}
+// t_path   **uniquepaths(t_path **paths, t_path **unique, int pos)
+// {
+//     t_path  *tmp[100];
+//     int     i;
+//     int     j;
+//     int     k;
+
+//     i = -1;
+//     while (paths[++i])
+//     {
+//         k = 0;
+//         j = -1;
+//         ft_memset(tmp[i], 0, sizeof(t_path *) * 100);
+//         tmp[k++] = paths[i];
+//         while (paths[++j])
+//         {
+//             if (is_unique(paths[j], tmp))
+//                 tmp[k++] = paths[j];
+//         }
+//     }
+//     return (unique);
+// }

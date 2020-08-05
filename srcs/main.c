@@ -52,9 +52,12 @@ void print_paths(t_path *paths, t_lemin *lemin)
     int i;
 
     i = -1;
-    printf("\e[91mPath[%d][%d]:", paths->len, paths->dupl);
-    while (++i < paths->len)
-        printf(" %s", lemin->rooms->hroom[paths->path[i]]->name);
+    if (paths)
+    {
+        printf("\e[91mPath[%d][%d]:", paths->len, paths->dupl);
+        while (++i < paths->len)
+            printf(" %s", lemin->rooms->hroom[paths->path[i]]->name);
+    }
     printf("\e[0m\n");
 }
 
@@ -70,12 +73,6 @@ void print_paths_2(t_lemin *lemin)
     rooms = lemin->rooms->hroom;
     while (lemin->shortpaths[++i])
     {
-        // j = -1;
-        // root = lemin->shortpaths[i]->rootpath;
-        // printf("\e[92mRoot[%d][%d]:", root->len, root->dupl);
-        // while (++j < root->len)
-        //     printf(" %s", rooms[root->path[j]]->name);
-        // printf("\e[0m\n");
         spur = lemin->shortpaths[i]->spurpaths;
         while (*spur)
         {
@@ -105,18 +102,9 @@ int main(int ac, char **av)
         ft_error(ERR);
     }
     lemin_init(&lemin, &*str);
-    // get_paths(&lemin, lemin.links, lemin.rooms->start->id);
     get_paths(&lemin);
-    // duplicate_paths(lemin.shortpaths);
     // print_paths_2(&lemin);
     choice_paths(&lemin);
-    // lemin.paths = new_paths(&lemin, lemin.paths);
-    // printf("---------------------\n");
-    // print_paths_2(&lemin);
-    // int i = -1;
-    // while (lemin.shortpath[++i])
-    //     ;
-    // lemin.count = i;
     // lem_play(&lemin);
     return (0);
 }

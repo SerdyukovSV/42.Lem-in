@@ -83,6 +83,7 @@ typedef struct      s_lemin
     t_links         *links;
     t_queue         *queue;
     // t_node          *primpath;
+    int             possible;
     int             *visitroom;
     t_shortpath     **shortpaths;
     // t_path          *primpath;
