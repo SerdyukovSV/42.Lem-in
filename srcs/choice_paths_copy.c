@@ -1,16 +1,37 @@
 #include "../includes/lemin.h"
 
-// static int      paths_count(t_path **paths)
-// {
-//     int i;
+static int  get_steps2(t_path **paths, t_path *new, int ant)
+{
+    int i;
+    int len;
+    int s1;
+    int s2;
 
-//     i = 0;
-//     while (paths[i])
-//         i++;
-//     return (i);
-// }
+    i = 0;
+    len = 0;
+    s1 = INT32_MAX;
+    s2 = INT32_MAX;
+    while (paths[i])
+    {
+        len += paths[i]->len;
+        i++;
+        s1 = (len / i) + (ant / i);
+        if (s1 < s2)
+            s2 = s1;
+    }
+    if (new)
+    {
+        len += new->len;
+        i++;
+        s1 = (len / i) + (ant / i);
+        if (s1 < s2)
+            s2 = s1;
+    }
+    // printf("count %d | len %d\t", count, len);
+    return (s2);
+}
 
-static int calc_step(t_path **paths, t_path *new, int ant)
+static int get_steps(t_path **paths, t_path *new, int ant)
 {
     int i;
     int len;
@@ -33,11 +54,11 @@ static int calc_step(t_path **paths, t_path *new, int ant)
         }
         i++;
     }
-    printf("count %d | len %d\t", count, len);
+    // printf("count %d | len %d\t", count, len);
     return ((len / count) + (ant / count));
 }
 
-static int      is_duplicate(t_path *src, t_path *dst)
+static int  is_duplicate(t_path *src, t_path *dst)
 {
     int i;
     int j;
@@ -56,143 +77,118 @@ static int      is_duplicate(t_path *src, t_path *dst)
     return (0);
 }
 
-static int      is_unique(t_path *new, t_path **unique)
+static int  is_unique(t_path *new, t_path **unique)
 {
-    // printf("is_unique\n");
     int i;
 
     i = 0;
     if (new)
     {
-        // printf("step_1\n");
         while (unique[i] || unique[i + 1])
         {
-            // printf("step_2\n");
             if (unique[i])
-            {
-                // printf("step_3\n");
                 if (is_duplicate(unique[i], new))
-                {
-                    // printf("return (0)\n");
                     return (0);
-                }
-            }
             i++;
         }
     }
     return (1);
 }
 
-static t_path   **replacepath(t_shortpath **shortpaths, t_path **unique, t_path *new, t_lemin *lemin)
+static int  is_replace(t_lemin *lemin, t_path *replace, t_path **tmp, t_path *new)
 {
-    printf("replacepath\n");
+    int i;
+    int s1;
+    int s2;
+    // t_path *t1[100];
+    // t_path *t2[100];
+
+    i = 0;
+    while (tmp[i])
+        i++;
+    if (!is_unique(new, tmp))
+        return (0);
+    if (!is_duplicate(replace, new))
+    {
+        if (is_unique(replace, tmp))
+        {
+            tmp[i] = replace;
+            // ft_memcpy(t1, tmp, sizeof(t_path *) * 100);
+            // ft_memcpy(t2, lemin->unique, sizeof(t_path *) * 100);
+            // sort_unique(t1);
+            // sort_unique(t2);
+            s1 = get_steps(tmp, new, lemin->ants);
+            s2 = get_steps(lemin->unique, NULL, lemin->ants);
+            if (s1 >= s2)
+                return (-1);
+            lemin->unique[i] = replace;
+            return (1);
+        }
+    }
+    return (0);
+}
+
+static int  replacepath(t_lemin *lemin, t_shortpath **shortpaths, t_path *new)
+{
     t_path  **paths;
     t_path  *tmp[100];
+    int     j;
     int     i;
 
     ft_memset(tmp, 0, sizeof(t_path *) * 100);
-    ft_memcpy(tmp, unique, sizeof(t_path *) * 100);
+    ft_memcpy(tmp, lemin->unique, sizeof(t_path *) * 100);
     i = 0;
     while (!is_duplicate(tmp[i], new))
         i++;
-    if (tmp[i])
-        print_paths(tmp[i], lemin);
-    int j = 0;
+    j = 0;
     while (shortpaths[j]->spurpaths[0]->path[0] != tmp[i]->path[0])
         j++;
     paths = shortpaths[j]->spurpaths;
     while (*paths != tmp[i])
         paths++;
     tmp[i] = NULL;
-    printf("i = %d\n", i);
-    while (*paths)
+    while (*(++paths))
     {
-        printf("paths[%d]\n", (*paths)->len);
-        if (!is_duplicate(*paths, new))
-        {
-            printf("step_1\n");
-            if (is_unique(*paths, tmp))
-            {
-                printf("step_2\n");
-                tmp[i] = *paths;
-                if (!is_unique(new, tmp))
-                    return (replacepath(shortpaths, tmp, new, lemin));
-                printf("calc: %d > %d\n", calc_step(tmp, new, lemin->ants), calc_step(unique, NULL, lemin->ants));
-                if (calc_step(tmp, new, lemin->ants) >= calc_step(unique, NULL, lemin->ants))
-                    return (NULL);
-                ft_memcpy(unique, tmp, sizeof(t_path *) * 100);
-                return (unique);
-            }
-        }
-        paths++;
+        if ((i = is_replace(lemin, *paths, tmp, new)) == 1)
+            return (1);
+        else if (i == -1)
+            return (0);
+        // paths++;
     }
-    return (NULL);
+    return (0);
 }
 
-static t_path **bestpaths(t_lemin *lemin, t_shortpath **shortpaths)
+void        choice_paths(t_lemin *lemin)
 {
-    t_path  **unique;
-    t_path  **tmp;
-    int     i;
-    int     j;
-    int     k;
+    t_shortpath **paths;
+    int         i;
+    int         j;
+    int         k;
 
-    lemin->count = 0;
-    k = 0;
     i = 0;
-    unique = malloc(sizeof(t_path *) * 100);
-    ft_memset(unique, 0, sizeof(t_path *) * 100);
-    while (shortpaths[i])
+    k = 0;
+    paths = lemin->shortpaths;
+    while (paths[i])
     {
         j = 0;
-        printf("shortpaths[%d]\n", i);
-        while (shortpaths[i]->spurpaths[j])
+        while (paths[i]->spurpaths[j])
         {
-            printf("spurpaths[%d]\n", shortpaths[i]->spurpaths[j]->len);
-            if (is_unique(shortpaths[i]->spurpaths[j], unique))
+            if (is_unique(paths[i]->spurpaths[j], lemin->unique))
             {
-                printf("add unique\n");
-                // print_paths(shortpaths[i]->spurpaths[j], lemin);
-                unique[k++] = shortpaths[i]->spurpaths[j];
-                int l = -1;
-                while (unique[++l])
-                    print_paths(unique[l], lemin);
+                lemin->unique[k++] = paths[i]->spurpaths[j];
                 break ;
             }
-            else if ((tmp = replacepath(shortpaths, unique, shortpaths[i]->spurpaths[j], lemin)))
-            {
-                printf("new unique\n");
-                unique = tmp;
+            else if (replacepath(lemin, paths, paths[i]->spurpaths[j]))
                 continue ;
-            }
             j++;
         }
         i++;
     }
+    sort_unique(lemin->unique);
     printf("-------------unique-------------\n");
     i = -1;
-    while (unique[++i])
-        print_paths(unique[i], lemin);
-    printf("step = %d\n", calc_step(unique, NULL, lemin->ants));
-    return (unique);
-}
-
-t_shortpath *choice_paths(t_lemin *lemin)
-{
-    // t_path  *paths[2000];
-    // int     i;
-    // int     j;
-    // int     k;
-
-    // k = 0;
-    // i = -1;
-    // while (lemin->shortpaths[++i])
-    // {
-    //     j = -1;
-    //     while (lemin->shortpaths[i]->spurpaths[++j])
-    //         paths[k++] = lemin->shortpaths[i]->spurpaths[j];
-    // }
-    // paths[k] = NULL;
-    bestpaths(lemin, lemin->shortpaths);
-    return (NULL);
+    while (lemin->unique[++i])
+        print_paths(lemin->unique[i], lemin);
+    // printf("step = %d\n", get_steps(lemin->unique, NULL, lemin->ants));
+    printf("step = %d\n", get_steps2(lemin->unique, NULL, lemin->ants));
 }

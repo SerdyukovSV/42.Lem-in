@@ -103,6 +103,8 @@ int main(int ac, char **av)
     }
     lemin_init(&lemin, &*str);
     get_paths(&lemin);
+    lemin.unique = malloc(sizeof(t_path *) * 100);
+    ft_memset(lemin.unique, 0, sizeof(t_path *) * 100);
     // print_paths_2(&lemin);
     choice_paths(&lemin);
     // lem_play(&lemin);

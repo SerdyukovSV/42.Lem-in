@@ -52,3 +52,25 @@ void     sort_rootpaths(t_shortpath **shortpaths)
         }
     }
 }
+
+void     sort_unique(t_path **paths)
+{
+    t_path  *tmp;
+    int     i;
+    int     j;
+
+    i = -1;
+    while (paths[++i])
+    {
+        j = -1;
+        while (paths[++j])
+        {
+            if (paths[j + 1] && paths[j]->len > paths[j + 1]->len)
+            {
+                tmp = paths[j];
+                paths[j] = paths[j + 1];
+                paths[j + 1] = tmp;
+            }
+        }
+    }
+}

@@ -216,7 +216,7 @@ static void     get_spurpaths(t_lemin *lemin, t_shortpath *shortpath, int *paren
             {
                 new = get_newpath(parent, lemin->final);
                 new = pathjoin(rootpath, new, rootpath->path[i]);
-                if (!cmp_paths(spurpaths, new, lemin) && new->len < 90)
+                if (!cmp_paths(spurpaths, new, lemin) /* && new->len < 150 */)
                 {
                     spurpaths[j++] = new;
                     setlink_spur(lemin, spurpaths[j - 1], rootpath->path[i], DEL);
@@ -238,7 +238,7 @@ static t_path   *get_rootpath(t_lemin *lemin, t_node **start)
     search_path(lemin, creat_queue(), parent, (*start)->id);
     if (lemin->links->visited[lemin->final])
     {
-        if ((new = get_newpath(parent, lemin->final))->len < 90)
+        if ((new = get_newpath(parent, lemin->final)))
             return (new);
         else
         {

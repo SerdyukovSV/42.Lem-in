@@ -87,7 +87,7 @@ typedef struct      s_lemin
     int             *visitroom;
     t_shortpath     **shortpaths;
     // t_path          *primpath;
-    // t_path          **shortpaths;
+    t_path          **unique;
     // t_path          **spurpaths;
 
     int             size;
@@ -132,10 +132,11 @@ void        get_paths(t_lemin* lemin);
 
 int         cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin);
 t_node      **new_paths(t_lemin *lemin, t_node **paths);
-t_shortpath *choice_paths(t_lemin *lemin);
+void        choice_paths(t_lemin *lemin);
 // int         sortpaths(t_lemin *lemin);
 void     sort_rootpaths(t_shortpath **shortpaths);
 void     sort_spurpaths(t_shortpath **shortpaths);
+void     sort_unique(t_path **paths);
 
 void        lem_play(t_lemin *lemin);
 int         path_len(t_node *path);
