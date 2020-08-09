@@ -1,110 +1,149 @@
 #include "../includes/lemin.h"
 
-static int pathlen(t_node *path)
+static void     set_flow(t_lemin *lemin, int flow)
 {
-    size_t i;
+    int flow_ant;
+    int i;
 
     i = 0;
-    while (path)
+    flow_ant = 0;
+    while (lemin->unique[i])
     {
+        lemin->unique[i]->flow = 0;
+        flow_ant = flow - lemin->unique[i]->len + 1;
+        if (flow_ant < lemin->ants)
+            lemin->unique[i]->flow = flow_ant;
+        else
+            lemin->unique[i]->flow = lemin->ants;
+        lemin->ants -= lemin->unique[i]->flow;
         i++;
-        path = path->next;
     }
-    i -= i > 0 ? 1 : 0;
-    return (i);
-    
 }
 
-static void search_max_flow(t_lemin *lem, int *p_ant)
+static int      get_flow(t_path **paths, int ants)
 {
-    printf("\e[91msearch_max_flow\e[0m\n");
-    int step[1000];
+    int ln;
+    int flow1;
+    int flow2;
+    int count;
+
+    ln = 0;
+    count = 0;
+    flow1 = INT32_MAX;
+    flow2 = INT32_MAX;
+    while (paths[count])
+    {
+        ln += paths[count++]->len;
+        flow1 = (ln / count) + (ants / count);
+        if (flow1 < flow2)
+            flow2 = flow1;
+    }
+    printf("\e[92mflow = %d\e[0m\n", flow2);
+    return (flow2);
+}
+
+static void     rebuildgraph(t_lemin *lemin)
+{
+    t_node  *tmp;
+    int     i;
+    int     j;
+
+    i = -1;
+    while (lemin->unique[++i])
+    {
+        j = -1;
+        tmp = lemin->links->adjace[lemin->start];
+        while (++j < lemin->unique[i]->len)
+        {
+            while (tmp)
+            {
+                if (tmp->id == lemin->unique[i]->path[j])
+                {
+                    tmp->path = 2;
+                    break ;
+                }
+                tmp = tmp->next;
+            }
+            tmp = lemin->links->adjace[tmp->id];
+        }
+    }
+}
+
+static t_node   *start_ant(t_lemin *lemin, t_node **ants)
+{
+    int start;
     int i;
     int j;
 
-    i = 0;
-    j = 1;
-    ft_bzero(step, sizeof(int) * 1000);
-    p_ant[i] = lem->ants;
-    step[i] = pathlen(lem->paths[i]) + p_ant[i] - (p_ant[i] ? 1 : 0);
-    while (j < lem->count)
+    i = -1;
+    while (lemin->unique[++i])
     {
-        step[j] = pathlen(lem->paths[j]) + p_ant[j] - (p_ant[j] ? 1 : 0);
-        if (step[i] > step[j])
+        if (lemin->unique[i]->flow)
         {
-            p_ant[j] += 1;
-            step[j] = pathlen(lem->paths[j]) + p_ant[j] - (p_ant[j] ? 1 : 0);
-            p_ant[i]--;
-            step[i]--;
-            i = 0;
-            j = 1;
-        }
-        else
-        {
-            i++;
-            j++;
+            j = -1;
+            start = lemin->unique[i]->path[0];
+            while (++j < lemin->ants)
+            {
+                if (!ants[j] && !lemin->links->adjace[start]->ant)
+                {
+                    ants[j] = lemin->links->adjace[start];
+                    ants[j]->ant = 1;
+                    break ;
+                }
+            }
         }
     }
-    i = -1;
-    while (p_ant[++i])
-        /* printf("\e[92mp_ant[%d] = %d\e[0m\n", i, p_ant[i]) */;
-    lem->size = i;
 }
 
-void    lem_play(t_lemin *lemin)
+void            lemin_play(t_lemin *lemin)
 {
-    printf("\e[91mlem_play\e[0m\n");
-    t_node *ant[lemin->ants];
-    int     count;
-    int     line;
-    int     path_ant[1000];
-    int i;
-    int k;
+    t_node  *ants[lemin->ants];
+    t_node  *tmp;
+    int     i;
 
-    i = -1;
-    while (++i < lemin->ants)
-        ant[i] = NULL;
-    count = 0;
-    line = 0;
-    ft_bzero(path_ant, sizeof(int) * 1000);
-    search_max_flow(lemin, path_ant);
-    while (count != lemin->ants)
+    rebuildgraph(lemin);
+    set_flow(lemin, get_flow(lemin->unique, lemin->ants));
+    while (lemin->ants)
     {
-        // system("sleep 0.5");
-        // printf("step_1\n");
-        i = -1;
-        while (++i < lemin->ants)
+        i = 0;
+        start_ant(lemin, ants);
+        while (ants[i])
         {
-            k = -1;
-            while (!ant[i] && ++k < lemin->size)
+            if (ants[i]->ant)
             {
-                if (path_ant[k] && !lemin->paths[k]->next->ant)
+                printf("L%d-%d ", i + 1, ants[i]->name);
+                ants[i]->ant = 0;
+                tmp = lemin->links->adjace[ants[i]->id];
+                while (tmp)
                 {
-                    ant[i] = lemin->paths[k];
-                    path_ant[k]--;
-                }
-            }
-            if (ant[i])
-            {
-                if (ant[i]->next && ant[i]->next->id == lemin->rooms->end->id)
-                {
-                    ant[i]->ant--;
-                    ant[i] = ant[i]->next;
-                    ant[i]->ant++;
-                    count++;
-                    printf("\e[92mL%d-%d\e[0m ", i + 1, ant[i]->id);
-                }
-                else if (ant[i]->next && ant[i]->next->ant == 0)
-                {
-                    ant[i]->ant = 0;
-                    ant[i] = ant[i]->next;
-                    ant[i]->ant = 1;
-                    printf("L%d-%d ", i + 1, ant[i]->id);
+                    if (tmp->path == 2)
+                    {
+                        ants[i] = tmp;
+                        ants[i]->ant = 1;
+                    }
                 }
             }
         }
-        line++;
-        printf("\n");
+    // while (start)
+    // {
+    //     if (start->path == 2)
+    //     {
+    //         printf("\e[92mPath:");
+    //         printf("\e[93m %s", start->name);
+    //         tmp = links[start->id];
+    //         while (tmp)
+    //         {
+    //             if (tmp->path == 2)
+    //             {
+    //                 printf(" %s", tmp->name);
+    //                 tmp = links[tmp->id];
+    //                 continue ;
+    //             }
+    //             tmp = tmp->next;
+    //         }
+    //         printf("\e[0m\n");
+    //     }
+    //     start = start->next;
+    // }
     }
-    printf("\e[92mlines #%d\e[0m\n", line);
 }

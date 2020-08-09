@@ -39,7 +39,7 @@ typedef struct      s_path
 {
     int             len;
     int             path[256];
-    int             dupl;
+    int             flow;
 }                   t_path;
 
 typedef struct      s_shortpath
@@ -138,7 +138,7 @@ void     sort_rootpaths(t_shortpath **shortpaths);
 void     sort_spurpaths(t_shortpath **shortpaths);
 void     sort_unique(t_path **paths);
 
-void        lem_play(t_lemin *lemin);
+void        lemin_play(t_lemin *lemin);
 int         path_len(t_node *path);
 
 

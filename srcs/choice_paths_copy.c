@@ -1,35 +1,35 @@
 #include "../includes/lemin.h"
 
-static int  get_steps2(t_path **paths, t_path *new, int ant)
-{
-    int i;
-    int len;
-    int s1;
-    int s2;
+// static int  get_steps2(t_path **paths, t_path *new, int ant)
+// {
+//     int i;
+//     int len;
+//     int s1;
+//     int s2;
 
-    i = 0;
-    len = 0;
-    s1 = INT32_MAX;
-    s2 = INT32_MAX;
-    while (paths[i])
-    {
-        len += paths[i]->len;
-        i++;
-        s1 = (len / i) + (ant / i);
-        if (s1 < s2)
-            s2 = s1;
-    }
-    if (new)
-    {
-        len += new->len;
-        i++;
-        s1 = (len / i) + (ant / i);
-        if (s1 < s2)
-            s2 = s1;
-    }
-    // printf("count %d | len %d\t", count, len);
-    return (s2);
-}
+//     i = 0;
+//     len = 0;
+//     s1 = INT32_MAX;
+//     s2 = INT32_MAX;
+//     while (paths[i])
+//     {
+//         len += paths[i]->len;
+//         i++;
+//         s1 = (len / i) + (ant / i);
+//         if (s1 < s2)
+//             s2 = s1;
+//     }
+//     if (new)
+//     {
+//         len += new->len;
+//         i++;
+//         s1 = (len / i) + (ant / i);
+//         if (s1 < s2)
+//             s2 = s1;
+//     }
+//     // printf("count %d | len %d\t", count, len);
+//     return (s2);
+// }
 
 static int get_steps(t_path **paths, t_path *new, int ant)
 {
@@ -185,10 +185,10 @@ void        choice_paths(t_lemin *lemin)
         i++;
     }
     sort_unique(lemin->unique);
-    printf("-------------unique-------------\n");
-    i = -1;
-    while (lemin->unique[++i])
-        print_paths(lemin->unique[i], lemin);
-    // printf("step = %d\n", get_steps(lemin->unique, NULL, lemin->ants));
-    printf("step = %d\n", get_steps2(lemin->unique, NULL, lemin->ants));
+    // printf("-------------unique-------------\n");
+    // i = -1;
+    // while (lemin->unique[++i])
+    //     print_paths(lemin->unique[i], lemin);
+    // // printf("step = %d\n", get_steps(lemin->unique, NULL, lemin->ants));
+    // printf("step = %d\n", get_steps2(lemin->unique, NULL, lemin->ants));
 }
