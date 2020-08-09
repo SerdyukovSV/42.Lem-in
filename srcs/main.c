@@ -54,7 +54,7 @@ void print_paths(t_path *paths, t_lemin *lemin)
     i = -1;
     if (paths)
     {
-        printf("\e[91mPath[%d][%d]:", paths->len, paths->dupl);
+        printf("\e[91mPath[%d][%d]:", paths->len, paths->flow);
         while (++i < paths->len)
             printf(" %s", lemin->rooms->hroom[paths->path[i]]->name);
     }
@@ -78,7 +78,7 @@ void print_paths_2(t_lemin *lemin)
         {
             j = -1;
             root = (*spur);
-            printf("\e[93mSpur[%d][%d]:", root->len, root->dupl);
+            printf("\e[93mSpur[%d][%d]:", root->len, root->flow);
             while (++j < root->len)
                 printf(" %s", rooms[root->path[j]]->name);
             printf("\e[0m\n");
