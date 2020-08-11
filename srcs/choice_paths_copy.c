@@ -54,7 +54,6 @@ static int get_steps(t_path **paths, t_path *new, int ant)
         }
         i++;
     }
-    // printf("count %d | len %d\t", count, len);
     return ((len / count) + (ant / count));
 }
 
@@ -100,8 +99,6 @@ static int  is_replace(t_lemin *lemin, t_path *replace, t_path **tmp, t_path *ne
     int i;
     int s1;
     int s2;
-    // t_path *t1[100];
-    // t_path *t2[100];
 
     i = 0;
     while (tmp[i])
@@ -113,10 +110,6 @@ static int  is_replace(t_lemin *lemin, t_path *replace, t_path **tmp, t_path *ne
         if (is_unique(replace, tmp))
         {
             tmp[i] = replace;
-            // ft_memcpy(t1, tmp, sizeof(t_path *) * 100);
-            // ft_memcpy(t2, lemin->unique, sizeof(t_path *) * 100);
-            // sort_unique(t1);
-            // sort_unique(t2);
             s1 = get_steps(tmp, new, lemin->ants);
             s2 = get_steps(lemin->unique, NULL, lemin->ants);
             if (s1 >= s2)
@@ -182,13 +175,12 @@ void        choice_paths(t_lemin *lemin)
                 continue ;
             j++;
         }
+        sort_unique(lemin->unique);
         i++;
     }
-    sort_unique(lemin->unique);
-    // printf("-------------unique-------------\n");
-    // i = -1;
-    // while (lemin->unique[++i])
-    //     print_paths(lemin->unique[i], lemin);
-    // // printf("step = %d\n", get_steps(lemin->unique, NULL, lemin->ants));
-    // printf("step = %d\n", get_steps2(lemin->unique, NULL, lemin->ants));
+    printf("-------------unique-------------\n");
+    i = -1;
+    while (lemin->unique[++i])
+        print_paths(lemin->unique[i], lemin);
+    printf("step = %d\n", get_flow(lemin->unique, lemin->ants));
 }

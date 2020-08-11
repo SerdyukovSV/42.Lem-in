@@ -138,6 +138,7 @@ void     sort_rootpaths(t_shortpath **shortpaths);
 void     sort_spurpaths(t_shortpath **shortpaths);
 void     sort_unique(t_path **paths);
 
+int      get_flow(t_path **paths, int ants);
 void        lemin_play(t_lemin *lemin);
 int         path_len(t_node *path);
 

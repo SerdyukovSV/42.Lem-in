@@ -157,10 +157,11 @@ int main(int ac, char **av)
     // print_paths_2(&lemin);
     choice_paths(&lemin);
     // duplicate_paths(lemin.unique);
-    lemin_play(&lemin);
     // printf("-------------unique-flow-------------\n");
     // int i = -1;
     // while (lemin.unique[++i])
     //     print_paths(lemin.unique[i], &lemin);
+    lemin.size = lemin.ants;
+    // lemin_play(&lemin);
     return (0);
 }
