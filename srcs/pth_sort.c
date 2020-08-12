@@ -1,8 +1,31 @@
 #include "../includes/lemin.h"
 
-void     sort_spurpaths(t_shortpath **shortpaths)
+int     cmp_paths(t_path **spurpaths, t_path *newpath)
 {
-    // printf("sort_spurpaths\n");
+    int     i;
+    int     j;
+    int     equal;
+
+    while (*spurpaths)
+    {
+        i = -1;
+        equal = 0;
+        while (++i < (*spurpaths)->len)
+        {
+            j = -1;
+            while (++j < newpath->len)
+                if (newpath->path[j] == (*spurpaths)->path[i])
+                    equal++;
+        }
+        if (equal == (*spurpaths)->len)
+            return (1);
+        spurpaths++;
+    }
+    return (0);
+}
+
+void    sort_spurpaths(t_shortpath **shortpaths)
+{
     t_path  **spurpath;
     t_path  *tmp;
     int     i;
@@ -30,9 +53,8 @@ void     sort_spurpaths(t_shortpath **shortpaths)
     }
 }
 
-void     sort_rootpaths(t_shortpath **shortpaths)
+void    sort_rootpaths(t_shortpath **shortpaths)
 {
-    // printf("sort_spurpaths\n");
     t_shortpath  *tmp;
     int     i;
     int     j;
@@ -53,7 +75,7 @@ void     sort_rootpaths(t_shortpath **shortpaths)
     }
 }
 
-void     sort_unique(t_path **paths)
+void    sort_unique(t_path **paths)
 {
     t_path  *tmp;
     int     i;

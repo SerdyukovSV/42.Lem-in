@@ -1,57 +1,6 @@
 #include "../includes/lemin.h"
 
-static void     set_flow(t_lemin *lemin, int flow)
-{
-    // printf("\e[92mset_flow\n\e[0m");
-    int flow_ant;
-    int ants;
-    int i;
-
-    i = 0;
-    flow_ant = 0;
-    ants = lemin->ants;
-    while (lemin->unique[i])
-    {
-        lemin->unique[i]->flow = 0;
-        // printf("flow = %d | len + 1 = %d\n", flow, lemin->unique[i]->len + 1);
-        flow_ant = flow - lemin->unique[i]->len + 1;
-        // printf("flow_ant = %d\n", flow_ant);
-        if (flow_ant < ants)
-            lemin->unique[i]->flow = flow_ant;
-        else
-            lemin->unique[i]->flow = ants;
-        ants -= lemin->unique[i]->flow;
-        i++;
-    }
-}
-
-int      get_flow(t_path **paths, int ants)
-{
-    // printf("\e[92mget_flow\n\e[0m");
-    int ln;
-    float flow1;
-    float flow2;
-    int count;
-
-    ln = 0;
-    count = 0;
-    flow1 = INT32_MAX;
-    flow2 = INT32_MAX;
-    while (paths[count])
-    {
-        ln += paths[count++]->len;
-        // printf("%d + %d - 1 / %d = %f\n", ln, ants, count, ((float)ln + ants - 1) / count);
-        flow1 = ((float)ln + ants - 1) / count;
-        if (flow1 < flow2)
-            flow2 = flow1;
-        else
-            break ;
-    }
-    printf("\e[92mflow = %d\e[0m\n", (int)flow2);
-    return (flow2);
-}
-
-static void     rebuildgraph(t_lemin *lemin)
+static void     rebuildlink(t_lemin *lemin)
 {
     t_node  *tmp;
     int     i;
@@ -139,13 +88,10 @@ void            lemin_play(t_lemin *lemin)
     int line; //del
 
     line = 0;
-    rebuildgraph(lemin);
+    rebuildlink(lemin);
     set_flow(lemin, get_flow(lemin->unique, lemin->ants));
     ft_bzero(fin, sizeof(int) * lemin->ants);
     ft_bzero(ants, sizeof(t_node *) * (lemin->ants + 1));
-    i = -1;
-    while (lemin->unique[++i])
-        print_paths(lemin->unique[i], lemin);
     while (lemin->size)
     {
         i = -1;

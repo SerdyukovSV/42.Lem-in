@@ -17,34 +17,20 @@ void    ft_error(int errcode)
     exit(EXIT_FAILURE);
 }
 
-int path_len(t_node *path)
+void print_paths_all(t_path **paths, t_lemin *lemin)
 {
-    size_t i;
+    int i;
+    int j;
 
-    i = 0;
-    while (path)
+    i = -1;
+    while (paths[++i])
     {
-        i++;
-        path = path->next;
+        j = -1;
+        printf("\e[92mPath[%d][%d]:", paths[i]->len, paths[i]->flow);
+        while (++j < paths[i]->len)
+            printf(" %s", lemin->rooms->hroom[paths[i]->path[j]]->name);
+        printf("\e[0m\n");
     }
-    // i -= i > 0 ? 1 : 0;
-    return (i);
-    
-}
-
-int path_len_2(t_node *path)
-{
-    size_t i;
-
-    i = 0;
-    while (path)
-    {
-        i++;
-        path = path->next;
-    }
-
-    return (i);
-    
 }
 
 void print_paths(t_path *paths, t_lemin *lemin)
@@ -88,55 +74,6 @@ void print_paths_2(t_lemin *lemin)
     }
 }
 
-// static int  is_duplicate(int src, t_path *dst)
-// {
-//     // printf("\e[93mis_duplicate\e[0m : ");
-//     int i;
-
-//     i = -1;
-//     if (dst)
-//     {
-//         while (++i < dst->len)
-//             if (dst->path[i] == src)
-//                 return (1);
-//     }
-//     return (0);
-// }
-
-// static int  get_duplicate(t_path *src, t_path **all)
-// {
-//     // printf("\e[91mget_duplicate\e[0m\n");
-//     int dup;
-//     int i;
-//     int j;
-
-//     i = -1;
-//     dup = 0;
-//     while (++i < src->len - 1)
-//     {
-//         j = -1;
-//         while (all[++j])
-//         {
-//             if (all[j] != src)
-//                 if (is_duplicate(src->path[i], all[j]))
-//                     dup++;
-//         }
-//     }
-//     return (dup);
-// }
-
-// static void duplicate_paths(t_path **paths)
-// {
-//     // printf("\e[92mduplicate_paths\e[0m\n");
-//     int j;
-
-//     j = -1;
-//     while (paths[++j])
-//     {
-//         paths[j]->dupl = get_duplicate(paths[j], paths);
-//     }
-// }
-
 int main(int ac, char **av)
 {
     t_lemin lemin;
@@ -156,12 +93,11 @@ int main(int ac, char **av)
     ft_memset(lemin.unique, 0, sizeof(t_path *) * 100);
     // print_paths_2(&lemin);
     choice_paths(&lemin);
-    // duplicate_paths(lemin.unique);
-    // printf("-------------unique-flow-------------\n");
-    // int i = -1;
-    // while (lemin.unique[++i])
-    //     print_paths(lemin.unique[i], &lemin);
+    printf("-------------unique-flow-------------\n");
+    int i = -1;
+    while (lemin.unique[++i])
+        print_paths(lemin.unique[i], &lemin);
     lemin.size = lemin.ants;
-    // lemin_play(&lemin);
+    lemin_play(&lemin);
     return (0);
 }

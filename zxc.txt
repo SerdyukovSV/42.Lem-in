@@ -1,74 +1,661 @@
-
-Path[20][-1]:  Yyv8 Wnj6 Vbc1 Gxs5 Sx_6 Dth7 I__4 Vqg8 Mbe5 Sn_3 Obm9 Vzf2 Ile9 Pti1 Qrp2 Erx7 Ygz3 Cdq8 Wqt6 Nh_6
-               Yyv8 Wnj6 Vbc1 Gxs5 Sx_6 Dth7 I__4 Vqg8 Mbe5 Sn_3 Obm9 Vzf2 Ile9 Pti1 Qrp2 Erx7 Ygz3 Cdq8 Wqt6 Nh_6
-
-Path[25][-1]:  Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
-               Djn6 J_i0 Bfv5 Dab2 Tpt3 Wvo0 Zyu5 Mn_9 Qlz1 Ods6 Frl5 Nzy3 Bot6 Pmh7 Pav0 Mit7 Yqs2 Cix3 Hcx2 Pzz9 G_a0 Jly5 Nrj2 Qy_1 Nh_6
-
-Path[47][-1]:  Mg_0 Shd1 Xod5 Jn_8 Dpn7 Qgm1 Xhb4 Mrv8 Vrm0 Egu7 Mx_6 Xfj6 Bu_3 Ohu7 Osu5 Ucf3 Pmq3 Kqt8 Pnw3 Fit4 Jxf9 Ynw1 Mfy1 Tzo0 Wwe0 Mcv0 Z__8 Clm2 Tgl5 Dka9 Ol_1 Hzm8 Yof9 Uzp2 Yzb7 Bga1 Pln8 Jne3 Heb9 Hwt5 Hpb5 Igh5 G__1 Ghu0 Cjy8 Xfj7 Nh_6
-               Mg_0 Shd1 Xod5 Jn_8 Dpn7 Qgm1 Xhb4 Mrv8 Vrm0 Egu7 Mx_6 Xfj6 Bu_3 Ohu7 Osu5 Ucf3 Pmq3 Kqt8 Pnw3 Fit4 Jxf9 Ynw1 Mfy1 Tzo0 Wwe0 Mcv0 Z__8 Clm2 Tgl5 Dka9 Ol_1 Hzm8 Yof9 Uzp2 Yzb7 Bga1 Pln8 Jne3 Heb9 Hwt5 Hpb5 Igh5 G__1 Ghu0 Cjy8 Xfj7 Nh_6
-
-Path[48][-1]:  Ezt6 Gof8 Xen8 Jaj7 Ooz2 Bin1 K_s7 Riv7 Wmz3 Wd_4 Nkb5 Fv_7 Dru6 F_e8 Ced2 Uwe7 Vbl9 A__3 Yoq6 Xw_5 G_n8 Rev1 Clr8 H_v0 Z_v2 Ffr0 Eaz9 W_b4 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
-               Ezt6 Gof8 Xen8 Jaj7 Ooz2 Bin1 K_s7 Riv7 Wmz3 Wd_4 Nkb5 Fv_7 Dru6 F_e8 Ced2 Uwe7 Vbl9 A__3 Yoq6 Xw_5 G_n8 Rev1 Clr8 H_v0 Z_v2 Ffr0 Eaz9 W_b4 Olo3 Bqu7 Tzw7 Bl_2 Fqp4 Wpp2 Zo_0 Ezl1 Vxk9 Yj_7 Cvi0 Fff7 Jmr5 Dcu2 Aru4 Pii2 Aqa1 Uae4 Kdh0 Nh_6
-
-Path[52][-1]:  Vgu8 Oxo3 Zfr2 Hxn5 Dks3 Uh_4 Qb_5 Dnh6 Vip1 Yuc9 Khf6 R__6 Vkq0 Cbd4 Qgp6 Pct8 Xox0 Xjm2 Hgc4 Kw_9 Umj7 Fpj1 Iwc3 Ar_5 Ksz1 Auc1 Xjv6 Ans9 Qdl1 Kjx9 K_h1 Iys1 Wdk5 Oeb6 Bq_7 Tpg3 Gvf4 Eq_4 Zid9 Mbz5 Kg_1 Dbz8 X_m0 Grl3 Qzp6 Bed5 Hoy8 Fam2 Kif2 Ixf4 Wzo8 Nh_6
-               Vgu8 Oxo3 Zfr2 Hxn5 Dks3 Uh_4 Qb_5 Dnh6 Vip1 Yuc9 Khf6 R__6 Vkq0 Cbd4 Qgp6 Pct8 Xox0 Xjm2 Hgc4 Kw_9 Umj7 Fpj1 Iwc3 Ar_5 Ksz1 Auc1 Xjv6 Ans9 Qdl1 Kjx9 K_h1 Iys1 Wdk5 Oeb6 Bq_7 Tpg3 Gvf4 Eq_4 Zid9 Mbz5 Kg_1 Dbz8 X_m0 Grl3 Qzp6 Bed5 Hoy8 Fam2 Kif2 Ixf4 Wzo8 Nh_6
-
-Path[56][-1]:  Uvh3 Ydu8 D_c2 Nru7 Jsl5 Tfn3 Cjn9 Nhd7 Fdy7 P_o5 Eie1 Eqn6 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
-               Uvh3 Ydu8 D_c2 Nru7 Jsl5 Tfn3 Cjn9 Nhd7 Fdy7 P_o5 Eie1 Eqn6 Qpc6 Unj6 Voo6 Rfw4 Gcg1 S_h8 Ykg9 Trk2 Cck3 Tne7 A_a9 Aef6 Ntq6 Qtt6 Cee4 Mus2 Zqw0 Ulk3 Qzv4 Oyj2 Vci0 Mmy5 Xto4 Xwe7 Xla3 Pwz2 Uha7 Gwx9 Fp_6 Rvz4 Ous0 Zu_9 Kk_1 Nlh3 Dpc8 I_l7 Sai7 Gqt5 Fnt9 Gk_3 Sbs2 Ix_7 Yet6 Nh_6
-
-Path[61][-1]:  Jwy0 Wqx2 Muo0 Wrk4 Yt_5 Too9 Hrm9 Mbz6 Yzd6 Phk9 Dpw2 Idy1 Cvn6 Oer5 Qw_1 Rw_6 Sf_9 Hcr0 Ggb0 F_i9 Tbj7 Szt6 Cga0 Jin4 Qp_0 O_c1 Ter9 Ikd1 Hhz2 Cjx2 Cue1 Bqv6 Bc_0 Jyy6 Yes0 I_s9 Mnd0 Cvh8 Rai3 Dgh6 Xsu2 Pem1 Yvf4 Fps5 Gs_4 Fmt8 Boc2 Hub7 Zrt7 Zeg4 Wfa9 Nyx4 Cp_5 Pcx2 Gvr7 Kwh1 Bde2 Fvz0 Hrt9 Pvf8 Nh_6
-               Jwy0 Wqx2 Muo0 Wrk4 Yt_5 Too9 Hrm9 Mbz6 Yzd6 Phk9 Dpw2 Idy1 Cvn6 Oer5 Qw_1 Rw_6 Sf_9 Hcr0 Ggb0 F_i9 Tbj7 Szt6 Cga0 Jin4 Qp_0 O_c1 Ter9 Ikd1 Hhz2 Cjx2 Cue1 Bqv6 Bc_0 Jyy6 Yes0 I_s9 Mnd0 Cvh8 Rai3 Dgh6 Xsu2 Pem1 Yvf4 Fps5 Gs_4 Fmt8 Boc2 Hub7 Zrt7 Zeg4 Wfa9 Nyx4 Cp_5 Pcx2 Gvr7 Kwh1 Bde2 Fvz0 Hrt9 Pvf8 Nh_6
-
-Path[62][-1]:  Qtd0 Inf6 Wgm1 Oqx7 Ols2 Axx6 Wnh3 G_b1 Ttk0 Eoj7 P_z1 Wnt7 Upr3 Isx3 Cef1 Brr2 Gdb9 Zbd3 Yqd7 Qcb9 Ajc7 Ran2 Pba0 Tef8 Mtb4 Aw_9 Edb3 Bbl5 Zxd5 Pbs5 Ftf9 O__6 Scr7 Sdh3 Pj_2 Zpu1 Ijs0 Ubd4 Xtq9 Ai_1 Uns0 Ko_3 Oys4 Xjh2 Xmq8 Jjb4 Gcj3 Vkh3 Jpo1 Pfk6 Qnp0 Tuk5 Fuq8 Ukb6 Ubm3 Skp6 A__4 Gvn9 Dua5 Sfi5 Mtz5 Nh_6
-               Qtd0 Inf6 Wgm1 Oqx7 Ols2 Axx6 Wnh3 G_b1 Ttk0 Eoj7 P_z1 Wnt7 Upr3 Isx3 Cef1 Brr2 Gdb9 Zbd3 Yqd7 Qcb9 Ajc7 Ran2 Pba0 Tef8 Mtb4 Aw_9 Edb3 Bbl5 Zxd5 Pbs5 Ftf9 O__6 Scr7 Sdh3 Pj_2 Zpu1 Ijs0 Ubd4 Xtq9 Ai_1 Uns0 Ko_3 Oys4 Xjh2 Xmq8 Jjb4 Gcj3 Vkh3 Jpo1 Pfk6 Qnp0 Tuk5 Fuq8 Ukb6 Ubm3 Skp6 A__4 Gvn9 Dua5 Sfi5 Mtz5 Nh_6
-
-Path[62][-1]:  Fvv8 Wqq2 Tem8 Ir_4 Hvc3 Yep2 Goa1 Dit0 Kgk2 Znu6 Pxr4 Hys7 Asv2 Aye7 Ukl4 Bso6 Xxo5 Cwo7 Rae3 Hhs5 Ruw1 Cvj9 Nsf6 Hw_3 Zwl6 Vsp4 Oai4 Qcl8 Vv_2 Nfw6 Wsa9 Hen4 Mjr3 Kun8 Nqd2 H_v3 Bgb1 Qqu3 Nzb7 Mvn9 Xh_8 Agq2 Wki8 X_m1 Anc6 Yrl4 M_a7 R_j1 Hz_9 Sry1 Qch4 Jba0 Wkx3 Ygb7 Att8 Xvc0 Ign9 Nkd4 Hit7 Zc_1 Yh_7 Nh_6
-               Fvv8 Wqq2 Tem8 Ir_4 Hvc3 Yep2 Goa1 Dit0 Kgk2 Znu6 Pxr4 Hys7 Asv2 Aye7 Ukl4 Bso6 Xxo5 Cwo7 Rae3 Hhs5 Ruw1 Cvj9 Nsf6 Hw_3 Zwl6 Vsp4 Oai4 Qcl8 Vv_2 Nfw6 Wsa9 Hen4 Mjr3 Kun8 Nqd2 H_v3 Bgb1 Qqu3 Nzb7 Mvn9 Xh_8 Agq2 Wki8 X_m1 Anc6 Yrl4 M_a7 R_j1 Hz_9 Sry1 Qch4 Jba0 Wkx3 Ygb7 Att8 Xvc0 Ign9 Nkd4 Hit7 Zc_1 Yh_7 Nh_6
-
-Path[63][-1]:  Cni9 B__8 J_o0 Zdf3 Zdj2 Kqw0 Z_f0 Apb2 Qlm2 Iic1 Yhx8 Apk4 Ye_7 Opm9 Rjm2 Zrd4 Rgz1 Vvt4 Tff7 Wil6 Ilb1 Fs_6 Vng7 Ml_1 Hse1 Huh4 Kb_2 Ugi0 To_9 Vuz3 Xaa9 Xul0 Yky1 Vaj6 Jdv1 Ily6 Hvi0 Kqm7 Ifo1 Jpg1 Xne4 Aci6 Pca1 Zu_6 Ewb4 Aul8 Qep9 Y_l3 Ucx4 Kbs7 Dnc4 Xju5 Hwn5 Nye0 Xgg5 Nfh9 Mvo4 Ikg1 Yhk5 Bha4 Rmi4 Cms6 Nh_6
-               Cni9 B__8 J_o0 Zdf3 Zdj2 Kqw0 Z_f0 Apb2 Qlm2 Iic1 Yhx8 Apk4 Ye_7 Opm9 Rjm2 Zrd4 Rgz1 Vvt4 Tff7 Wil6 Ilb1 Fs_6 Vng7 Ml_1 Hse1 Huh4 Kb_2 Ugi0 To_9 Vuz3 Xaa9 Xul0 Yky1 Vaj6 Jdv1 Ily6 Hvi0 Kqm7 Ifo1 Jpg1 Xne4 Aci6 Pca1 Zu_6 Ewb4 Aul8 Qep9 Y_l3 Ucx4 Kbs7 Dnc4 Xju5 Hwn5 Nye0 Xgg5 Nfh9 Mvo4 Ikg1 Yhk5 Bha4 Rmi4 Cms6 Nh_6
-
-Path[73][-1]:  Eb_9 Ccs5 Vbq9 A_d7 Aso3 Fjm0 Dkp9 Kzs0 Zje2 O_z9 Mkj7 W_n0 Dns5 Uqi1 Mcg0 Bus1 Pfy5 Sif9 Ilm2 Zs_6 Oeh1 Knw3 Awk1 Tcd2 Rxu7 Tgd4 Smj0 Cqx1 Fv_4 B_o4 W_y3 Nal2 Tq_3 Mqc7 Xl_5 O_g6 W_v6 Tts0 Tgl6 Mlb6 Dcr8 Vjh0 Vbq6 Wzx9 Ipm0 De_7 Joi7 Tpk5 Rrk5 B_c4 Hie2 Nxc8 Pce3 H_x9 Xot7 Nth3 Qcn5 Hpg6 D_h8 Zpi1 Yjh6 Sh_0 Ukc4 Dr_8 Sh_1 O_d6 Xwy8 Xdv7 Uzo0 Zxk4 Xrm4 Qyi4 Nh_6
-               Eb_9 Ccs5 Vbq9 A_d7 Aso3 Fjm0 Dkp9 Kzs0 Zje2 O_z9 Mkj7 W_n0 Dns5 Uqi1 Mcg0 Bus1 Pfy5 Sif9 Ilm2 Zs_6 Oeh1 Knw3 Awk1 Tcd2 Rxu7 Tgd4 Smj0 Cqx1 Fv_4 B_o4 W_y3 Nal2 Tq_3 Mqc7 Xl_5 O_g6 W_v6 Tts0 Tgl6 Mlb6 Dcr8 Vjh0 Vbq6 Wzx9 Ipm0 De_7 Joi7 Tpk5 Rrk5 B_c4 Hie2 Nxc8 Pce3 H_x9 Xot7 Nth3 Qcn5 Hpg6 D_h8 Zpi1 Yjh6 Sh_0 Ukc4 Dr_8 Sh_1 O_d6 Xwy8 Xdv7 Uzo0 Zxk4 Xrm4 Qyi4 Nh_6
-
-Path[76][-1]:  Dgv5 Sbg4 P_l9 Gsu4 W_w5 Hkq5 Sd_4 Tdc4 Wen8 Kgc3 Alm0 Kcf9 Bfe9 Awh9 Oqj1 Rnb4 Nm_6 Dyu9 Cue5 Dio1 Vuc4 Pix0 Vdm7 Jlh8 Dfk6 Dxf9 Bol0 Hgj4 Cku3 Xqr8 Qqx0 Kum8 Ny_3 Qir7 Jjn2 Krf5 Yxl5 Kty8 Eyv6 Pye3 Ayx1 Mhg0 S_t5 Jdk4 Ztj4 Xvr2 Bnf8 Bal9 Vna7 Vty6 Mxs8 Ruf8 So_8 W_m3 Fny0 Nov1 Rmj2 Ue_1 Eyz0 Dm_2 Tuq1 Mzo3 Hj_3 Mum1 Qqb4 Usk5 Emt6 Ihf4 Ysh0 Fps8 Rlg4 Rvo4 Hzl5 Nxg6 Oat4 Nh_6
-               Dgv5 Sbg4 P_l9 Gsu4 W_w5 Hkq5 Sd_4 Tdc4 Wen8 Kgc3 Alm0 Kcf9 Bfe9 Awh9 Oqj1 Rnb4 Nm_6 Dyu9 Cue5 Dio1 Vuc4 Pix0 Vdm7 Jlh8 Dfk6 Dxf9 Bol0 Hgj4 Cku3 Xqr8 Qqx0 Kum8 Ny_3 Qir7 Jjn2 Krf5 Yxl5 Kty8 Eyv6 Pye3 Ayx1 Mhg0 S_t5 Jdk4 Ztj4 Xvr2 Bnf8 Bal9 Vna7 Vty6 Mxs8 Ruf8 So_8 W_m3 Fny0 Nov1 Rmj2 Ue_1 Eyz0 Dm_2 Tuq1 Mzo3 Hj_3 Mum1 Qqb4 Usk5 Emt6 Ihf4 Ysh0 Fps8 Rlg4 Rvo4 Hzl5 Nxg6 Oat4 Nh_6
-
-Path[82][-1]:  Bye1 Fw_1 Vwf5 Ncd8 Zwv0 Fek5 Mpm1 Psd1 Kt_1 Wmq5 Gno1 Jvb7 Eji8 Pan6 Beg2 Eaf8 Mof1 Io_9 Dlx5 Gx_0 Oys2 Pgf9 Tgr3 Brm1 Rvh8 Agi1 Zrd7 Srf8 Ibk8 Pau3 Hhl8 Syh1 Z_u3 Ike6 Tfr6 Zkm6 Usn5 Ao_8 Cpj5 Z_v1 Opk3 Hjj9 Juf0 Rkh8 Zxw6 Tme0 P_h1 Xu_6 Vbg1 Twp5 Zsl5 Gce1 Bii3 Ecr7 Fhc4 Pqv8 Nke4 Dnf6 Obh6 Rex7 Xqa3 Rfx1 Pjy3 Yn_0 Tya6 Huk8 Ced8 Jsa2 Qsa1 Fsh3 Jgu1 Ynj7 Dam3 Qzw3 Bnj8 Xdv4 Mj_2 Fpo8 Fky5 O_h4 Jeh3 Nh_6
-               Bye1 Fw_1 Vwf5 Ncd8 Zwv0 Fek5 Mpm1 Psd1 Kt_1 Wmq5 Gno1 Jvb7 Eji8 Pan6 Beg2 Eaf8 Mof1 Io_9 Dlx5 Gx_0 Oys2 Pgf9 Tgr3 Brm1 Rvh8 Agi1 Zrd7 Srf8 Ibk8 Pau3 Hhl8 Syh1 Z_u3 Ike6 Tfr6 Zkm6 Usn5 Ao_8 Cpj5 Z_v1 Opk3 Hjj9 Juf0 Rkh8 Zxw6 Tme0 P_h1 Xu_6 Vbg1 Twp5 Zsl5 Gce1 Bii3 Ecr7 Fhc4 Pqv8 Nke4 Dnf6 Obh6 Rex7 Xqa3 Rfx1 Pjy3 Yn_0 Tya6 Huk8 Ced8 Jsa2 Qsa1 Fsh3 Jgu1 Ynj7 Dam3 Qzw3 Bnj8 Xdv4 Mj_2 Fpo8 Fky5 O_h4 Jeh3 Nh_6
-
-Path[83][-1]:  Ipc9 Siq9 Ddd1 Kli3 Tkg9 Oqg0 Sux6 Tzo2 Wwg6 Ile5 Rwy7 Djy1 Bw_6 Kar2 Efq6 Rdw9 Tpo0 Vwt7 Jqq5 Xji3 Oeq5 Xms3 C_e9 Hbm6 Oab8 Xjg5 Xyb3 Uan0 Ssn7 Iow7 Wkm1 Acx0 Niy1 Fnf0 X_e0 Sku5 Vwe6 Erx0 J_c5 Rw_8 Hto7 C_z1 Enq0 G_o7 U_t9 Chs5 Epo7 Ykh9 Fm_7 I__6 Tle7 Wno8 Yrd2 Gif7 Keb4 Udb2 Qn_7 Due3 Vt_0 Mxd9 O_c6 Utx2 Dpy6 Onv3 Yaf5 Ynn8 Qya2 A_a5 J_m7 Zzp4 Hxh5 Oot9 Yua3 Oiy1 Jm_7 Qua3 Ntx9 Pik4 Ttp3 Ytp5 Xvf8 Tei2 Nh_6
-               Ipc9 Siq9 Ddd1 Kli3 Tkg9 Oqg0 Sux6 Tzo2 Wwg6 Ile5 Rwy7 Djy1 Bw_6 Kar2 Efq6 Rdw9 Tpo0 Vwt7 Jqq5 Xji3 Oeq5 Xms3 C_e9 Hbm6 Oab8 Xjg5 Xyb3 Uan0 Ssn7 Iow7 Wkm1 Acx0 Niy1 Fnf0 X_e0 Sku5 Vwe6 Erx0 J_c5 Rw_8 Hto7 C_z1 Enq0 G_o7 U_t9 Chs5 Epo7 Ykh9 Fm_7 I__6 Tle7 Wno8 Yrd2 Gif7 Keb4 Udb2 Qn_7 Due3 Vt_0 Mxd9 O_c6 Utx2 Dpy6 Onv3 Yaf5 Ynn8 Qya2 A_a5 J_m7 Zzp4 Hxh5 Oot9 Yua3 Oiy1 Jm_7 Qua3 Ntx9 Pik4 Ttp3 Ytp5 Xvf8 Tei2 Nh_6
-
-Path[84][-1]:  Hyn4 Bpk8 Som8 Sgd9 Dw_7 Cyp0 Vpq3 Kh_7 Adk5 Okz7 Zdc1 Bis5 Vny8 Gzv4 Vbx6 Tnf2 Rs_6 Woh9 Yuo3 Yhw5 Fxh0 Srr0 G_r8 Hpz7 Nob2 Ptp8 Hdk2 Zv_4 Vwg4 Qjj0 Iwq7 Noa5 Yph4 Bvc3 Xlt2 Mhg7 Qaa2 Nwm6 Dzp4 Vij7 Kui3 Scn1 Vsh7 Tdd2 Cau6 Czr1 R_k3 Uhz2 Txe6 Jjn3 Syn9 Oli6 Wik7 Heh5 Ow_9 Mtb2 Ehd8 Fzy0 Mnz7 Zje6 Vzt2 Uit0 Zzd7 Ull9 Hzh3 Be_7 Cdc7 Aro5 Qzt3 Fvu2 Ovj5 Coi4 Xdp3 A_h6 Bit9 Xio8 Mbh5 Mhs0 Tbb3 X_h9 Jr_7 Ubl4 Ohh1 Nh_6
-               Hyn4 Bpk8 Som8 Sgd9 Dw_7 Cyp0 Vpq3 Kh_7 Adk5 Okz7 Zdc1 Bis5 Vny8 Gzv4 Vbx6 Tnf2 Rs_6 Woh9 Yuo3 Yhw5 Fxh0 Srr0 G_r8 Hpz7 Nob2 Ptp8 Hdk2 Zv_4 Vwg4 Qjj0 Iwq7 Noa5 Yph4 Bvc3 Xlt2 Mhg7 Qaa2 Nwm6 Dzp4 Vij7 Kui3 Scn1 Vsh7 Tdd2 Cau6 Czr1 R_k3 Uhz2 Txe6 Jjn3 Syn9 Oli6 Wik7 Heh5 Ow_9 Mtb2 Ehd8 Fzy0 Mnz7 Zje6 Vzt2 Uit0 Zzd7 Ull9 Hzh3 Be_7 Cdc7 Aro5 Qzt3 Fvu2 Ovj5 Coi4 Xdp3 A_h6 Bit9 Xio8 Mbh5 Mhs0 Tbb3 X_h9 Jr_7 Ubl4 Ohh1 Nh_6
-
-Path[102][-1]: Dxi3 Rij0 Bnr1 Rbl2 Yxa0 Hf_5 Nld7 Nlo9 Sta2 Kxb4 Dhr5 Kiz7 Ji_5 Ddr7 Pty6 E_l0 Akx6 Z_y7 Imj8 Ogl4 Ne_8 Equ4 Mzo2 Nw_9 Ksi5 Zw_8 Qvg0 K_j4 Xgw8 Vpz6 Ccp5 W__5 Cxj5 Ukp7 Abp7 Gaa0 Xhe8 Not4 Cxz5 Bes9 Zsp9 Ix_6 Hjv3 Rzy9 Hyc0 I_i7 Nab6 Nwt5 Zso9 Ybf8 Kat1 Jva8 Ogm4 Qxh1 Uiw4 Qfn8 Tsp3 Ywr7 Yso7 K_h6 Fyc5 Nt_2 Xla5 Krs0 Boy7 Kwc3 Spf4 Scr3 Hjs1 Ppx0 Cro5 Seu6 Vqb0 Cnq5 Fva0 Pvg5 Sel4 Ob_5 Cyr4 Yeh4 Cnk3 Iil3 Fvb8 Ngl0 Qgo7 Hfl9 Fku7 Tlk2 Hi_7 Sii0 Bwd6 Flg6 C_s9 Psf0 Pot8 Ttu2 Eqv5 Ccm3 Gxt9 I_b8 Yfo0 Nh_6
-Path[107][-1]: Oyz1 Wet5 Qys3 Bqk9 Ur_3 Mio1 Flr2 Jtm7 Rqq0 Kin3 Zcp3 Fza0 Aow7 Dbs4 N_r6 Cok0 Hem0 Xs_7 U_e2 Bxc3 Cqy5 Hwf8 Qfi0 Had6 Uhy3 Muz6 Rfi7 G_q9 Eeq0 Ucf4 Ba_1 Al_1 Qwe3 Otv7 Rla6 Fwk7 Bgr9 Nxw0 Vme9 Iwy0 Ycw0 Yau0 Axh7 Odl6 Iip5 Ked9 Nqd1 Eaq8 P_a3 Fai7 Ceq8 Xh_2 Nti6 Yfa9 Zvg3 Pfv3 Ber2 Scx5 Gam0 Awm9 Sci5 Ydg1 Tzx3 Dqs2 Ooc6 Fru0 Fiv9 Itk3 Ufc4 Hdq7 A__1 Uhs4 Xwf1 G__9 Tma0 Esb0 Xzz0 Fng4 Jvn2 Aah1 Jsd8 Dpa4 Cvw5 Xe_9 Oqf8 Xv_0 Ulk7 Wnl8 T_y0 Nez7 Uwg8 Uov3 Wz_4 Gt_7 Mek7 Mek3 J_t9 Dff8 Jae3 Hwi5 O_y4 Zcx8 Vfr9 Gqb0 Rfz9 Ver8 Nh_6
-Path[114][-1]: Pbf6 Guw7 Yfu3 B__6 Z_x4 Mio6 U_x7 Nac8 Tdc5 U_w4 Vav1 Mlw5 Rub0 Kix2 Xeo5 J_o2 Yy_3 Xra2 Wme3 Rjc4 Z_w6 Dhe2 Jiy7 Ffk1 X_u6 Yib4 Iam0 Eas0 Gyl5 Vv_5 Wdq8 Yrx2 Jgw0 Zah9 Rh_1 Eci1 Jdc4 Fzz3 Ypr0 Sni2 Xd_5 Zjd3 Pg_1 Wxg6 Mlg8 Vhy4 Eqc6 Hky6 Ksr4 Zbs7 Wsd0 Vf_7 Bxt2 Mn_7 Jzu1 Z_z6 Wef3 Vss0 Qok2 Uk_8 Jjo2 Wza7 Vcg7 Fmw6 Fii9 Xd_2 Ngr9 Ymp3 B_j2 Elb9 Dfz7 Naa8 Sev2 Zua6 Dug9 Awr4 Dfh9 Qdw0 Hok6 Pnn7 Box9 Okj5 Kn_8 N_b4 Zaj9 Mum0 Tjn1 Nfb7 Snn2 Kqp3 Pnk3 Jnm0 Oyb6 Q_p0 Dkb7 Pyg3 Ppr2 Pgz6 R_e1 Had2 Ujy9 Hwv8 W_v7 Mwa0 Jyw5 Xiu3 Xwf9 Iib1 Fmu0 Dnz2 Rz_2 Nuf3 Hdo8 Nh_6
-Path[118][-1]: Krw6 Yye9 Du_0 Ni_6 Gam8 Tqx8 An_1 Ufb5 Uqm3 Ori0 U_z2 Mte4 Vbr9 Ges3 Qeo2 Zfg1 Ha_5 D_q1 Bvm8 Hb_7 T_b8 Ptt1 Ifg1 C_h8 Tbh5 Pyh7 Jcq9 Wtg4 Wnu6 Yhj2 Jae4 Djj8 Boh8 Smt5 O_j5 Dpi9 Dbz7 Mjb7 Nmc2 Q_a7 Ent2 Jhg7 Ksj3 Egm6 Tef4 Vyl1 Uaf5 Kqo3 Z_g3 C_v8 Pfw3 Yo_0 N__0 Ymr2 Re_0 Puj4 Wbq1 Nlv9 Zba1 O_f0 Bza7 Su_8 Dlk8 Hxu7 Snz3 Nkj2 Vfc2 Iez0 Bbd3 Taw4 Fnl4 Zyr8 Huu8 Cec4 Pby0 Vcx4 Idx7 Qgm5 Hr_8 Yxa3 Bll4 Mqo4 Jsk6 Iem8 Xok2 Kzs9 Wvj5 Fan7 Kx_6 Cvi1 Imw8 Xmf7 Eqt3 V_n1 Jkh3 Pws3 A_k0 Zox6 Gpl9 I_f4 Zbg7 Tvm4 Bap2 Tw_2 Kmz0 Pig5 Bii6 Hxr1 Skx5 Dpk4 Bv_1 S__8 Puw5 Jym2 Ggu3 Iad2 Avm7 Nh_6
-Path[139][-1]: Dxi4 Ntt7 M_s2 Akw2 Ekw2 Foa5 Du_8 Int9 Pm_1 F_l6 Koh8 Ayw4 Thf8 Whf1 Jmx2 Inw3 Zqu4 Jtj6 C_f8 Euj5 Yqd9 Zpf3 Du_4 Fwu9 Oqe5 Pxn8 Gvu4 Wng6 T_u7 Fcb4 Zxf3 Kk_6 Kiy4 Ed_8 Byk8 Cmb2 Qw_4 Ift6 Sbk7 Ulj7 Akz6 K_h4 Dwz6 Yrq6 Pke0 Ilf7 Q_t9 Ola2 Pxq4 Jjp8 Rpi9 Vq_3 Wcs6 Kcx5 I_e6 Hex0 Nra3 Ewe2 Fl_3 Qbf3 Yue9 Dxw9 Wyq7 Onz3 Xhm4 H_v6 Znp4 I_n5 Dej1 Cqk6 X_x3 Ofo1 Bch5 Dtg2 Qiz1 Kew5 Hcb6 Cft8 M_b7 Grr2 Ide3 Vsz5 Gk_9 Dia8 Gta5 Ef_6 Zig4 Jh_2 Odo4 T_g6 Evo5 Vpt2 Mpa7 Vf_6 Szo3 Qlq6 Vcj2 Bjk8 Qzb5 F_v1 Jpv2 O__0 Chk8 Fcv9 Si_2 Jfm7 Iww8 Gjm8 Pfj4 Rww8 Xtn7 Vzy0 Cxi3 Ash7 Chn5 Ozc6 Flh3 Eff2 Eyc7 Nmu5 Emr4 Iyd0 Cyj8 Umv9 Ebl6 Qgh7 Oz_7 J_u1 Rdh8 Tfz2 M_h4 Rfd4 Ey_4 Foj4 Cnk5 Ctg5 Sr_1 Okp3 Nh_6
-Path[146][-1]: Stx4 Yvo9 Nxr3 Wzt0 Nje3 J_n3 Osc4 Wls4 Jvs9 Eye8 Cpn5 Dl_5 Ezu4 Jyi1 Ghw8 Iif0 Hyg3 Exq4 Nkt1 Fwb3 X_j7 Idi5 Gpz4 Cln3 Slj5 Cgk5 X_v7 F_k0 Eyb9 Myb4 Hep4 Rjs1 Qnl2 Yut8 Wff9 Xtd1 Aix8 C_u2 Bcf3 Vhq7 Ets0 Xve8 By_0 Zku8 Djf5 Ezi3 Ydl0 Eeu9 D_p8 Kco8 Hbj1 Ttt9 Yro9 Jmp4 Mkf4 Js_0 G_f2 Dzq5 Rfe9 Hta2 Grn4 Dsd3 Qan2 Jyw3 Vpj0 Ooc4 N_c0 P_p7 Kmf7 Cn_0 Qzb0 Wgw1 Jmj8 Drv1 Bel9 Jyg4 U_u3 Teg9 Soj6 Yhf7 Joq7 Uaj7 Uca2 Zih9 Qng5 Fqq9 Ua_2 Rkl8 Ayk5 Uut1 Ou_6 Uj_6 K_s8 Dhw9 Irc6 Odk4 Wqi5 Qud9 Snt2 Mjf5 M_a2 J_b5 Qlm3 Mxc1 Eeg3 Flw1 Dxc2 Vxs5 T_j2 Mfc2 Jip0 Wdu4 Tsa3 Xkx7 Qtx3 Jcs9 Xpo0 Nny5 R_j7 Ids1 Hmt8 Dvh4 Pis1 Uvx3 Njq1 Hut4 Wqu9 Hhc1 Txb5 Xfh1 Air7 X_f7 Vr_1 Plc5 Dmn1 Zjh4 Ilu4 Ijs1 Fcj0 Kfi6 Zoh2 Jdu7 Zyn2 Sxg9 Ije3 Nh_6
-Path[148][-1]: Qlo8 Guk8 Mjf2 P__1 Vcq1 Dcn5 Qd_8 Dbd5 Djl5 Zql9 Fdy1 Hdf8 Wl_9 V_g0 Mpm5 Fks9 Bie0 Bqw4 Kgk5 Dnn3 Ust5 Vvi6 Tf_9 Tzt3 Brj7 Wsz4 Oiv5 Xge0 Zu_4 Iyr6 Zvh4 Xdo4 Vzm1 G_y3 Mso6 Mlq0 Ynh3 Qhf0 Fyy6 Ziq5 Yo_4 Oxn7 No_8 Qw_5 Pbj1 Rom2 Xds5 Fex1 Pka5 Yob8 Swa6 Knb9 Bdy6 Mwr8 U_d6 Gwq0 Vbt6 Kh_4 Rkc1 Dky2 Kat4 Fkx0 H_n5 Brb3 Wi_1 Abu2 Hov7 Xgk9 Tfi3 Ufy6 Uwt8 Xjl0 Vi_7 Wj_7 Fbk8 Ebm4 Qgd3 B_y1 Nqt9 Twz2 Ckl3 Blk2 Cet9 Aat3 Q_x6 Doy5 Dk_0 Won0 Ajf1 Agb2 Trr3 Gn_3 Dmb2 Qms2 Vbb5 Ch_1 Tnj0 Qfa9 Qwv1 Ver5 Syi9 Nko7 Dpx2 Tpd3 Iab7 Ptt0 Ysl4 Zpr8 Xig2 Cr_5 Acx4 Vob7 Zxb3 Hjd7 Bmq0 Tpz7 Jsn8 Puk5 Oih1 I__9 Nji2 Kva9 Pli0 Zwt9 Kxd6 M_k8 Gpi4 Gpv6 Icc1 Ir_1 Gce7 Cqm4 Hoa2 Vqf4 Xyp9 Roc1 Vbw9 H_t2 Ztq7 Kve1 Iz_5 Zza8 Jcm0 Eff8 Fpz2 Mrf1 Ehj4 Nh_6
-Path[151][-1]: Kzn4 Yg_2 Rr_9 Kfb8 Gpc9 Hjm2 Adr3 Yvd1 Bzk7 Aig9 A_u2 Ytx9 Cnc1 Bcs6 Ber5 Dj_1 Wik4 Xjj3 Bcm8 Xya8 Jhg8 Coj6 Uyj9 Xe_7 Cr_4 M_y7 Xfn4 Buk1 Ise0 Kxd8 Wic2 Nr_1 Tkr9 Pyw2 Znw6 Xfh8 Vce3 Nec6 I_u8 Zkm8 Wrk0 Wkd6 Fur1 Vy_4 Nrw2 Aqh0 Joe2 U_a9 Cq_3 Fy_4 Obs6 Hy_5 Fjk5 Tst6 Hir8 Gpv5 Bei2 Bya9 Asd8 Gve1 Jcz0 Skv4 Mu_9 Dwe2 Hzz6 Kfg7 Rnw1 Utz1 Kyz8 Gpz8 Bij2 Xue5 Zbz1 Rtd3 Kh_1 Mwa6 Ona5 Gly3 Ugg5 Jfl9 Nik0 Kkr0 Iiz3 Pea0 Wsu9 Mkp7 Twd6 Rk_5 Akw8 Fod3 Onh7 Atl0 Sor8 K_z6 Yhb2 Rqm0 Ux_3 Wai0 Kdd3 Dxt2 Ovd8 Gbz5 Gc_6 Obj9 Kb_7 Bob2 Agn7 Acq5 Ryy9 Iem5 E_p3 Ngt0 Cqe9 Ebz6 Olf2 C_p2 O_d0 Ced4 Njb6 Nqt4 Seo3 Bcz5 Qtz6 Vuv2 Rdg5 Fu_3 Dxa8 Pss8 Ip_2 B_b9 Jve9 N__5 Fcg0 Tjv7 Qki7 Svs9 Zjj7 Knu4 Pfp2 Rle1 Mql5 E_v2 Udo9 R_m1 Ajn3 Kyh9 P_l8 Hdl4 Mmj6 Cvp0 Nh_6
-Path[153][-1]: Jfg8 Jlm5 Hop7 Swj9 Hoe7 Ggu6 Bdw9 Cad6 Y_f5 Msx1 Ild3 P_a0 Ytb9 Vru5 Yvn0 Wzu5 Jrj5 H_p2 Iiq9 Vnc2 Joo3 Ctl8 Bcd1 Kbe2 Xt_4 Kqk6 Vup3 Jfg6 Cou1 Ivx5 Gtz8 Vmg8 Xyz5 Qlj3 Euo3 Tff5 Fmn2 Hwv2 Vik4 Mqx1 Mps7 Ohn1 Mmc4 S_j9 Fst7 Gue1 Ift8 Mta0 Wna9 Htf0 Gi_0 Nhd8 Ym_4 Uqx1 B_t2 Hre2 S_r7 Dnp4 Djf0 Dch8 Cum7 Suy1 Odz4 Bfl5 Gez9 Zu_0 Nsw1 Wkw6 Dtr1 Gbs6 Vkb8 Zsr5 Els9 Aye1 Pfy2 Yct5 Jha1 Qll2 Whp4 Jdd2 H_j2 Xv_5 Yhp0 Qkf7 Amk4 Fcb1 Ols3 Wye7 Jjy5 Hmc8 Ixf9 Hci7 Swz4 Nls0 I_z2 Imt8 Guf2 Vgf5 Jhv0 Ml_7 Ew_4 Arw9 Qcc5 Xqy8 P_g9 Zvf9 Kzh7 Ugm2 Hha0 Vff4 Fuy3 R_p0 Uve6 Yd_5 Vfn1 Ofc0 Nok5 Ott5 Zlx3 Gho9 Jrm1 Z_f1 Zjv4 Gly0 Xv_3 Ymk0 I_y1 Aie8 Tli0 Feo3 Zoo5 Ef_7 C_m7 Ije9 R__1 Cav2 Yld5 Cxi2 Bgl2 Wc_2 Fye7 Xer0 Jnz9 Pla2 Yt_2 Ith0 Bl_8 H_o6 P_x8 Mcg4 Qii2 Qch5 Nh_6
- 
- 
- 
- 
- 
- 
- 
+*** Paths ***
+path 0: Evb5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Gnz9 Hjj6 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Aol6 Ymh6 Ke_0 Pmw4 E_w6 Brt5 B_q9
+path 1: Evb5 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Qvd2 Itt3 Zel1 Wjq8 E_w1 Hfu0 Hfm5 Tpm1 Pyo0 Xk_8 M_i0 Vb_4 B_q9
+path 2: Evb5 Kra1 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+path 3: Evb5 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+path 4: Evb5 M_w8 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Fc_2 Vlb5 Gzg6 Rm_6 Dno9 Ijx6 Iah0 S_z3 Fcd2 Yfl8 Wer1 Ghh1 Ate9 C_o9 Hyv4 Vqi9 Ejm9 Di_1 Yoi5 Epd1 Vwc0 Gra9 Gua1 I_b4 G_e3 Jfy6 B_q9
+path 5: Evb5 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+path 6: Evb5 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+path 7: Evb5 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Spr8 Niw5 Qrh1 Yyn8 F_b9 Thr2 Nv_8 Vy_7 Due1 Nev6 Exq9 Ksa0 Zlq5 Nyn8 Tq_6 Sa_5 Wto1 Prr1 Qgv2 K_n1 Jzj5 F_j0 Xp_7 Ink9 Ebb4 Iyg3 Ffe1 Nut7 B_q9
+path 8: Evb5 X_d5 Qhe0 Vba2 R_f9 Wuw6 Yzd8 J_a2 Igx3 Hzy9 Ssy1 Efc1 Sdu6 Tvi6 Uuh5 Qrq7 Fzj4 Gws4 Mpd1 Kpa9 Alc8 Wty0 Exw1 M_f7 Fpc0 Nfx3 Cqe0 Obk9 Dv_7 H_e3 Bor6 Tbe2 H__5 B_q9
+path 9: Evb5 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Ulx5 Rib4 Ykl8 Ota7 Wwk6 Bbt5 Cpe7 J_q1 F_i8 S_c4 Pjv9 Ppv0 Bzs0 Dpj9 X_f9 Nsl7 Ir_1 Y_p0 Wqr7 N_e9 B_q9
+path 10: Evb5 Evj2 Glx4 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Zjo5 Gr_9 C_l6 Cdy9 Qx_1 Nan5 Mrh4 Cyw4 Zuk7 Swv8 Vck9 Kfy8 Oaw3 V_m7 Grh2 Kpj9 A_g6 Waw8 Kgo9 Jfj2 Bd_3 Tkz1 Qxp3 I_p7 Xvb3 Drn6 T_t5 B_q9
+path 11: Evb5 Mnc1 Vfv9 Hbc1 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Szv0 Zjw0 Uzu5 Qbn4 Ufj5 Tul0 Sls3 Bfi8 Teo2 Be_1 De_8 K_l6 O_v5 Mvb3 Kzm0 W_w5 Sa_8 Qpw3 B_q9
 
 
 
+Spur[15][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[17][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Nky2 Pwx4 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Nky2 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Nky2 Pwx4 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Nky2 J_d1 Emh3 Na_3 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Nky2 Pwx4 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[31][-1]: Nky2 Pwx4 Tpf2 Emh3 Na_3 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[16][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[16][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Xwe7 Mnc1 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Xwe7 Szz4 Myn6 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[28][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Xwe7 Rdi4 Vxk0 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Xwe7 Szz4 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Xwe7 Szz4 Us_0 Rbc1 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Xwe7 Szz4 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Xwe7 Szz4 Na_3 Jhc9 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[33][-1]: Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[16][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[17][-1]: Evj2 Glx4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Evj2 Wro9 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Evj2 Glx4 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Evj2 Glx4 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Evj2 Glx4 End4 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Evj2 Glx4 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Evj2 Glx4 Kqc5 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Evj2 Glx4 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Evj2 Glx4 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Evj2 Glx4 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[33][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[17][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[17][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Kaf0 Ei_0 Kx_0 Xkh3 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Kaf0 Tnw6 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Kaf0 Ei_0 Kx_0 Syg3 Rkg7 H_s6 Cic3 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[27][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Kaf0 Ei_0 Rmt7 Whi5 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Kaf0 Ei_0 Kx_0 Dfb1 Fbl4 Ain0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Kaf0 Ei_0 Kx_0 Syg3 Vt_4 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Kaf0 Fyy4 Sb_7 Ush0 Gkc2 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Kaf0 Ei_0 Qbe5 Mdl9 Q_g0 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[17][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[17][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: M_w8 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: M_w8 Ups4 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: M_w8 Gsc1 Yrb1 Myn6 Szz4 Na_3 Emh3 Tpf2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[28][-1]: M_w8 Gsc1 Rds3 Hez9 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: M_w8 Gsc1 Wro9 Evj2 Glx4 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: M_w8 Gsc1 Yrb1 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: M_w8 Gsc1 Yrb1 Rbc1 Us_0 Szz4 Xwe7 Mnc1 Vfv9 Hbc1 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[17][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Ttg3 Mk_8 Zlr9 Qws6 Dct8 Smr7 Ufe1 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Ttg3 Ilo5 Ext6 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Ttg3 Mk_8 Odo6 Ups4 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Dzx1 Mzm0 Bhg8 Elc4 Jak8 Sea0 Vch2 Boa8 Mdk9 Mx_4 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[28][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Zrg7 Yxj0 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Whd1 Vzj2 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Udx2 Ohj1 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Uh_9 Gnz9 Hjj6 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[33][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[34][-1]: Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Jlb7 W_j9 Mnq9 Rnn3 Dct8 Smr7 Ufe1 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
 
+Spur[17][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: X_d5 Qhe0 Vba2 R_f9 Wuw6 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: X_d5 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: X_d5 Qhe0 Iu_8 Hky4 Jox7 Dyk8 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[28][-1]: X_d5 Qhe0 Mzr2 Zjg3 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[17][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[17][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Mnc1 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Mnc1 Xwe7 Szz4 Myn6 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[28][-1]: Mnc1 Tnw6 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Mnc1 Xwe7 Rdi4 Vxk0 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Mnc1 Xwe7 Szz4 Us_0 Rbc1 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Mnc1 Xwe7 Szz4 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Mnc1 Qsg0 Znf8 Qch6 Mrm3 Ad_3 Vfv9 Hbc1 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Mnc1 Xwe7 Szz4 Na_3 Jhc9 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[18][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Csl1 I_v5 Xwe7 Mnc1 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[29][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Csl1 I_v5 Xwe7 Rdi4 Vxk0 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Csl1 I_v5 Xwe7 Szz4 Us_0 Rbc1 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Csl1 I_v5 Xwe7 Szz4 Na_3 Jhc9 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[35][-1]: Csl1 I_v5 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
 
+Spur[18][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Ynk5 Gcf6 Geb5 Vf_3 Cic3 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Ynk5 Kfy6 Jhc9 Na_3 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Ynk5 Gcf6 Geb5 Ynk0 R_f9 Wuw6 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Kbh0 Jeg7 R_o1 Bdc8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Ea_4 J_x7 Ax_0 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Edw1 Dpd3 R_o1 Bdc8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Xia3 Wbg4 Auq7 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Ynk5 Gcf6 Xkh8 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 Hbj5 Tst1 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[26][-1]: Ynk5 Tr_5 Ogd7 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[27][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 T_n5 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[27][-1]: Ynk5 Wri1 T_z9 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Cfx1 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Ebq8 Xvq1 Ypk8 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 Bft2 Ffi8 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Ynk5 Gcf6 Geb5 Q_s2 Wto7 Qbv3 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Odt6 Val8 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Ynk5 Gcf6 Geb5 Ynk0 Hbk5 Xxh9 Emv6 Tst1 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Pyx2 Jcz8 Rmq1 Odt6 Val8 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Pqh8 Zrr5 Jxa7 Ffi8 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Me_3 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[35][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[36][-1]: Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Nuo1 Mjd3 Zql7 Kv_0 Ea_4 J_x7 Ax_0 Uh_9 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+
+Spur[18][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Wri1 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Wri1 T_z9 Etb0 Dfb1 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Kh_4 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Wri1 T_z9 Ilp7 Whi5 Rmt7 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Wri1 T_z9 Ilp7 Upw4 Tst1 Hbj5 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[27][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Wri1 Ext6 Ilo5 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Cwm1 T__7 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Wri1 Qrr5 Nne0 Yzw2 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Wri1 T_z9 Tye0 G_y0 Nzj5 Nne0 Yzw2 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[35][-1]: Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[18][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[30][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Hpb2 Uim1 Sli6 Nky2 J_d1 Emh3 Na_3 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[34][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Tpf2 Emh3 Na_3 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Hpb2 Uim1 Sli6 Nky2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[18][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[18][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Ccf1 Zfk3 Me_3 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Eal4 Wjs1 Wsz0 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Eal4 Wjs1 Aai2 E_q6 Jx_8 Dyk8 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Eal4 Wjs1 Aai2 Qua3 Nir7 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 T_n5 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Kh_4 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Eal4 Swi9 Q_g0 Mdl9 Qbe5 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Zvs8 Sf_7 Psf2 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[29][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Hvk6 Dtl3 Urh2 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Psf2 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[30][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Eal4 Wjs1 Dru4 Saz7 Bj_9 Jx_8 Dyk8 Pwx4 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Eal4 Wjs1 Aai2 Btb7 Ic_4 Vps8 Stc4 Nir7 Pzd1 Hys6 Duf9 Xgf8 Oky9 Yxj0 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[35][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[35][-1]: Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Wk_3 Maw9 Jxb6 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+
+Spur[19][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Dez6 Xck5 Sgo7 Evj2 Wro9 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[30][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 End4 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[36][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Dez6 Xck5 Sgo7 Evj2 Glx4 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[19][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Cpj2 Ush0 Gkc2 Ns_5 Ehj4 Gqf4 Dwv4 Uwg3 Npq1 Nzt9 Yki0 Ic_3 Ikt6 Zlm1 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Cpj2 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Cpj2 Ush0 Gkc2 Bhv2 Odc9 Uyt9 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Cpj2 Fgs9 M_f8 Tjx9 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Cpj2 Ush0 Gkc2 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Cpj2 Ush0 Wns1 Aph4 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Glx4 Evj2 Wro9 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[36][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[19][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[19][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Bol7 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Tkq1 Zyb8 Rcs1 Duf9 Hys6 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Spr8 Niw5 Au_3 Cyo0 Sus6 Ccf1 Zfk3 Me_3 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Psf2 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Tkq1 Zyb8 Rcs1 Bxc4 Hnz1 Nt_1 Pcq5 Xkh3 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Tkq1 Zyb8 Rcs1 Duf9 Suh6 Oqv9 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[28][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Dzx1 Mzm0 Bhg8 Elc4 Jak8 Sea0 Vch2 Boa8 Mdk9 Mx_4 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[28][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[29][-1]: Tkq1 Gr_7 Dic2 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Tkq1 Zyb8 Dic2 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 I_f2 O__2 Tst1 Hbj5 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[30][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Xkt1 Qqa9 Hkd9 Dqa4 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Udx2 Ohj1 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Unx3 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Uh_9 Gnz9 Hjj6 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[35][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[36][-1]: Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[20][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Kra1 Vgo0 San6 Etb0 Dfb1 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Kra1 Vgo0 Bmh3 Xkh8 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Kra1 Vgo0 Bmh3 Gkc2 Ns_5 Ehj4 Gqf4 Dwv4 Uwg3 Npq1 Nzt9 Yki0 Ic_3 Ikt6 Zlm1 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Kra1 Azr4 Ogd7 Tr_5 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 Odc9 Uyt9 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Kra1 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[29][-1]: Kra1 Vgo0 Ogd7 Tr_5 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Kra1 Vgo0 Bmh3 Gkc2 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Kra1 Vgo0 Bmh3 Aph4 Wns1 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Glx4 Evj2 Wro9 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[37][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[37][-1]: Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[20][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[20][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Alo0 Vct2 Wri1 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Alo0 Vct2 Wri1 T_z9 Etb0 Dfb1 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Kh_4 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Whi5 Rmt7 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[29][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Tst1 Hbj5 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[29][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Alo0 Vct2 Wri1 Ext6 Ilo5 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Cwm1 T__7 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Alo0 Vct2 Wri1 Qrr5 Nne0 Yzw2 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Alo0 Vct2 Wri1 T_z9 Tye0 G_y0 Nzj5 Nne0 Yzw2 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[37][-1]: Alo0 Vct2 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[20][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Vba2 R_f9 Wuw6 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Gga0 Uje6 Nyv3 X_d5 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Hky4 Jox7 Dyk8 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[31][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Mzr2 Zjg3 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[37][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[37][-1]: Gga0 Uje6 Nyv3 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[21][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Ups4 Odo6 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Szz4 Na_3 Emh3 Tpf2 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[32][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Rds3 Hez9 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[33][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Wro9 Evj2 Glx4 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[37][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Rbc1 Us_0 Szz4 Xwe7 Mnc1 Vfv9 Hbc1 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[38][-1]: Gcl1 Ald5 Wau8 Ctv6 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[21][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Bol7 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Hys6 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Spr8 Niw5 Au_3 Cyo0 Sus6 Ccf1 Zfk3 Me_3 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Psf2 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Bxc4 Hnz1 Nt_1 Pcq5 Xkh3 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[29][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Suh6 Oqv9 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[30][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Dzx1 Mzm0 Bhg8 Elc4 Jak8 Sea0 Vch2 Boa8 Mdk9 Mx_4 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[30][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[31][-1]: Xjm3 Rzj6 Tkq1 Gr_7 Dic2 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[31][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Dic2 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 I_f2 O__2 Tst1 Hbj5 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[32][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Xkt1 Qqa9 Hkd9 Dqa4 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Udx2 Ohj1 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Unx3 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Uh_9 Gnz9 Hjj6 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[37][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[38][-1]: Xjm3 Rzj6 Tkq1 Zyb8 Rcs1 Duf9 Xgf8 Oky9 Yxj0 Zrg7 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[21][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[21][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Ccf1 Zfk3 Me_3 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Wsz0 X_d5 Qhe0 Iu_8 Ij_5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 E_q6 Jx_8 Dyk8 Pwx4 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Nir7 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 T_n5 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Kh_4 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Yia0 Zgm1 Ary8 Eal4 Swi9 Q_g0 Mdl9 Qbe5 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Zvs8 Sf_7 Psf2 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[32][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Hvk6 Dtl3 Urh2 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Psf2 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[33][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Dru4 Saz7 Bj_9 Jx_8 Dyk8 Pwx4 Ixb4 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Btb7 Ic_4 Vps8 Stc4 Nir7 Pzd1 Hys6 Duf9 Xgf8 Oky9 Yxj0 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[38][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[38][-1]: Yia0 Zgm1 Ary8 Eal4 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Wk_3 Maw9 Jxb6 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+
+Spur[22][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Akh4 Kt_7 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Gg_1 Qea4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[33][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Tnw6 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Tdx4 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Rdi4 Vxk0 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Cic3 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Us_0 Rbc1 Yrb1 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Bqr1 J_o8 Gzv8 Vf_3 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Qsg0 Znf8 Qch6 Mrm3 Ad_3 Vfv9 Hbc1 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Na_3 Jhc9 Kfy6 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[38][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[39][-1]: Dnl2 Djt8 Xtz4 Pdh6 U_h7 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[22][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[22][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Xkh3 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Tnw6 Mnc1 Xwe7 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Rkg7 H_s6 Cic3 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[31][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Rmt7 Whi5 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Dfb1 Fbl4 Ain0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Vt_4 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Fyy4 Sb_7 Ush0 Gkc2 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Xmz1 Zrr5 Pqh8 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Qpo8 Val8 Odt6 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Qbe5 Mdl9 Q_g0 Ryt6 Wsz0 Wjs1 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Qea4 Gg_1 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[38][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[39][-1]: Fzh3 Nzn9 Ncm4 Hho3 Ntg9 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[22][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Iq_3 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Psf2 Mfq1 Zzw5 Sqw8 Mvp9 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Dct8 Smr7 Ufe1 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Ilo5 Ext6 Wri1 T_z9 Ilp7 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Odo6 Ups4 M_w8 Gsc1 Yrb1 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[31][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Dzx1 Mzm0 Bhg8 Elc4 Jak8 Sea0 Vch2 Boa8 Mdk9 Mx_4 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[31][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Bhg8 Elc4 Jak8 Sea0 Vch2 Rrz7 Rff4 Zrw7 Gbo4 Vpz3 Bn_9 Ara7 Yfe1 Beo3 Eo_6 Xzd2 B_q9
+Spur[33][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Zrg7 Yxj0 Spr8 Niw5 Qrh1 Yyn8 F_b9 Oha0 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Whd1 Vzj2 Zny6 Nju7 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Udx2 Ohj1 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Uh_9 Gnz9 Hjj6 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[38][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[39][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Unx3 Idv2 Duy5 Gxk7 Hs_3 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[39][-1]: Qqs0 Yck8 Tfc2 X_x5 Edo6 Ttg3 Mk_8 Zlr9 Qws6 Gxx6 Jlb7 W_j9 Mnq9 Rnn3 Dct8 Smr7 Ufe1 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+
+Spur[23][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[23][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Vf_3 Cic3 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Kfy6 Jhc9 Na_3 Szz4 Myn6 Tnu6 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 R_f9 Wuw6 Yzd8 J_a2 Igx3 Hzy9 Kin2 Bhx2 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Kbh0 Jeg7 R_o1 Bdc8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Ea_4 J_x7 Ax_0 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Edw1 Dpd3 R_o1 Bdc8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Xia3 Wbg4 Auq7 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Xkh8 Vfv9 Hbc1 Yj_8 Vt_4 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[27][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 Hbj5 Tst1 Upw4 Mcj0 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[30][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[31][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Tr_5 Ogd7 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 T_n5 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Wri1 T_z9 Ilp7 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Cfx1 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Ebq8 Xvq1 Ypk8 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[34][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 Bft2 Ffi8 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Q_s2 Wto7 Qbv3 Kqc5 Pri2 Wcs2 Umj4 Nho1 Aig6 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Odt6 Val8 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Hbk5 Xxh9 Emv6 Tst1 Upw4 Mcj0 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Pyx2 Jcz8 Rmq1 Odt6 Val8 Nyb5 Iq_3 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Pqh8 Zrr5 Jxa7 Ffi8 Vyf8 Jfi2 Qce5 Hmx5 Yhp8 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Me_3 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[39][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[40][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+Spur[41][-1]: Hxx2 F_g3 Mpv2 Tyo8 Ryq9 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Nuo1 Mjd3 Zql7 Kv_0 Ea_4 J_x7 Ax_0 Uh_9 Hng9 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+
+Spur[23][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Ns_5 Ehj4 Gqf4 Dwv4 Uwg3 Npq1 Nzt9 Yki0 Ic_3 Ikt6 Zlm1 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 Odc9 Uyt9 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Fgs9 M_f8 Tjx9 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[31][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[32][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Wns1 Aph4 Bmh3 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[34][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[35][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[36][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[37][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[38][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[38][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[38][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[38][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Glx4 Evj2 Wro9 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[39][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[40][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[40][-1]: Jcs2 Ixw0 Uxn0 N_u8 Cpj2 Ush0 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9
+
+Spur[24][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[24][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 San6 Etb0 Dfb1 Kx_0 Syg3 Akh4 Uwh8 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Xkh8 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Ns_5 Ehj4 Gqf4 Dwv4 Uwg3 Npq1 Nzt9 Yki0 Ic_3 Ikt6 Zlm1 Dai6 Ykk5 Y_g0 Xhd9 Zfy1 B_q9
+Spur[25][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Azr4 Ogd7 Tr_5 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Rqa2 Caz6 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 Odc9 Uyt9 Pzd1 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Hdq3 Dtu3 Pri2 Wcs2 Umj4 Ekp2 Jxb6 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[26][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Jxb6 Nyb5 Uh_9 Hng9 Nwu8 Mpn5 Nvv7 Xhd9 Zfy1 B_q9
+Spur[28][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Vr_8 Yrp1 Vgw6 Tkw0 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[33][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Ogd7 Tr_5 Ynk5 Gcf6 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[35][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Pzd1 Nir7 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Zfk3 Ccf1 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[36][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Xkh3 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 Sqw8 Zzw5 Kh_4 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Bhx2 Anj3 Rsl4 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[37][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Caz6 Rqa2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[37][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Qbv3 Wto7 Q_s2 Geb5 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[38][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Aph4 Wns1 Ush0 Sb_7 Fyy4 Kaf0 Ei_0 Kx_0 Syg3 Akh4 Kt_7 Mqf0 Ran4 Kcz9 Hts5 Dkr1 Teq8 Mfp5 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[38][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ccz7 Uto5 Euy2 Yj_8 Onu4 Xdv3 Ash9 Daz8 Mcb6 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[39][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[39][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ij_5 Iu_8 Qhe0 Vba2 R_f9 Ynk0 Ie_1 C__4 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[39][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Pwx4 Dyk8 Jx_8 E_q6 Aai2 Qua3 Wi_9 Ppw2 Htc4 Mfq1 Au_3 Cyo0 Sus6 Qnx7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[39][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Glx4 Evj2 Wro9 Gsc1 Chq3 Nvq9 Tlk1 Px_6 Ikd3 Dn_3 Bp_3 Rli7 Ng_9 Gpk4 Mhh7 Xhn3 Suv6 Xui2 Gvz7 Uni1 Eon0 Zen1 Dkt7 Cfm7 Ith4 Foi4 Azu9 B_q9
+Spur[40][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Z_p3 Gzj7 Fpl6 Pgf5 Blz8 Ghc3 Ksb6 Xm_3 Bmx1 Vtk1 Sfx6 R_m2 Xyu1 P_l5 Kz_9 Can5 Zpf5 Rwv3 B_q9
+Spur[41][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Qgq8 Okv0 Eru3 Bdc8 R_o1 Dpd3 Edw1 Iob0 Syt0 Sls9 Pil2 Bqk1 Uxk2 Vkw9 Qfh0 Nbs2 Xg_3 Zuf8 Mfd0 Kzh3 Fid9 Ei_2 H_m4 Wwt4 Rwv3 B_q9
+Spur[41][-1]: Nek8 Wom8 Zop0 Knt8 Kra1 Vgo0 Bmh3 Gkc2 Bhv2 U__6 Kqc5 Ixb4 Ghz0 Fjb0 Pkp8 Maw9 Wk_3 T_x6 Nwu8 Mpn5 Nvv7 Xhd9 Y_g0 Ykk5 Dai6 Mx_4 Mdk9 Not1 Whd0 Fw_8 G_u8 Fer6 Mqh6 Pax7 Bai8 Eeu2 Hah0 Cff4 Asq8 Azu9 B_q9

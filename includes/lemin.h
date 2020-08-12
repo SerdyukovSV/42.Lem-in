@@ -82,14 +82,10 @@ typedef struct      s_lemin
     t_rooms         *rooms;
     t_links         *links;
     t_queue         *queue;
-    // t_node          *primpath;
     int             possible;
     int             *visitroom;
     t_shortpath     **shortpaths;
-    // t_path          *primpath;
     t_path          **unique;
-    // t_path          **spurpaths;
-
     int             size;
     int             count;
 
@@ -97,54 +93,70 @@ typedef struct      s_lemin
 
 
 /*
-** functions for receiving and processing data
+** initialization function
 */
 
-void        ft_error(int errcode);
-void        lm_strdel(char **str);
-
-char        **lemin_read(char *av[]);
-int         lemin_validate(char *str[]);
 void        lemin_init(t_lemin *lemin, char *str[]);
-t_node      **creat_paths(int size);
+char        **lemin_read(char *av[]);
 int         get_ants(char *str);
 t_rooms     *get_rooms(char ***str);
 t_links     *get_links(t_rooms *room, char **str);
+t_node      *room_dup(t_node *room);
+int         lemin_validate(char *str[]);
 
 /*
-** preparation of data for work on graphs
+** search paths
 */
 
+void        get_paths(t_lemin* lemin);
+t_path      *newpath(int *parent, int fin);
+t_path      *pathjoin(t_path *rootpath, t_path *newpath, int cur);
+
+/*
+** utility search paths
+*/
+void        rebuildgraph(t_lemin *lemin, t_shortpath *shortpath, int set);
+void        setvertex(t_lemin *lemin, int vertex, int set);
+void        setlink_root(t_lemin *lemin, int *rootpath, int set);
+void        setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set);
+void        possible_paths(t_lemin *lemin, t_path *rootpath);
+int         cmp_paths(t_path **spurpaths, t_path *newpath);
+void        sort_spurpaths(t_shortpath **shortpaths);
+void        sort_rootpaths(t_shortpath **shortpaths);
 t_queue     *creat_queue(void);
 void        enqueue(t_queue *queue, int value);
 int         dequeue(t_queue *queue);
 
 /*
-** search for routes to go through an ant farm (BFS algorithm)
+** choice paths & utility
 */
 
-t_node      *room_dup(t_node *room);
-void        get_paths(t_lemin* lemin);
+void        choice_paths(t_lemin *lemin);
+int         is_replace(t_lemin *lemin, t_path *replace, \
+                                t_path **tmp, t_path *new);
+int         get_steps(t_path **paths, t_path *new, int ant);
+int         is_unique(t_path *new, t_path **unique);
+int         is_duplicate(t_path *src, t_path *dst);
+void        sort_unique(t_path **paths);
 
 /*
-** compare paths 
+** get flow for paths & run ants
 */
 
-int         cmp_paths(t_path **spurpaths, t_path *newpath, t_lemin *lemin);
-t_node      **new_paths(t_lemin *lemin, t_node **paths);
-void        choice_paths(t_lemin *lemin);
-// int         sortpaths(t_lemin *lemin);
-void     sort_rootpaths(t_shortpath **shortpaths);
-void     sort_spurpaths(t_shortpath **shortpaths);
-void     sort_unique(t_path **paths);
-
-int      get_flow(t_path **paths, int ants);
+int         get_flow(t_path **paths, int ants);
+void        set_flow(t_lemin *lemin, int flow);
 void        lemin_play(t_lemin *lemin);
-int         path_len(t_node *path);
 
+/*
+** processing errors
+*/
+
+void        ft_error(int errcode);
+void        lm_strdel(char **str);
 
 ////////
 void print_paths(t_path *paths, t_lemin *lemin);
+void print_paths_all(t_path **paths, t_lemin *lemin);
 void print_paths_2(t_lemin *lemin);
 
 #endif

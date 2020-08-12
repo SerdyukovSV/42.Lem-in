@@ -1,6 +1,6 @@
 #include "../includes/lemin.h"
 
-void enqueue(t_queue* queue, int value)
+void    enqueue(t_queue* queue, int value)
 {
     if (queue->rear == SIZE-1)
         ft_error(ERR);
@@ -13,7 +13,7 @@ void enqueue(t_queue* queue, int value)
     }
 }
 
-int dequeue(t_queue* queue)
+int     dequeue(t_queue* queue)
 {
     int item;
     if (queue->rear == -1)

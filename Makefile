@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 TARGET	:= lem-in
-CFLAGS 	:= -Wall -Werror -Wextra -g
+CFLAGS 	:= -Wall -Werror -Wextra
 CC 		:= gcc
 
 # Source and object direct
@@ -22,9 +22,10 @@ OBJ_DIR	:= ./obj/
 SRC_DIR	:= ./srcs/
 
 # Source files
-SRCS 	:= main.c lem_read.c lem_validate.c lem_init.c \
-			get_ants.c get_rooms.c get_links.c queue.c \
-			get_paths_3_NEW.c cmp_paths.c choice_paths_copy.c sort_paths.c lem_play.c
+SRCS 	:= main.c lem_read.c lem_validate.c \
+			lem_init.c get_ants.c get_rooms.c get_links.c \
+			pth_getpaths.c pth_newpath.c pth_queue.c pth_sort.c pth_utility.c \
+			ch_choice_paths.c ch_utility.c lm_flow.c lm_play.c
 
 # Object files
 OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
@@ -59,11 +60,8 @@ clean:
 fclean: clean
 	@rm -f $(TARGET)
 	@cd libft/ && make fclean
-	@echo "$(WHITE)$(TARGET)$(EOC)     $(YELLOW)removed$(EOC)"
+	@echo "$(WHITE)$(TARGET)$(EOC)    $(YELLOW)removed$(EOC)"
 
 re: fclean all
 
 .PHONY: clean fclean re all
-
-# @printf "$(YELLOW) - Compiling $< into $@\r"
-# @$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@

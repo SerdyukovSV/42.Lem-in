@@ -1,6 +1,6 @@
 #include "../includes/lemin.h"
 
-void    lm_strdel(char **str)
+void        lm_strdel(char **str)
 {
     while (*str != NULL)
     {
@@ -29,25 +29,25 @@ static int  get_size_path(t_links *link, int start, int final)
         tmp = tmp->next;
         k++;
     }
-    printf("start = %d | end = %d\n", i, k);
+    // printf("start = %d | end = %d\n", i, k);
     return ((i > k) ? k : i);
 }
 
-t_node   **creat_paths(int size)
-{
-    t_node  **path;
-    int     i;
+// t_node      **creat_paths(int size)
+// {
+//     t_node  **path;
+//     int     i;
 
-    if (!(path = malloc(sizeof(t_node *) * size + 1)))
-        ft_error(ERR);
-    i = -1;
-    while (++i < size)
-        path[i] = NULL;
-    path[i] = NULL;
-    return (path);
-}
+//     if (!(path = malloc(sizeof(t_node *) * size + 1)))
+//         ft_error(ERR);
+//     i = -1;
+//     while (++i < size)
+//         path[i] = NULL;
+//     path[i] = NULL;
+//     return (path);
+// }
 
-void    lemin_init(t_lemin *lemin, char *str[])
+void        lemin_init(t_lemin *lemin, char *str[])
 {
     g_id = 0;
     lemin->count = 0;
@@ -57,5 +57,4 @@ void    lemin_init(t_lemin *lemin, char *str[])
     lemin->start = lemin->rooms->start->id;
     lemin->final = lemin->rooms->end->id;
     lemin->size = get_size_path(lemin->links, lemin->start, lemin->final);
-    // printf("size = %d\n", lemin->size);
 }
