@@ -1,97 +1,85 @@
 #include "../includes/lemin.h"
 
-void     possible_paths(t_lemin *lemin, t_path *rootpath)
+void    set_capacity(t_lemin *lemin, t_node *src, t_node *dst, int set)
 {
-    t_node  *tmp;
-    int     i;
+    // printf("set_capacity_edge\n");
+    t_node *tmp;
 
-    i = -1;
-    lemin->possible = 0;
-    while (++i < rootpath->len)
+    tmp = lemin->links->adjace[src->id];
+    while (tmp)
     {
-        tmp = lemin->links->adjace[rootpath->path[i]];
-        while (tmp)
+        if (tmp->id == dst->id)
         {
-            lemin->possible++;
-            tmp = tmp->next;
-        }
-    }
-}
-
-void     setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set)
-{
-    t_node  *tmp;
-    int     i;
-
-    i = 0;
-    tmp = lemin->links->adjace[root];
-    while (i < spurpaths->len - 1)
-    {
-        if (spurpaths->path[i++] == root)
-        {
-            while (tmp && tmp->id != spurpaths->path[i])
-                tmp = tmp->next;
-            if (tmp && tmp->id == spurpaths->path[i])
-                tmp->path = set;
+            tmp->capacity += set;
             break ;
         }
-    }
-}
-
-void     setlink_root(t_lemin *lemin, int *rootpath, int set)
-{
-    t_node  *tmp;
-
-    tmp = lemin->links->adjace[rootpath[0]];
-    while (tmp && tmp->id != rootpath[1])
         tmp = tmp->next;
-    if (tmp && tmp->id == rootpath[1])
-    {
-        tmp->path = set;
     }
 }
 
-void     setvertex(t_lemin *lemin, int vertex, int set)
+void    set_attributes(t_lemin *lemin, t_path **paths)
 {
-    t_node  *src;
-    t_node  *adj;
+    // printf("set_attributes\n");
+    t_node  **node;
     int i;
+    int j;
 
     i = -1;
-    src = lemin->links->adjace[vertex];
-    while (src)
+    node = lemin->node;
+    while (lemin->node[++i])
     {
-        adj = lemin->links->adjace[src->id];
-        while (adj)
-        {
-            if (adj->id == vertex)
-            {
-                adj->path = set;
-                break ;
-            }
-            adj = adj->next;
-        }
-        src = src->next;
+        node[i]->in_path = 0;
+        node[i]->previous = -1;
     }
+    i = -1;
+    while (paths[++i])
+    {
+        // printf("STEP_2\n");
+        j = 0;
+        while (paths[i]->node[j])
+        {
+            // printf("step_3\n");
+            node[paths[i]->node[j++]->id]->in_path = 1;
+            if (paths[i]->node[j])
+                node[paths[i]->node[j]->id]->previous = paths[i]->node[j - 1]->id;
+        }
+    }
+    // t_node *tmp;
+    // tmp = lemin->links->adjace[lemin->start];
+    // printf("\e[94mstart[%s]", lemin->rooms->start->name);
+    // while (tmp)
+    // {
+    //     printf("->%s", tmp->name);
+    //     tmp = tmp->next;
+    // }
+    // printf("\e[0m\n");
 }
 
-void     rebuildgraph(t_lemin *lemin, t_shortpath *shortpath, int set)
+void    rebuildgraph(t_lemin *lemin, t_path *path, int set)
 {
-    t_path  *rootpath;
-    t_path  **spurpaths;
+    // printf("rebuildgraph\n");
+    t_node  **node;
+    int     ln;
     int     i;
-    int     j;
 
     i = 0;
-    rootpath = shortpath->rootpath;
-    spurpaths = shortpath->spurpaths;
-    while (i < rootpath->len && rootpath->path[i + 1] != -1)
+    ln = path->len;
+    node = path->node;
+    // printf("ln = %d\n", ln);
+    while (ln--)
     {
-        setlink_root(lemin, &rootpath->path[i], set);
-        j = -1;
-        while (spurpaths[++j])
-            setlink_spur(lemin, spurpaths[j], rootpath->path[i], set);
-        setvertex(lemin, rootpath->path[i], set);
-        i++;
+        // printf("in | SET = %d\n", set);
+        if (set == SET && (ln - 1) >= 0)
+        {
+            set_capacity(lemin, node[ln], node[ln - 1], DECREASE);
+            set_capacity(lemin, node[ln - 1], node[ln], INCREASE);
+
+        }
+        else if (set == DEL && (ln - 1) >= 0)
+        {
+            set_capacity(lemin, node[ln], node[ln - 1], INCREASE);
+            set_capacity(lemin, node[ln - 1], node[ln], DECREASE);
+        }
+        // printf("out\n");
     }
 }

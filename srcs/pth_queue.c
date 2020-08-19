@@ -1,7 +1,8 @@
 #include "../includes/lemin.h"
 
-void    enqueue(t_queue* queue, int value)
+void    enqueue(t_queue* queue, t_node *vert)
 {
+    // printf("enqueue\n");
     if (queue->rear == SIZE-1)
         ft_error(ERR);
     else
@@ -9,36 +10,29 @@ void    enqueue(t_queue* queue, int value)
         if(queue->front == -1)
             queue->front = 0;
         queue->rear++;
-        queue->items[queue->rear] = value;
+        queue->items[queue->rear] = vert;
     }
 }
 
-int     dequeue(t_queue* queue)
+t_node  *dequeue(t_queue* queue)
 {
-    int item;
+    // printf("\e[93mdequeue\e[0m\n");
+    t_node *item;
+
     if (queue->rear == -1)
     {
-        printf("Queue is empty");
-        item = -1;
+        printf("\e[91mQueue is empty\e[0m");
+        item = NULL;
     }
     else
     {
         item = queue->items[queue->front];
         queue->front++;
         if(queue->front > queue->rear)
-            queue->front = queue->rear = -1;
+        {
+            queue->front = -1;
+            queue->rear = -1;
+        }
     }
-    return item;
-}
-
-t_queue *creat_queue(void)
-{
-    t_queue *queue;
-
-    if (!(queue = malloc(sizeof(t_queue))))
-        ft_error(ERR);
-    queue->front = -1;
-    queue->rear = -1;
-
-    return (queue);
+    return (item);
 }

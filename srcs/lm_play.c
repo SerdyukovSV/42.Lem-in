@@ -17,7 +17,7 @@ static void     rebuildlink(t_lemin *lemin)
             {
                 if (tmp->id == lemin->unique[i]->path[j])
                 {
-                    tmp->path = 2;
+                    // tmp->path = 2;
                     break ;
                 }
                 tmp = tmp->next;
@@ -37,12 +37,12 @@ static t_node   *get_next(t_lemin *lemin, t_node *ants)
     tmp = lemin->links->adjace[ants->id];
     while (tmp)
     {
-        if (tmp->path == 2)
-        {
-            ants = tmp;
-            ants->ant = 1;
-            break ;
-        }
+        // if (tmp->path == 2)
+        // {
+        //     ants = tmp;
+        //     ants->ant = 1;
+        //     break ;
+        // }
         tmp = tmp->next;
     }
     return (ants);

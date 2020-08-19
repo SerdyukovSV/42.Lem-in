@@ -1,19 +1,20 @@
 #include "../includes/lemin.h"
 
-static void create_hash_room(t_rooms *room)
+static void create_hroom(t_rooms *room)
 {
-    t_node **hash;
-    t_node *head;
+    t_node  **hroom;
+    t_node  *head;
 
     head = room->head;
-    if (!(hash = malloc(sizeof(t_node *) * room->total)))
+    if (!(hroom = malloc(sizeof(t_node *) * room->total + 1)))
         ft_error(ERR);
     while (head)
     {
-        hash[head->id] = head;
+        hroom[head->id] = head;
         head = head->next;
     }
-    room->hroom = hash;
+    hroom[room->total] = NULL;
+    room->hroom = hroom;
 }
 
 static void fill_room(t_node *room, char *str)
@@ -26,7 +27,9 @@ static void fill_room(t_node *room, char *str)
     room->x = ft_atoi(tmp[1]);
     room->y = ft_atoi(tmp[2]);
     room->ant = 0;
-    room->path = 0;
+    room->capacity = 1;
+    room->is_start = 0;
+    room->in_path = 0;
     room->id = g_id++;
     lm_strdel(tmp);
 }
@@ -70,6 +73,6 @@ t_rooms     *get_rooms(char ***str)
         else
             break ;
     }
-    create_hash_room(rooms);
+    create_hroom(rooms);
     return (rooms);
 }

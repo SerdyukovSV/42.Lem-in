@@ -19,34 +19,16 @@
 # define END            "end"
 # define SIZE           (16384)
 
-# define DEL             (1)
-# define SET             (0)
+# define SET            (1)
+# define DEL            (0)
+# define INCREASE       (1)
+# define DECREASE       (-1)
 
 int g_id;
 
 /*
 ** Data structures
 */
-
-typedef struct      s_queue
-{
-    int             items[SIZE];
-    int             front;
-    int             rear;
-}                   t_queue;
-
-typedef struct      s_path
-{
-    int             len;
-    int             path[256];
-    int             flow;
-}                   t_path;
-
-typedef struct      s_shortpath
-{
-    t_path          *rootpath;
-    t_path          **spurpaths;
-}                   t_shortpath;
 
 typedef struct      s_node
 {
@@ -55,9 +37,29 @@ typedef struct      s_node
     int             x;
     int             y;
     int             ant;
-    int             path;
+    int             capacity;
+    int             previous;
+    int             is_start;
+    int             in_path;
+    // int             on_source;
     struct s_node   *next;
 }                   t_node;
+
+typedef struct      s_path
+{
+    int             len;
+    // int             path[256];
+    t_node          *node[256];
+    
+    int             flow;
+}                   t_path;
+
+typedef struct      s_queue
+{
+    t_node          *items[SIZE];
+    int             front;
+    int             rear;
+}                   t_queue;
 
 typedef struct      s_links
 {
@@ -80,12 +82,15 @@ typedef struct      s_lemin
     int             start;
     int             final;
     t_rooms         *rooms;
+    t_node          **node;
     t_links         *links;
     t_queue         *queue;
-    int             possible;
-    int             *visitroom;
-    t_shortpath     **shortpaths;
+    int             *parent;
+    // int             possible;
+    // int             *visitroom;
+    // t_shortpath     **shortpaths;
     t_path          **unique;
+    t_path          **paths;
     int             size;
     int             count;
 
@@ -111,21 +116,26 @@ int         lemin_validate(char *str[]);
 void        get_paths(t_lemin* lemin);
 t_path      *newpath(int *parent, int fin);
 t_path      *pathjoin(t_path *rootpath, t_path *newpath, int cur);
+void        add_end_paths(t_lemin *lemin);
 
 /*
 ** utility search paths
 */
-void        rebuildgraph(t_lemin *lemin, t_shortpath *shortpath, int set);
-void        setvertex(t_lemin *lemin, int vertex, int set);
-void        setlink_root(t_lemin *lemin, int *rootpath, int set);
-void        setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set);
-void        possible_paths(t_lemin *lemin, t_path *rootpath);
-int         cmp_paths(t_path **spurpaths, t_path *newpath);
-void        sort_spurpaths(t_shortpath **shortpaths);
-void        sort_rootpaths(t_shortpath **shortpaths);
-t_queue     *creat_queue(void);
-void        enqueue(t_queue *queue, int value);
-int         dequeue(t_queue *queue);
+void        rebuildgraph(t_lemin *lemin, t_path *path, int set);
+// void        setvertex(t_lemin *lemin, int vertex, int set);
+// void        setlink_root(t_lemin *lemin, int *rootpath, int set);
+// void        setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set);
+// void        possible_paths(t_lemin *lemin, t_path *rootpath);
+// int         cmp_paths(t_path **spurpaths, t_path *newpath);
+// void        sort_spurpaths(t_shortpath **shortpaths);
+// void        sort_rootpaths(t_shortpath **shortpaths);
+void        set_attributes(t_lemin *lemin, t_path **paths);
+void        set_capacity(t_lemin *lemin, t_node *src, t_node *dst, int set);
+void        set_start(t_lemin *lemin, t_node *start);
+void        del_cross_edge(t_lemin *lemin);
+
+void        enqueue(t_queue* queue, t_node *vert);
+t_node      *dequeue(t_queue* queue);
 
 /*
 ** choice paths & utility
@@ -136,7 +146,7 @@ int         is_replace(t_lemin *lemin, t_path *replace, \
                                 t_path **tmp, t_path *new);
 int         get_steps(t_path **paths, t_path *new, int ant);
 int         is_unique(t_path *new, t_path **unique);
-int         is_duplicate(t_path *src, t_path *dst);
+// int         is_duplicate(t_path *src, t_path *dst);
 void        sort_unique(t_path **paths);
 
 /*
@@ -155,8 +165,8 @@ void        ft_error(int errcode);
 void        lm_strdel(char **str);
 
 ////////
-void print_paths(t_path *paths, t_lemin *lemin);
-void print_paths_all(t_path **paths, t_lemin *lemin);
+void print_path(t_path *path);
+void print_paths_all(t_path **paths);
 void print_paths_2(t_lemin *lemin);
 
 #endif

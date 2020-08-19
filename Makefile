@@ -24,7 +24,7 @@ SRC_DIR	:= ./srcs/
 # Source files
 SRCS 	:= main.c lem_read.c lem_validate.c \
 			lem_init.c get_ants.c get_rooms.c get_links.c \
-			pth_getpaths.c pth_newpath.c pth_queue.c pth_sort.c pth_utility.c \
+			pth_getpaths_copy.c pth_newpath.c pth_queue.c pth_sort.c pth_utility.c \
 			ch_choice_paths.c ch_utility.c lm_flow.c lm_play.c
 
 # Object files
