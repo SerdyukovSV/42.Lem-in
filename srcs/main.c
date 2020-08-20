@@ -26,10 +26,11 @@ void print_paths_all(t_path **paths)
     while (paths[++i])
     {
         j = -1;
-        printf("\e[92mPath[%d][%d]:", paths[i]->len, paths[i]->flow);
+        // printf("\e[92mPath[%d][%d]:", paths[i]->len, paths[i]->flow);
+        printf("Path[%d][%d]:", paths[i]->len, paths[i]->flow);
         while (++j < paths[i]->len)
             printf(" %s", paths[i]->node[j]->name);
-        printf("\e[0m\n");
+        printf("\n");
     }
 }
 
@@ -40,14 +41,17 @@ void print_path(t_path *path)
     i = -1;
     if (path)
     {
-        printf("\e[91mPath[%d][%d]:", path->len, path->flow);
+        // printf("\e[91mPath[%d][%d]:", path->len, path->flow);
+        if (path->flow > 0)
+            printf("\e[91m");
+        printf("Path[%d][%d]:", path->len - 1, path->flow);
         while (++i < path->len)
             printf(" %s", path->node[i]->name);
     }
     printf("\e[0m\n");
 }
 
-static int  is_duplicate(t_node *src, t_path *dst)
+ int  is_duplicate(t_node *src, t_path *dst)
 {
     // printf("\e[93mis_duplicate\e[0m : ");
     int i;
@@ -62,14 +66,14 @@ static int  is_duplicate(t_node *src, t_path *dst)
     return (0);
 }
 
-static int  get_duplicate(t_path *src, t_path **all)
+ int  get_duplicate(t_path *src, t_path **all)
 {
     // printf("\e[91mget_duplicate\e[0m\n");
     int dup;
     int i;
     int j;
 
-    i = -1;
+    i = 0;
     dup = 0;
     while (++i < src->len - 1)
     {
@@ -84,15 +88,19 @@ static int  get_duplicate(t_path *src, t_path **all)
     return (dup);
 }
 
-static void duplicate_paths(t_path **paths)
+ void duplicate_paths(t_path **paths)
 {
     // printf("\e[92mduplicate_paths\e[0m\n");
     int i;
+    int dup;
 
     i = -1;
+    dup = 0;
     while (paths[++i])
     {
-        paths[i]->flow = get_duplicate(paths[i], paths);
+        dup = get_duplicate(paths[i], paths);
+        if (dup)
+            paths[i]->flow = dup;
     }
 }
 
@@ -111,15 +119,14 @@ int main(int ac, char **av)
     }
     lemin_init(&lemin, &*str);
     get_paths(&lemin);
-    // print_paths_2(&lemin);
-    // choice_paths(&lemin);
-    duplicate_paths(lemin.paths);
+    set_flow(&lemin, get_flow(lemin.paths, lemin.ants));
+    // duplicate_paths(lemin.paths);
     printf("-------------paths-------------\n");
     printf("Line #%d\n", get_flow(lemin.paths, lemin.ants));
     int i = -1;
     while (lemin.paths[++i])
         print_path(lemin.paths[i]);
-    // lemin.size = lemin.ants;
-    // lemin_play(&lemin);
+    lemin.size = lemin.ants;
+    lemin_play(&lemin);
     return (0);
 }

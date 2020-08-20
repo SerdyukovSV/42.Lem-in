@@ -41,17 +41,14 @@ typedef struct      s_node
     int             previous;
     int             is_start;
     int             in_path;
-    // int             on_source;
     struct s_node   *next;
 }                   t_node;
 
 typedef struct      s_path
 {
     int             len;
-    // int             path[256];
-    t_node          *node[256];
-    
     int             flow;
+    t_node          *node[256];
 }                   t_path;
 
 typedef struct      s_queue
@@ -85,20 +82,15 @@ typedef struct      s_lemin
     t_node          **node;
     t_links         *links;
     t_queue         *queue;
-    int             *parent;
-    // int             possible;
-    // int             *visitroom;
-    // t_shortpath     **shortpaths;
-    t_path          **unique;
     t_path          **paths;
+    int             *parent;
     int             size;
     int             count;
-
 }                   t_lemin;
 
 
 /*
-** initialization function
+** initialization lemin
 */
 
 void        lemin_init(t_lemin *lemin, char *str[]);
@@ -114,40 +106,21 @@ int         lemin_validate(char *str[]);
 */
 
 void        get_paths(t_lemin* lemin);
-t_path      *newpath(int *parent, int fin);
-t_path      *pathjoin(t_path *rootpath, t_path *newpath, int cur);
-void        add_end_paths(t_lemin *lemin);
+t_path      *search_path(t_lemin *lemin, t_node *src);
 
 /*
 ** utility search paths
 */
+
 void        rebuildgraph(t_lemin *lemin, t_path *path, int set);
-// void        setvertex(t_lemin *lemin, int vertex, int set);
-// void        setlink_root(t_lemin *lemin, int *rootpath, int set);
-// void        setlink_spur(t_lemin *lemin, t_path *spurpaths, int root, int set);
-// void        possible_paths(t_lemin *lemin, t_path *rootpath);
-// int         cmp_paths(t_path **spurpaths, t_path *newpath);
-// void        sort_spurpaths(t_shortpath **shortpaths);
-// void        sort_rootpaths(t_shortpath **shortpaths);
 void        set_attributes(t_lemin *lemin, t_path **paths);
 void        set_capacity(t_lemin *lemin, t_node *src, t_node *dst, int set);
-void        set_start(t_lemin *lemin, t_node *start);
-void        del_cross_edge(t_lemin *lemin);
-
-void        enqueue(t_queue* queue, t_node *vert);
-t_node      *dequeue(t_queue* queue);
 
 /*
 ** choice paths & utility
 */
 
-void        choice_paths(t_lemin *lemin);
-int         is_replace(t_lemin *lemin, t_path *replace, \
-                                t_path **tmp, t_path *new);
-int         get_steps(t_path **paths, t_path *new, int ant);
-int         is_unique(t_path *new, t_path **unique);
-// int         is_duplicate(t_path *src, t_path *dst);
-void        sort_unique(t_path **paths);
+void        sort_paths(t_path **paths);
 
 /*
 ** get flow for paths & run ants
@@ -167,6 +140,5 @@ void        lm_strdel(char **str);
 ////////
 void print_path(t_path *path);
 void print_paths_all(t_path **paths);
-void print_paths_2(t_lemin *lemin);
 
 #endif
