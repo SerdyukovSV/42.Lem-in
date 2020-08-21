@@ -1,47 +1,70 @@
 #include "../includes/lemin.h"
 
-void        lm_strdel(char **str)
+static t_node   **create_node(t_rooms *room)
 {
-    while (*str != NULL)
+    t_node  *head;
+    t_node  **node;
+
+    if (!room)
+        return (NULL);
+    head = room->head;
+    if (!(node = malloc(sizeof(t_node *) * room->total + 1)))
+        return (NULL);
+    while (head)
     {
-        ft_strdel(&(*str));
-        str += 1;
+        node[head->id] = head;
+        head = head->next;
     }
+    node[room->total] = NULL;
+    return (node);
 }
 
-static int  get_size_path(t_links *link, int start, int final)
+static int      get_countpath(t_lemin *lemin)
 {
     t_node  *tmp;
     int     i;
-    int     k;
 
     i = 0;
-    tmp = link->adjace[start];
+    tmp = lemin->links->adjace[lemin->start];
     while (tmp)
     {
         tmp = tmp->next;
         i++;
     }
-    k = 0;
-    tmp = link->adjace[final];
-    while (tmp)
-    {
-        tmp = tmp->next;
-        k++;
-    }
-    // printf("start = %d | end = %d\n", i, k);
-    return ((i > k) ? k : i);
+    return (i);
 }
 
-void        lemin_init(t_lemin *lemin, char *str[])
+void            init_attributes(t_lemin *lemin)
 {
-    g_id = 0;
+    lemin->ants = 0;
+    lemin->size = 0;
     lemin->count = 0;
+    lemin->final = 0;
+    lemin->start = 0;
+    lemin->str = NULL;
+    lemin->node = NULL;
+    lemin->rooms = NULL;
+    lemin->links = NULL;
+    lemin->paths = NULL;
+    lemin->queue = NULL;
+    lemin->parent = NULL;
+}
+
+void            lemin_init(t_lemin *lemin)
+{
+    char    **str;
+
+    g_id = 0;
+    str = lemin->str;
     lemin->ants = get_ants(str[0]);
     lemin->rooms = get_rooms(&str);
-    lemin->links = get_links(lemin->rooms, str);
-    lemin->node = lemin->rooms->hroom;
+    lemin->node = create_node(lemin->rooms);
+    if (!lemin->rooms || !lemin->node)
+        ft_error2(lemin, ERR);
+    if ((lemin->links = get_links(lemin, str)) == NULL)
+        ft_error2(lemin, ERR);
+    str = NULL;
     lemin->start = lemin->rooms->start->id;
     lemin->final = lemin->rooms->end->id;
-    lemin->size = get_size_path(lemin->links, lemin->start, lemin->final);
+    lemin->size = get_countpath(lemin);
 }

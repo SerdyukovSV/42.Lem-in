@@ -19,7 +19,7 @@ static char	**lem_split(char *str)
 
 	i = ft_wordcount(str, '\n');
 	if (!(tmp = malloc(sizeof(char *) * (i + 1))))
-		ft_error(ERR);
+		return (NULL);
 	i = 0;
 	while (*str)
 	{
@@ -34,27 +34,29 @@ static char	**lem_split(char *str)
 	return (tmp);
 }
 
-char		**lemin_read(char *av[])
+char		**lemin_read()
 {
 	char	str[BUFF_SIZE + 1];
 	char	*s1;
 	char	*s2;
 	int		ret;
-	int		fd;
 
-	if ((fd = open(av[1], O_RDONLY)) == -1)
-		ft_error(ERR);
 	s1 = NULL;
-	while ((ret = read(fd, str, BUFF_SIZE)) > 0)
+	while ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) > 0)
 	{
 		str[ret] = '\0';
 		if (!s1)
-			s1 = ft_strdup(str);
+		{
+			if ((s1 = ft_strdup(str)) == NULL)
+				return (NULL);
+		}
 		else
 		{
 			s2 = s1;
 			s1 = ft_strjoin(s2, str);
 			free(s2);
+			if (s1 == NULL)
+				return (NULL);
 		}
 	}
 	return (lem_split(s1));

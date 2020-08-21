@@ -1,22 +1,5 @@
 #include "../includes/lemin.h"
 
-void    ft_error(int errcode)
-{
-    static char *err[] = {
-        [ERR] = "ERROR",
-        [NOARG] = "missing argument",
-        [INVDLINK] = "Invalid link",
-        [INVDCOMM] = "Invalid command",
-        [INVDROOM] = "Invalid room",
-        [NOPATH] = "No paths"
-    };
-    if (errcode >= 0)
-        printf("%s: %s\n", !errcode ? "" : err[0], err[errcode]);
-    else
-        perror(err[errcode]);
-    exit(EXIT_FAILURE);
-}
-
 void print_paths_all(t_path **paths)
 {
     int i;
@@ -104,29 +87,30 @@ void print_path(t_path *path)
     }
 }
 
-int main(int ac, char **av)
+int main()
 {
     t_lemin lemin;
-    char    **str;
 
-    if (ac < 2)
-        ft_error(NOARG);
-    str = lemin_read(av);
-    if (lemin_validate(str))
+    init_attributes(&lemin);
+    if (!(lemin.str = lemin_read()) || lemin_validate(lemin.str))
     {
-        lm_strdel(str);
+        lm_strdel(lemin.str);
         ft_error(ERR);
     }
-    lemin_init(&lemin, &*str);
+    lemin_init(&lemin);
+    int j = -1;
+    while (lemin.str[++j])
+        printf("\e[95m%s\e[0m\n", lemin.str[j]);
+
     get_paths(&lemin);
-    set_flow(&lemin, get_flow(lemin.paths, lemin.ants));
-    // duplicate_paths(lemin.paths);
-    printf("-------------paths-------------\n");
-    printf("Line #%d\n", get_flow(lemin.paths, lemin.ants));
-    int i = -1;
-    while (lemin.paths[++i])
-        print_path(lemin.paths[i]);
+    printf("step_1\n");
+    // printf("-------------paths-------------\n");
+    // printf("Line #%d\n", get_flow(lemin.paths, lemin.ants));
+    // int i = -1;
+    // while (lemin.paths[++i])
+    //     print_path(lemin.paths[i]);
     lemin.size = lemin.ants;
     lemin_play(&lemin);
+    // lemin_free(&lemin);
     return (0);
 }

@@ -66,7 +66,6 @@ typedef struct      s_links
 
 typedef struct      s_rooms
 {
-    t_node          **hroom;
     t_node          *head;
     t_node          *start;
     t_node          *end;
@@ -79,13 +78,14 @@ typedef struct      s_lemin
     int             start;
     int             final;
     t_rooms         *rooms;
-    t_node          **node;
     t_links         *links;
-    t_queue         *queue;
+    t_node          **node;
     t_path          **paths;
+    t_queue         *queue;
     int             *parent;
     int             size;
     int             count;
+    char            **str;
 }                   t_lemin;
 
 
@@ -93,11 +93,12 @@ typedef struct      s_lemin
 ** initialization lemin
 */
 
-void        lemin_init(t_lemin *lemin, char *str[]);
-char        **lemin_read(char *av[]);
+void        init_attributes(t_lemin *lemin);
+void        lemin_init(t_lemin *lemin);
+char        **lemin_read();
 int         get_ants(char *str);
 t_rooms     *get_rooms(char ***str);
-t_links     *get_links(t_rooms *room, char **str);
+t_links     *get_links(t_lemin *lemin, char **str);
 t_node      *room_dup(t_node *room);
 int         lemin_validate(char *str[]);
 
@@ -115,11 +116,6 @@ t_path      *search_path(t_lemin *lemin, t_node *src);
 void        rebuildgraph(t_lemin *lemin, t_path *path, int set);
 void        set_attributes(t_lemin *lemin, t_path **paths);
 void        set_capacity(t_lemin *lemin, t_node *src, t_node *dst, int set);
-
-/*
-** choice paths & utility
-*/
-
 void        sort_paths(t_path **paths);
 
 /*
@@ -127,15 +123,18 @@ void        sort_paths(t_path **paths);
 */
 
 int         get_flow(t_path **paths, int ants);
-void        set_flow(t_lemin *lemin, int flow);
 void        lemin_play(t_lemin *lemin);
 
 /*
-** processing errors
+** error management
 */
+void        ft_error2(t_lemin *lemin, int code);
 
-void        ft_error(int errcode);
+void        ft_error(int code);
 void        lm_strdel(char **str);
+void        links_free(t_links *links);
+void        rooms_free(t_rooms *rooms);
+void        lemin_free(t_lemin *lemin);
 
 ////////
 void print_path(t_path *path);

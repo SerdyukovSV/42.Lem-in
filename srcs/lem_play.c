@@ -1,5 +1,27 @@
 #include "../includes/lemin.h"
 
+static void     set_flow(t_lemin *lemin, int flow)
+{
+    int flow_ant;
+    int ants;
+    int i;
+
+    i = 0;
+    flow_ant = 0;
+    ants = lemin->ants;
+    while (lemin->paths[i])
+    {
+        lemin->paths[i]->flow = 0;
+        flow_ant = flow - lemin->paths[i]->len + 2;
+        if (flow_ant < ants)
+            lemin->paths[i]->flow = flow_ant;
+        else
+            lemin->paths[i]->flow = ants;
+        ants -= lemin->paths[i]->flow;
+        i++;
+    }
+}
+
 static t_node   *get_next(t_lemin *lemin, t_node *ants)
 {
     // printf("\e[93mget_next\e[0m");
@@ -61,6 +83,7 @@ void            lemin_play(t_lemin *lemin)
     line = 0;
     ft_bzero(fin, sizeof(int) * lemin->ants);
     ft_bzero(ants, sizeof(t_node *) * (lemin->ants + 1));
+    set_flow(lemin, get_flow(lemin->paths, lemin->ants));
     while (lemin->size)
     {
         // system("sleep 0.2");

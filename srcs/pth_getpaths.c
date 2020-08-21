@@ -73,7 +73,6 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
     int     size;
 
     size = sizeof(t_path *) * (lemin->size + 1);
-    // printf("start = %s\n", start->name);
     lemin->queue->front = -1;
     lemin->queue->rear = -1;
     ft_bzero(lemin->parent, sizeof(int) * lemin->rooms->total);
@@ -87,10 +86,12 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
             set_attributes(lemin, lemin->paths);
         }
         else
+        {
+            rebuildgraph(lemin, tmp, DEL);
             return ;
-            // rebuildgraph(lemin, tmp, DEL);
-        ///// free path from reconstruct_path!!!!!!!!!!
+        }
         get_shortpaths(lemin, lemin->rooms->start);
+        ///// free path from reconstruct_path!!!!!!!!!!
     }
     else
         return ;
@@ -98,12 +99,15 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
 
 void            get_paths(t_lemin* lemin)
 {
+    // printf("get_paths\n");
+    int     visited[lemin->rooms->total];
     int     parent[lemin->rooms->total];
     t_node  *start;
     t_queue queue;
 
     lemin->queue = &queue;
     lemin->parent = parent;
+    lemin->links->visited = visited;
     if (!(lemin->paths = malloc(sizeof(t_path *) * (lemin->size + 1))))
         ft_error(ERR);
     ft_bzero(lemin->paths, sizeof(t_path *) * lemin->size * 1);

@@ -25,7 +25,7 @@ SRC_DIR	:= ./srcs/
 SRCS 	:= main.c lem_read.c lem_validate.c \
 			lem_init.c get_ants.c get_rooms.c get_links.c \
 			pth_getpaths.c pth_search_path.c pth_utility.c \
-			lm_flow.c lm_play.c
+			lem_play.c lem_errors.c
 
 # Object files
 OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))

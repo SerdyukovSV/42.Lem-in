@@ -1,29 +1,22 @@
 #include "../includes/lemin.h"
 
-static void create_hroom(t_rooms *room)
+static int      set_command(char *s, int pos)
 {
-    t_node  **hroom;
-    t_node  *head;
-
-    head = room->head;
-    if (!(hroom = malloc(sizeof(t_node *) * room->total + 1)))
-        ft_error(ERR);
-    while (head)
-    {
-        hroom[head->id] = head;
-        head = head->next;
-    }
-    hroom[room->total] = NULL;
-    room->hroom = hroom;
+    if (!ft_strcmp(s, "##start"))
+        return (1);
+    else if (!ft_strcmp(s, "##end"))
+        return (2);
+    return (pos);
 }
 
-static void fill_room(t_node *room, char *str)
+static t_node *fill_room(t_node *room, char *str)
 {
     char **tmp;
 
     if (!(tmp = ft_strsplit(str, ' ')))
-        ft_error(ERR);
-    room->name = ft_strdup(tmp[0]);
+        return (NULL);
+    if (!(room->name = ft_strdup(tmp[0])))
+        return (NULL);
     room->x = ft_atoi(tmp[1]);
     room->y = ft_atoi(tmp[2]);
     room->ant = 0;
@@ -32,20 +25,25 @@ static void fill_room(t_node *room, char *str)
     room->in_path = 0;
     room->id = g_id++;
     lm_strdel(tmp);
+    return (room);
 }
 
-static void creat_room(t_rooms *rooms, char *str, int pos)
+static t_rooms *creat_room(t_rooms *rooms, char *str, int pos)
 {
     t_node  *tmp;
 
     if (!(tmp = malloc(sizeof(t_node))))
-        ft_error(ERR);
-    fill_room(tmp, str);
-    (pos == 1) ? (rooms->start = tmp) : 0;
-    (pos == 2) ? (rooms->end = tmp) : 0;
+        return (NULL);
+    if (fill_room(tmp, str) == NULL)
+        return (NULL);
+    if (pos == 1)
+        rooms->start = tmp;
+    else if (pos == 2)
+        rooms->end = tmp;
     tmp->next = rooms->head;
     rooms->head = tmp;
     rooms->total++;
+    return (rooms);
 }
 
 t_rooms     *get_rooms(char ***str)
@@ -54,25 +52,22 @@ t_rooms     *get_rooms(char ***str)
     int             pos;
 
     if (!(rooms = malloc(sizeof(t_rooms))))
-        ft_error(ERR);
+        return (NULL);
     pos = 0;
     rooms->total = 0;
     rooms->head = NULL;
     while (*(*str)++)
     {
         if ((*str)[0][0] == '#')
-        {
-            if ((*str)[0][1] == '#')
-                pos = (*str)[0][2] == 's' ? 1 : 2;
-        }
+            pos = set_command((*str)[0], pos);
         else if (ft_wordcount((*str)[0], ' ') == 3)
         {
-            creat_room(rooms, (*str)[0], pos);
+            if (creat_room(rooms, (*str)[0], pos) == NULL)
+                return (NULL);
             pos = 0;
         }
         else
             break ;
     }
-    create_hroom(rooms);
     return (rooms);
 }
