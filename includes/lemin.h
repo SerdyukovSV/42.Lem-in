@@ -114,23 +114,23 @@ t_path      *search_path(t_lemin *lemin, t_node *src);
 */
 
 void        rebuildgraph(t_lemin *lemin, t_path *path, int set);
+void        reset_graph(t_lemin *lemin);
 void        set_attributes(t_lemin *lemin, t_path **paths);
 void        set_capacity(t_lemin *lemin, t_node *src, t_node *dst, int set);
 void        sort_paths(t_path **paths);
+int         get_flow(t_path **paths, int ants);
 
 /*
-** get flow for paths & run ants
+** run ants
 */
 
-int         get_flow(t_path **paths, int ants);
 void        lemin_play(t_lemin *lemin);
 
 /*
 ** error management
 */
-void        ft_error2(t_lemin *lemin, int code);
 
-void        ft_error(int code);
+void        ft_error(t_lemin *lemin, int code);
 void        lm_strdel(char **str);
 void        links_free(t_links *links);
 void        rooms_free(t_rooms *rooms);

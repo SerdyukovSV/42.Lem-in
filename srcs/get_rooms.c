@@ -25,6 +25,8 @@ static t_node *fill_room(t_node *room, char *str)
     room->in_path = 0;
     room->id = g_id++;
     lm_strdel(tmp);
+    free(tmp);
+    tmp = NULL;
     return (room);
 }
 

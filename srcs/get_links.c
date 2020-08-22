@@ -56,30 +56,30 @@ static void     *creat_links(t_lemin *lemin, t_links *links, char *str)
     id_room[0] = get_id(lemin->rooms->head, room[0]);
     id_room[1] = get_id(lemin->rooms->head, room[1]);
     if (!(addlinks(links, lemin->node, id_room[0], id_room[1])))
+    {
+        lm_strdel(room);
+        free(room);
         return (NULL);
+    }
     lm_strdel(room);
+    free(room);
     return ((t_links *)links);
 }
 
 t_links *get_links(t_lemin *lemin, char **str)
 {
     t_links    *links;
-    int         i;
 
-    i = -1;
     if (!(links = malloc(sizeof(t_links))))
         return (NULL);
-    if (!(links->adjace = malloc(sizeof(t_node *) * lemin->rooms->total)))
+    if (!(links->adjace = malloc(sizeof(t_node *) * (lemin->rooms->total + 1))))
         return (NULL);
-    ft_bzero(links->adjace, sizeof(t_node *) * lemin->rooms->total);
+    ft_bzero(links->adjace, sizeof(t_node *) * lemin->rooms->total + 1);
     while (str[0])
     {
         if (str[0][0] != '#')
             if (creat_links(lemin, links, str[0]) == NULL)
-            {
-                links_free(links);
                 return (NULL);
-            }
         str++;
     }
     return (links);

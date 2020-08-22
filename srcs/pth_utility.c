@@ -1,5 +1,13 @@
 #include "../includes/lemin.h"
 
+void    reset_graph(t_lemin *lemin)
+{
+    lemin->queue->front = -1;
+    lemin->queue->rear = -1;
+    ft_bzero(lemin->parent, sizeof(int) * lemin->rooms->total);
+    ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
+}
+
 int     get_flow(t_path **paths, int ants)
 {
     int ln;

@@ -21,11 +21,10 @@ static t_path   *add_path(t_lemin *lemin, t_node *current)
     t_path *path;
 
     if (!(path = malloc(sizeof(t_path))))
-        ft_error(ERR);
+        ft_error(lemin, ERR);
     path->len = 0;
     path->node[path->len++] = lemin->rooms->start;
     path->node[path->len++] = current;
-    // printf("node = %s\n", lemin->node[start->id]->name);
     current = lemin->links->adjace[current->id];
     while (current)
     {
@@ -72,11 +71,8 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
     t_path  *tmp;
     int     size;
 
+    reset_graph(lemin);
     size = sizeof(t_path *) * (lemin->size + 1);
-    lemin->queue->front = -1;
-    lemin->queue->rear = -1;
-    ft_bzero(lemin->parent, sizeof(int) * lemin->rooms->total);
-    ft_bzero(lemin->links->visited, sizeof(int) * lemin->rooms->total);
     if ((tmp = search_path(lemin, start)))
     {
         rebuildgraph(lemin, tmp, SET);
@@ -84,17 +80,16 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
         {
             ft_memcpy(lemin->paths, paths, size);
             set_attributes(lemin, lemin->paths);
+            free(tmp);
         }
         else
         {
             rebuildgraph(lemin, tmp, DEL);
+            free(tmp);
             return ;
         }
         get_shortpaths(lemin, lemin->rooms->start);
-        ///// free path from reconstruct_path!!!!!!!!!!
     }
-    else
-        return ;
 }
 
 void            get_paths(t_lemin* lemin)
@@ -109,8 +104,8 @@ void            get_paths(t_lemin* lemin)
     lemin->parent = parent;
     lemin->links->visited = visited;
     if (!(lemin->paths = malloc(sizeof(t_path *) * (lemin->size + 1))))
-        ft_error(ERR);
-    ft_bzero(lemin->paths, sizeof(t_path *) * lemin->size * 1);
+        ft_error(lemin, ERR);
+    ft_bzero(lemin->paths, sizeof(t_path *) * (lemin->size + 1));
     start = lemin->links->adjace[lemin->start];
     while (start)
     {
@@ -118,5 +113,7 @@ void            get_paths(t_lemin* lemin)
         start = start->next;
     }
     get_shortpaths(lemin, lemin->rooms->start);
+    if (!(*lemin->paths))
+        ft_error(lemin, NOPATH);
     sort_paths(lemin->paths);
 }

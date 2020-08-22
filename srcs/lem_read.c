@@ -17,6 +17,8 @@ static char	**lem_split(char *str)
 	char	**tmp;
 	int		i;
 
+	if (!str)
+		return (NULL);
 	i = ft_wordcount(str, '\n');
 	if (!(tmp = malloc(sizeof(char *) * (i + 1))))
 		return (NULL);

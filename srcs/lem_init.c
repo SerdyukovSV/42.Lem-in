@@ -60,11 +60,11 @@ void            lemin_init(t_lemin *lemin)
     lemin->rooms = get_rooms(&str);
     lemin->node = create_node(lemin->rooms);
     if (!lemin->rooms || !lemin->node)
-        ft_error2(lemin, ERR);
+        ft_error(lemin, ERR);
     if ((lemin->links = get_links(lemin, str)) == NULL)
-        ft_error2(lemin, ERR);
+        ft_error(lemin, ERR);
     str = NULL;
-    lemin->start = lemin->rooms->start->id;
-    lemin->final = lemin->rooms->end->id;
     lemin->size = get_countpath(lemin);
+    lemin->final = lemin->rooms->end->id;
+    lemin->start = lemin->rooms->start->id;
 }

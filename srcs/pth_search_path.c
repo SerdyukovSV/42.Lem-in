@@ -4,7 +4,8 @@ static void     enqueue(t_queue* queue, t_node *vert)
 {
     // printf("enqueue\n");
     if (queue->rear == SIZE-1)
-        ft_error(ERR);
+        exit(EXIT_FAILURE);
+        // ft_error(ERR);
     else
     {
         if(queue->front == -1)

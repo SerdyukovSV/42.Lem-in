@@ -86,8 +86,6 @@ void            lemin_play(t_lemin *lemin)
     set_flow(lemin, get_flow(lemin->paths, lemin->ants));
     while (lemin->size)
     {
-        // system("sleep 0.2");
-        // printf("\e[91msize = %d\e[0m\n", lemin->size);
         i = -1;
         get_start(lemin, ants);
         while (ants[++i])

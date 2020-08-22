@@ -90,27 +90,20 @@ void print_path(t_path *path)
 int main()
 {
     t_lemin lemin;
+    int     ret;
 
+    ret = 0;
     init_attributes(&lemin);
-    if (!(lemin.str = lemin_read()) || lemin_validate(lemin.str))
-    {
-        lm_strdel(lemin.str);
-        ft_error(ERR);
-    }
+    if (!(lemin.str = lemin_read()))
+        ft_error(&lemin, ERR);
+    if ((ret = lemin_validate(lemin.str)))
+        ft_error(&lemin, ret);
     lemin_init(&lemin);
-    int j = -1;
-    while (lemin.str[++j])
-        printf("\e[95m%s\e[0m\n", lemin.str[j]);
 
     get_paths(&lemin);
-    printf("step_1\n");
-    // printf("-------------paths-------------\n");
-    // printf("Line #%d\n", get_flow(lemin.paths, lemin.ants));
-    // int i = -1;
-    // while (lemin.paths[++i])
-    //     print_path(lemin.paths[i]);
+
     lemin.size = lemin.ants;
     lemin_play(&lemin);
-    // lemin_free(&lemin);
-    return (0);
+    lemin_free(&lemin);
+    return (EXIT_SUCCESS);
 }
