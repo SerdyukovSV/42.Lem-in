@@ -24,7 +24,7 @@ static t_node *fill_room(t_node *room, char *str)
     room->is_start = 0;
     room->in_path = 0;
     room->id = g_id++;
-    lm_strdel(tmp);
+    ft_matrix_del((void **)tmp);
     free(tmp);
     tmp = NULL;
     return (room);

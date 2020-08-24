@@ -19,7 +19,7 @@ FILES		:= 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_memchr.c ft_memcmp
 				ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c \
 				ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr_fd.c ft_putnbr.c ft_putchar_fd.c \
 				ft_putstr_fd.c ft_putendl_fd.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_iscntrl.c ft_isgraph.c ft_isblank.c \
-				ft_islower.c ft_isupper.c get_next_line.c ft_strrev.c ft_dectostr.c ft_strchrpos.c ft_power.c ft_wordcount.c\
+				ft_islower.c ft_isupper.c get_next_line.c ft_strrev.c ft_dectostr.c ft_strchrpos.c ft_power.c ft_wordcount.c ft_matrix_del.c \
 				# pft/ft_printf.c pft/parse_specifier.c pft/get_param.c pft/print_txt.c pft/print_hexadecimal.c pft/print_nbr.c pft/signed_nbr.c pft/unsigned_nbr.c \
 				# pft/print_octal.c pft/print_float.c pft/util_fl/convers_fl.c pft/util_fl/match_fl.c
 # OBJ		= $(addprefix obj/, $(notdir $(FILES:.c=.o)))

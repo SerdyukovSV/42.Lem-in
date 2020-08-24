@@ -1,31 +1,7 @@
 #include "../includes/lemin.h"
 
-static char *get_error(int code)
-{
-    static char *error[] = {
-        [ERR] = "ERROR",
-        [NOARG] = "missing argument",
-        [INVDLINK] = "Invalid link",
-        [INVDCOMM] = "Invalid command",
-        [INVDROOM] = "Invalid room",
-        [NOPATH] = "No paths"
-    };
-    return (error[code]);
-}
-
-void        lm_strdel(char **str)
-{
-    printf("\e[91mlm_strdel\e[0m\n");
-    while (*str != NULL)
-    {
-        free(*str);
-        str += 1;
-    }
-}
-
 void        links_free(t_links *links)
 {
-    // printf("\e[91mlinks_free\e[0m\n");
     t_node  *adjacent;
     t_node  *tmp;
     int     i;
@@ -46,13 +22,11 @@ void        links_free(t_links *links)
         links->adjace[i] = NULL;
     }
     free(links->adjace);
-    // free(links);
     links->visited = NULL;
 }
 
 void        rooms_free(t_rooms *rooms)
 {
-    // printf("\e[91mrooms_free\e[0m\n");
     t_node *tmp;
 
     tmp = NULL;
@@ -64,18 +38,26 @@ void        rooms_free(t_rooms *rooms)
         tmp->name = NULL;
         free(tmp);
     }
-    // free(rooms);
     rooms->head = NULL;
     rooms->start = NULL;
     rooms->end = NULL;
     tmp = NULL;
 }
 
-void        lemin_free(t_lemin *lemin)
+void        paths_free(t_path **paths)
 {
-    printf("\e[91mlemin_free\e[0m\n");
     int i;
 
+    if (paths)
+    {
+        i = -1;
+        while (paths[++i])
+            free(paths[i]);
+    }
+}
+
+void        lemin_free(t_lemin *lemin)
+{
     if (lemin->rooms)
     {
         rooms_free(lemin->rooms);
@@ -90,9 +72,7 @@ void        lemin_free(t_lemin *lemin)
         free(lemin->node);
     if (lemin->paths)
     {
-        i = -1;
-        while (lemin->paths[++i])
-            free(lemin->paths[i]);
+        paths_free(lemin->paths);
         free(lemin->paths);
     }
     if (lemin->str)
@@ -104,11 +84,19 @@ void        lemin_free(t_lemin *lemin)
 
 void        ft_error(t_lemin *lemin, int code)
 {
-    // printf("ft_error\n");
+    static char *error[] = {
+        [ERR] = "ERROR",
+        [NOARG] = "missing argument",
+        [INVDLINK] = "Invalid link",
+        [INVDCOMM] = "Invalid command",
+        [INVDROOM] = "Invalid room",
+        [NOPATH] = "No paths"
+    };
+
     lemin_free(lemin);
     init_attributes(lemin);
     if (code != ERR)
-        printf("ERROR: %s\n", get_error(code));
+        printf("ERROR: %s\n", error[code]);
     else
         perror("ERROR");
     exit(EXIT_FAILURE);

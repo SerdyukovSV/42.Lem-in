@@ -50,7 +50,6 @@ static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
     int     i;
 
     i = 0;
-    // ft_bzero(paths, sizeof(t_path *) * (lemin->size + 1));
     start = lemin->links->adjace[lemin->start];
     while (start)
     {
@@ -60,7 +59,11 @@ static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
     }
     paths[i] = NULL;
     if (is_best_paths(lemin, paths))
+    {
+        paths_free(lemin->paths);
         return (paths);
+    }
+    paths_free(paths);
     return (NULL);
 }
 

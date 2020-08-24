@@ -131,9 +131,9 @@ void        lemin_play(t_lemin *lemin);
 */
 
 void        ft_error(t_lemin *lemin, int code);
-void        lm_strdel(char **str);
 void        links_free(t_links *links);
 void        rooms_free(t_rooms *rooms);
+void        paths_free(t_path **paths);
 void        lemin_free(t_lemin *lemin);
 
 ////////

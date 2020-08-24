@@ -8,7 +8,7 @@ static t_node   **create_node(t_rooms *room)
     if (!room)
         return (NULL);
     head = room->head;
-    if (!(node = malloc(sizeof(t_node *) * room->total + 1)))
+    if (!(node = malloc(sizeof(t_node *) * (room->total + 1))))
         return (NULL);
     while (head)
     {
@@ -16,6 +16,7 @@ static t_node   **create_node(t_rooms *room)
         head = head->next;
     }
     node[room->total] = NULL;
+    head = NULL;
     return (node);
 }
 
@@ -58,6 +59,7 @@ void            lemin_init(t_lemin *lemin)
     str = lemin->str;
     lemin->ants = get_ants(str[0]);
     lemin->rooms = get_rooms(&str);
+    printf("step_1\n");
     lemin->node = create_node(lemin->rooms);
     if (!lemin->rooms || !lemin->node)
         ft_error(lemin, ERR);
