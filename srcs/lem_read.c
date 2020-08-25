@@ -36,7 +36,7 @@ static char	**lem_split(char *str)
 	return (tmp);
 }
 
-char		**lemin_read()
+char		**lemin_read(t_lemin *lemin)
 {
 	char	str[BUFF_SIZE + 1];
 	char	*s1;
@@ -44,22 +44,22 @@ char		**lemin_read()
 	int		ret;
 
 	s1 = NULL;
+	ft_bzero(str, sizeof(char) * (BUFF_SIZE + 1));
+	if ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) == 0)
+		ft_error(lemin, EMPTYFILE);
+	str[ret] = '\0';
+	if ((s1 = ft_strdup(str)) == NULL)
+		return (NULL);
 	while ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) > 0)
 	{
 		str[ret] = '\0';
-		if (!s1)
-		{
-			if ((s1 = ft_strdup(str)) == NULL)
-				return (NULL);
-		}
-		else
-		{
-			s2 = s1;
-			s1 = ft_strjoin(s2, str);
-			free(s2);
-			if (s1 == NULL)
-				return (NULL);
-		}
+		s2 = s1;
+		s1 = ft_strjoin(s2, str);
+		free(s2);
+		if (s1 == NULL)
+			return (NULL);
 	}
+	if (is_emptyline(str, BUFF_SIZE + 1))
+		ft_error(lemin, EMPTYLINE);
 	return (lem_split(s1));
 }

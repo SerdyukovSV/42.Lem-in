@@ -86,17 +86,22 @@ void        ft_error(t_lemin *lemin, int code)
 {
     static char *error[] = {
         [ERR] = "ERROR",
-        [NOARG] = "missing argument",
+        [EMPTYFILE] = "Empty file",
         [INVDLINK] = "Invalid link",
-        [INVDCOMM] = "Invalid command",
-        [INVDROOM] = "Invalid room",
-        [NOPATH] = "No paths"
+        [NOPATH] = "No paths",
+        [DUPCOMM] = "Duplicate command",
+        [DUPROOM] = "Duplicate room",
+        [INVDLINE] = "Invalid line",
+        [INVDANTS] = "Invalid number ants",
+        [NOTSRCSINK] = "Start or final not specified",
+        [NOARG] = "Missing arguments",
+        [EMPTYLINE] = "Empty line"
     };
 
     lemin_free(lemin);
     init_attributes(lemin);
     if (code != ERR)
-        printf("ERROR: %s\n", error[code]);
+        printf("\e[91mERROR: %s\e[0m\n", error[code]);
     else
         perror("ERROR");
     exit(EXIT_FAILURE);

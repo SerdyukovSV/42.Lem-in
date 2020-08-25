@@ -12,18 +12,27 @@
 
 #include "../includes/lemin.h"
 
-int get_ants(char *str)
+int get_ants(t_lemin *lemin, char **str)
 {
-    int i;
+    int ret;
     
-    i = 0;
-    while (str[i])
+    ret = 0;
+    while (str[lemin->count])
     {
-        if (!ft_isdigit(str[i]))
+        if (is_command(str[lemin->count]) == 1)
+            ;
+        else if ((ret = is_ant(str[lemin->count])))
         {
-            return (0);
+            lemin->ants = ft_atoi(str[lemin->count]);
+            if (lemin->ants == 0 && ret > 1)
+                return (0);
+            return (lemin->ants);
         }
-        i++;
+        else
+            break ;
+        lemin->count++;
     }
-    return (ft_atoi(str));
+    // if (!str[lemin->count][0])
+    //         ft_error(lemin, INVDLINE);
+    return (0);
 }

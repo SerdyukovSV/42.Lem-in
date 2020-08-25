@@ -70,21 +70,24 @@ void print_paths(t_path **paths)
 //     }
 // }
 
-int main()
+int main(int ac, char **av)
 {
     t_lemin lemin;
     int     ret;
 
     ret = 0;
+    if (ac > 1)
+    {
+        ft_putendl("Usage:");
+        ft_putstr(av[0]);
+        ft_putendl(" < maps/file.map");
+        return (0);
+    }
     init_attributes(&lemin);
-    if (!(lemin.str = lemin_read()))
+    if (!(lemin.str = lemin_read(&lemin)))
         ft_error(&lemin, ERR);
-    if ((ret = lemin_validate(lemin.str)))
-        ft_error(&lemin, ret);
     lemin_init(&lemin);
-
-    printf("step_2\n");
-
+    // printf("step_4\n");
     get_paths(&lemin);
     lemin.size = lemin.ants;
     lemin_play(&lemin);

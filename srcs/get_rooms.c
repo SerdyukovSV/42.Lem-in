@@ -1,22 +1,25 @@
 #include "../includes/lemin.h"
 
-static int      set_command(char *s, int pos)
+static int      set_command(t_rooms *rooms, int ret)
 {
-    if (!ft_strcmp(s, "##start"))
-        return (1);
-    else if (!ft_strcmp(s, "##end"))
-        return (2);
-    return (pos);
+    if ((ret == START && rooms->start) || (ret == END && rooms->end))
+        return (DUPCOMM);
+    rooms->pos = ret;
+    return (ret);
 }
 
-static t_node *fill_room(t_node *room, char *str)
+static t_node   *fill_room(t_node *room, char *str)
 {
     char **tmp;
 
     if (!(tmp = ft_strsplit(str, ' ')))
         return (NULL);
     if (!(room->name = ft_strdup(tmp[0])))
+    {
+        ft_matrix_del((void **)tmp);
+        free(tmp);
         return (NULL);
+    }
     room->x = ft_atoi(tmp[1]);
     room->y = ft_atoi(tmp[2]);
     room->ant = 0;
@@ -30,46 +33,58 @@ static t_node *fill_room(t_node *room, char *str)
     return (room);
 }
 
-static t_rooms *creat_room(t_rooms *rooms, char *str, int pos)
+static t_rooms  *creat_room(t_rooms *rooms, char *str)
 {
     t_node  *tmp;
 
     if (!(tmp = malloc(sizeof(t_node))))
         return (NULL);
     if (fill_room(tmp, str) == NULL)
+    {
+        free(tmp);
         return (NULL);
-    if (pos == 1)
+    }
+    if (rooms->pos == START)
         rooms->start = tmp;
-    else if (pos == 2)
+    else if (rooms->pos == END)
         rooms->end = tmp;
     tmp->next = rooms->head;
     rooms->head = tmp;
     rooms->total++;
+    rooms->pos = 0;
     return (rooms);
 }
 
-t_rooms     *get_rooms(char ***str)
+static void     init_rooms(t_rooms *rooms)
 {
-    t_rooms         *rooms;
-    int             pos;
-
-    if (!(rooms = malloc(sizeof(t_rooms))))
-        return (NULL);
-    pos = 0;
-    rooms->total = 0;
     rooms->head = NULL;
-    while (*(*str)++)
+    rooms->start = NULL;
+    rooms->end = NULL;
+    rooms->total = 0;
+    rooms->pos = 0;
+}
+
+t_rooms         *get_rooms(t_lemin *lemin, char **str)
+{
+    int ret;
+
+    if (!(lemin->rooms = malloc(sizeof(t_rooms))))
+        ft_error(lemin, ERR);
+    init_rooms(lemin->rooms);
+    while (str[++lemin->count])
     {
-        if ((*str)[0][0] == '#')
-            pos = set_command((*str)[0], pos);
-        else if (ft_wordcount((*str)[0], ' ') == 3)
+        if ((ret = is_command(str[lemin->count])))
         {
-            if (creat_room(rooms, (*str)[0], pos) == NULL)
-                return (NULL);
-            pos = 0;
+            if (set_command(lemin->rooms, ret) == DUPCOMM)
+                ft_error(lemin, DUPCOMM);
+        }
+        else if (is_room(str[lemin->count]))
+        {
+            if (!creat_room(lemin->rooms, str[lemin->count]))
+                ft_error(lemin, ERR);
         }
         else
             break ;
     }
-    return (rooms);
+    return (lemin->rooms);
 }

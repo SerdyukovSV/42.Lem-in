@@ -58,23 +58,10 @@ int main(int ac, char **av)
 
     // str = lm_read();
     char	str[BUFF_SIZE + 1];
-	char	*s1;
     int		ret;
 
-	s1 = NULL;
-    // printf("step_1\n");
-	// ret = read(STDIN_FILENO, str, BUFF_SIZE);
-	printf("%s\n", str);
-	printf("ac = %d\n", ac);
-	ret = 0;
-	while (av[++ret])
-		printf("%s\n", av[ret]);
-    // if (STDIN_FILENO)
-    // {
-        // printf("SUCCESS\n");
-	    // while ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) > 0)
-        //     printf("%s\n", str);
-    // }
-    printf("step_2\n");
+	ret = ac;
+	ret = read(STDIN_FILENO, str, 0);
+	printf("ac = %d\n", ret);
     return (0);
 }

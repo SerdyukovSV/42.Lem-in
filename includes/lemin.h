@@ -9,14 +9,21 @@
 */
 
 # define ERR            (0)
-# define NOARG          (1)
+# define EMPTYFILE      (1)
 # define INVDLINK       (2)
-# define INVDCOMM       (3)
-# define INVDROOM       (4)
-# define NOPATH         (5)
+# define NOPATH         (3)
+# define DUPCOMM        (4)
+# define DUPROOM        (5)
+# define INVDLINE       (6)
+# define INVDANTS       (7)
+# define NOTSRCSINK     (8)
+# define NOARG          (9)
+# define EMPTYLINE      (10)
 
-# define START          "start"
-# define END            "end"
+
+# define START          (11)
+# define END            (12)
+
 # define SIZE           (16384)
 
 # define SET            (1)
@@ -70,6 +77,7 @@ typedef struct      s_rooms
     t_node          *start;
     t_node          *end;
     int             total;
+    int             pos;
 }                   t_rooms;
 
 typedef struct      s_lemin
@@ -95,12 +103,23 @@ typedef struct      s_lemin
 
 void        init_attributes(t_lemin *lemin);
 void        lemin_init(t_lemin *lemin);
-char        **lemin_read();
-int         get_ants(char *str);
-t_rooms     *get_rooms(char ***str);
+char        **lemin_read(t_lemin *lemin);
+// int         get_ants(char *str);
+int         get_ants(t_lemin *lemin, char **str);
+t_rooms     *get_rooms(t_lemin *lemin, char **str);
 t_links     *get_links(t_lemin *lemin, char **str);
 t_node      *room_dup(t_node *room);
 int         lemin_validate(char *str[]);
+
+/*
+** validate lemin
+*/
+
+int         is_ant(char *str);
+int         is_room(char *str);
+int         is_link(char *str);
+int         is_command(char *str);
+int         is_emptyline(char *str, int size);
 
 /*
 ** search paths
