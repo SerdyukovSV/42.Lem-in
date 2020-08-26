@@ -20,7 +20,6 @@ t_node          *room_dup(t_node *room)
 
 static int      get_id(t_node *head, char *room)
 {
-    ///переделать head на tail т.к элементы идут с конца, большая потеря времени при переборе узлов
     while (head)
     {
         if (!ft_strcmp(room, head->name))
@@ -80,7 +79,7 @@ t_links *get_links(t_lemin *lemin, char **str)
     ft_bzero(lemin->links->adjace, sizeof(t_node *) * size);
     while (str[lemin->count])
     {
-        if (is_command(str[lemin->count]))
+        if (is_command(str[lemin->count]) == 1)
             ;
         else if (is_link(str[lemin->count]))
         {

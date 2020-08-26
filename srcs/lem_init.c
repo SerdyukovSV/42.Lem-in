@@ -35,24 +35,25 @@ static int      get_countpath(t_lemin *lemin)
     return (i);
 }
 
-static int      check_rooms(t_node **rooms)
+static int      check_rooms(t_node **node)
 {
     int     i;
     int     j;
     int     k;
 
-    i = 0;
-    while (rooms[i])
+    i = -1;
+    while (node[++i])
     {
         k = i;
-        j = 0;
-        while (rooms[j])
+        j = -1;
+        while (node[++j])
         {
-            if (j != k && !ft_strcmp(rooms[j]->name, rooms[k]->name))
+            if (j != k && !ft_strcmp(node[j]->name, node[k]->name))
                 return (DUPROOM);
-            j++;
+            if (j != k && (node[j]->x == node[k]->x) && \
+                                (node[j]->y == node[k]->y))
+                return (DUPCOORD);
         }
-        i++;
     }
     return (0);
 }
@@ -76,13 +77,15 @@ void            init_attributes(t_lemin *lemin)
 
 void            lemin_init(t_lemin *lemin)
 {
-    if (get_ants(lemin, lemin->str) == 0)
+    int ret;
+
+    if ((ret = get_ants(lemin, lemin->str)) == 0)
         ft_error(lemin, INVDANTS);
     lemin->rooms = get_rooms(lemin, lemin->str);
     if (!(lemin->node = create_node(lemin->rooms)))
         ft_error(lemin, ERR);
-    if (check_rooms(lemin->node) == DUPROOM)
-        ft_error(lemin, DUPROOM);
+    if ((ret = check_rooms(lemin->node)) > 0)
+        ft_error(lemin, ret);
     lemin->links = get_links(lemin, lemin->str);
     if (lemin->str[lemin->count])
         ft_error(lemin, INVDLINE);

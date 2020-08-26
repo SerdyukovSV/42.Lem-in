@@ -17,60 +17,7 @@ void print_paths(t_path **paths)
     }
 }
 
-// int  is_duplicate(t_node *src, t_path *dst)
-// {
-//     // printf("\e[93mis_duplicate\e[0m : ");
-//     int i;
-
-//     i = -1;
-//     if (dst)
-//     {
-//         while (++i < dst->len)
-//             if (dst->node[i]->id == src->id)
-//                 return (1);
-//     }
-//     return (0);
-// }
-
-// int  get_duplicate(t_path *src, t_path **all)
-// {
-//     // printf("\e[91mget_duplicate\e[0m\n");
-//     int dup;
-//     int i;
-//     int j;
-
-//     i = 0;
-//     dup = 0;
-//     while (++i < src->len - 1)
-//     {
-//         j = -1;
-//         while (all[++j])
-//         {
-//             if (all[j] != src)
-//                 if (is_duplicate(src->node[i], all[j]))
-//                     dup++;
-//         }
-//     }
-//     return (dup);
-// }
-
-// void duplicate_paths(t_path **paths)
-// {
-//     // printf("\e[92mduplicate_paths\e[0m\n");
-//     int i;
-//     int dup;
-
-//     i = -1;
-//     dup = 0;
-//     while (paths[++i])
-//     {
-//         dup = get_duplicate(paths[i], paths);
-//         if (dup)
-//             paths[i]->flow = dup;
-//     }
-// }
-
-int main(int ac, char **av)
+int     main(int ac, char **av)
 {
     t_lemin lemin;
     int     ret;
@@ -87,7 +34,6 @@ int main(int ac, char **av)
     if (!(lemin.str = lemin_read(&lemin)))
         ft_error(&lemin, ERR);
     lemin_init(&lemin);
-    // printf("step_4\n");
     get_paths(&lemin);
     lemin.size = lemin.ants;
     lemin_play(&lemin);

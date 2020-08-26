@@ -24,15 +24,15 @@ int get_ants(t_lemin *lemin, char **str)
         else if ((ret = is_ant(str[lemin->count])))
         {
             lemin->ants = ft_atoi(str[lemin->count]);
-            if (lemin->ants == 0 && ret > 1)
-                return (0);
+            if (lemin->ants > MAX_ANTS)
+                ft_error(lemin, TOOMANYANT);
+            else if (lemin->ants == 0 && ret > 1)
+                ft_error(lemin, INVDANTS);
             return (lemin->ants);
         }
         else
             break ;
         lemin->count++;
     }
-    // if (!str[lemin->count][0])
-    //         ft_error(lemin, INVDLINE);
     return (0);
 }

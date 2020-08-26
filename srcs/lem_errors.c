@@ -1,6 +1,6 @@
 #include "../includes/lemin.h"
 
-void        links_free(t_links *links)
+void        links_free(t_links *links, int size)
 {
     t_node  *adjacent;
     t_node  *tmp;
@@ -9,7 +9,7 @@ void        links_free(t_links *links)
     i = -1;
     tmp = NULL;
     adjacent = NULL;
-    while (links->adjace[++i])
+    while (++i < (size + 1))
     {
         adjacent = links->adjace[i];
         while (adjacent)
@@ -58,15 +58,15 @@ void        paths_free(t_path **paths)
 
 void        lemin_free(t_lemin *lemin)
 {
+    if (lemin->links)
+    {
+        links_free(lemin->links, lemin->rooms->total);
+        free(lemin->links);
+    }
     if (lemin->rooms)
     {
         rooms_free(lemin->rooms);
         free(lemin->rooms);
-    }
-    if (lemin->links)
-    {
-        links_free(lemin->links);
-        free(lemin->links);
     }
     if (lemin->node)
         free(lemin->node);
@@ -95,7 +95,9 @@ void        ft_error(t_lemin *lemin, int code)
         [INVDANTS] = "Invalid number ants",
         [NOTSRCSINK] = "Start or final not specified",
         [NOARG] = "Missing arguments",
-        [EMPTYLINE] = "Empty line"
+        [EMPTYLINE] = "Empty line",
+        [DUPCOORD] = "Duplicate coordinates",
+        [TOOMANYANT] = "Too many ants"
     };
 
     lemin_free(lemin);

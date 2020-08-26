@@ -1,0 +1,7 @@
+#!/bin/bash
+tmp="maps/invalid/*"
+for var in $tmp
+do
+    awk -F/ '{print $1}' $var
+    ./lem-in < $var
+done

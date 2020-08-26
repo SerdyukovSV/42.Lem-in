@@ -2,7 +2,6 @@
 
 static int      is_best_paths(t_lemin *lemin, t_path **paths)
 {
-    // printf("is_best_paths\n");
     int f1;
     int f2;
 
@@ -17,7 +16,6 @@ static int      is_best_paths(t_lemin *lemin, t_path **paths)
 
 static t_path   *add_path(t_lemin *lemin, t_node *current)
 {
-    // printf("add_path\n");
     t_path *path;
 
     if (!(path = malloc(sizeof(t_path))))
@@ -45,7 +43,6 @@ static t_path   *add_path(t_lemin *lemin, t_node *current)
 
 static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
 {
-    // printf("get_newtpaths\n");
     t_node  *start;
     int     i;
 
@@ -69,7 +66,6 @@ static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
 
 static void     get_shortpaths(t_lemin *lemin, t_node *start)
 {
-    // printf("get_shortpaths\n");
     t_path  *paths[lemin->size + 1];
     t_path  *tmp;
     int     size;
@@ -97,7 +93,6 @@ static void     get_shortpaths(t_lemin *lemin, t_node *start)
 
 void            get_paths(t_lemin* lemin)
 {
-    // printf("get_paths\n");
     int     visited[lemin->rooms->total];
     int     parent[lemin->rooms->total];
     t_node  *start;

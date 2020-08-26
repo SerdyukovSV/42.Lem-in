@@ -19,12 +19,15 @@
 # define NOTSRCSINK     (8)
 # define NOARG          (9)
 # define EMPTYLINE      (10)
+# define DUPCOORD       (11)
+# define TOOMANYANT     (12)
 
 
-# define START          (11)
-# define END            (12)
+# define START          (13)
+# define END            (14)
 
 # define SIZE           (16384)
+# define MAX_ANTS       (99999)
 
 # define SET            (1)
 # define DEL            (0)
@@ -104,7 +107,6 @@ typedef struct      s_lemin
 void        init_attributes(t_lemin *lemin);
 void        lemin_init(t_lemin *lemin);
 char        **lemin_read(t_lemin *lemin);
-// int         get_ants(char *str);
 int         get_ants(t_lemin *lemin, char **str);
 t_rooms     *get_rooms(t_lemin *lemin, char **str);
 t_links     *get_links(t_lemin *lemin, char **str);
@@ -150,7 +152,7 @@ void        lemin_play(t_lemin *lemin);
 */
 
 void        ft_error(t_lemin *lemin, int code);
-void        links_free(t_links *links);
+void        links_free(t_links *links, int size);
 void        rooms_free(t_rooms *rooms);
 void        paths_free(t_path **paths);
 void        lemin_free(t_lemin *lemin);

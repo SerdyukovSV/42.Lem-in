@@ -62,13 +62,18 @@ int is_ant(char *str)
 {
     int i;
 
-    i = -1;
-    while (str[++i])
+    i = 0;
+    while (*str == ' ' || *str == '\t')
+        str++;
+    if (str[i] == '+')
+        str++;
+    while (str[i])
+    {
         if (!ft_isdigit(str[i]))
-            return (0);
-    if (i)
-        return(1);
-    return(0);
+                return (0);
+        i++;
+    }
+    return(i);
 }
 
 int is_emptyline(char *str, int size)
@@ -76,10 +81,12 @@ int is_emptyline(char *str, int size)
     int i;
 
     i = 0;
+    if (str[i] == 10)
+        return (EMPTYLINE);
 	while (i < size && str[i])
 	{
 		if (str[i] == 10 && str[i + 1] == 10)
-            return (INVDLINE);
+            return (EMPTYLINE);
         i++;
 	}
     return (0);
