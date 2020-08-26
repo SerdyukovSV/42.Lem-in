@@ -2,10 +2,8 @@
 
 static void     enqueue(t_queue* queue, t_node *vert)
 {
-    // printf("enqueue\n");
-    if (queue->rear == SIZE-1)
-        exit(EXIT_FAILURE);
-        // ft_error(ERR);
+    if (queue->rear == SIZE - 1)
+        return ;
     else
     {
         if(queue->front == -1)
@@ -17,14 +15,10 @@ static void     enqueue(t_queue* queue, t_node *vert)
 
 static t_node   *dequeue(t_queue* queue)
 {
-    // printf("\e[93mdequeue\e[0m\n");
     t_node *item;
 
     if (queue->rear == -1)
-    {
-        printf("\e[91mQueue is empty\e[0m");
         item = NULL;
-    }
     else
     {
         item = queue->items[queue->front];
@@ -40,7 +34,6 @@ static t_node   *dequeue(t_queue* queue)
 
 static t_path   *reconstruct_path(t_lemin *lemin)
 {
-    // printf("reconstruct_path\n");
     t_path  *path;
     int     fin;
 
@@ -60,7 +53,6 @@ static t_path   *reconstruct_path(t_lemin *lemin)
 
 static void     add_queue(t_lemin *lemin, t_node *src, t_node *dst)
 {
-    // printf("\e[92madd_queue\e[0m\n");
     t_node **node;
 
     node = lemin->node;
@@ -77,7 +69,8 @@ static void     add_queue(t_lemin *lemin, t_node *src, t_node *dst)
         lemin->links->visited[dst->id] = 1;
         lemin->parent[dst->id] = src->id;
     }
-    else if ((dst->capacity == 2 && dst->id != lemin->start) || (dst->capacity == 1 && !node[dst->id]->in_path))
+    else if ((dst->capacity == 2 && dst->id != lemin->start) || \
+                    (dst->capacity == 1 && !node[dst->id]->in_path))
     {
         enqueue(lemin->queue, node[dst->id]);
         lemin->links->visited[dst->id] = 1;
@@ -87,7 +80,6 @@ static void     add_queue(t_lemin *lemin, t_node *src, t_node *dst)
 
 t_path          *search_path(t_lemin *lemin, t_node *src)
 {
-    // printf("search_path\n");
     t_node  *tmp;
 
     enqueue(lemin->queue, src);

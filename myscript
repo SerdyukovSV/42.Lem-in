@@ -1,7 +1,30 @@
 #!/bin/bash
+printf "\e[93mINVALID MAPS\e[0m\n"
 tmp="maps/invalid/*"
+count=0
 for var in $tmp
 do
-    awk -F/ '{print $1}' $var
-    ./lem-in < $var
+count=$(( $count + 1 ))
+printf "map #$count: "
+printf "$var" | awk -F/ '{print $3}' | ./lem-in < $var
+done
+printf "\e[92mVALID BIG_MAPS\e[0m\n"
+tmp="maps/valid/big/*"
+count=0
+for var in $tmp
+do
+count=$(( $count + 1 ))
+printf "\e[0mmap #$count: "
+./lem-in < $var | grep "line"
+cat $var | grep "#Here is the number of lines required:" | awk -F' ' '{print $8}'
+done
+printf "\e[92mVALID BIG_SUPER_MAPS\e[0m\n"
+tmp="maps/valid/big_sup/*"
+count=0
+for var in $tmp
+do
+count=$(( $count + 1 ))
+printf "\e[0mmap #$count: "
+./lem-in < $var | grep "line"
+cat $var | grep "#Here is the number of lines required:" | awk -F' ' '{print $8}'
 done

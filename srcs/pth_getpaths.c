@@ -9,27 +9,29 @@ static int      is_best_paths(t_lemin *lemin, t_path **paths)
         return (!paths[0] ? 0 : 1);
     f1 = get_flow(lemin->paths, lemin->ants);
     f2 = get_flow(paths, lemin->ants);
-    if (f2 <= f1)
+    if (f2 < f1)
         return (1);
     return (0);
 }
 
 static t_path   *add_path(t_lemin *lemin, t_node *current)
 {
+    // printf("add_path\n");
     t_path *path;
 
     if (!(path = malloc(sizeof(t_path))))
         ft_error(lemin, ERR);
     path->len = 0;
+    ft_bzero(path->node, sizeof(t_node *) * 256);
     path->node[path->len++] = lemin->rooms->start;
-    path->node[path->len++] = current;
+    if ((path->node[path->len++] = current)->id == lemin->final)
+        return (path);
     current = lemin->links->adjace[current->id];
     while (current)
     {
         if (current->capacity == 0)
         {
             path->node[path->len++] = current;
-            path->node[path->len] = NULL;
             if (current->id == lemin->final)
                 return (path);
             current = lemin->links->adjace[current->id];
@@ -43,6 +45,7 @@ static t_path   *add_path(t_lemin *lemin, t_node *current)
 
 static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
 {
+    // printf("get_newpaths\n");
     t_node  *start;
     int     i;
 
@@ -66,6 +69,7 @@ static t_path   **get_newpaths(t_lemin *lemin, t_path  **paths)
 
 static void     get_shortpaths(t_lemin *lemin, t_node *start)
 {
+    // printf("get_shortpaths\n");
     t_path  *paths[lemin->size + 1];
     t_path  *tmp;
     int     size;

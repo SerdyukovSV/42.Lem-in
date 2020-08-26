@@ -59,7 +59,7 @@ char		**lemin_read(t_lemin *lemin)
 		if (s1 == NULL)
 			return (NULL);
 	}
-	if (is_emptyline(str, BUFF_SIZE + 1))
+	if (is_emptyline(s1, BUFF_SIZE + 1))
 		ft_error(lemin, EMPTYLINE);
 	return (lem_split(s1));
 }

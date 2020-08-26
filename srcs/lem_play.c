@@ -24,7 +24,6 @@ static void     set_flow(t_lemin *lemin, int flow)
 
 static t_node   *get_next(t_lemin *lemin, t_node *ants)
 {
-    // printf("\e[93mget_next\e[0m");
     t_node  *tmp;
 
     if (ants->id == lemin->final)
@@ -45,7 +44,6 @@ static t_node   *get_next(t_lemin *lemin, t_node *ants)
 
 static void     get_start(t_lemin *lemin, t_node **ants)
 {
-    // printf("\e[92mget_start\e[0m");
     t_node  *start;
     int     i;
     int     j;
@@ -60,15 +58,14 @@ static void     get_start(t_lemin *lemin, t_node **ants)
             while (lemin->paths[i]->node[1]->id != start->id)
                 start = start->next;
             while (++j < lemin->ants)
-            {
-                if (!ants[j] && !start->ant)
+                if (!ants[j] && (!start->ant || start->id == lemin->final))
                 {
                     ants[j] = start;
                     ants[j]->ant = 1;
                     lemin->paths[i]->flow--;
-                    break ;
+                    if (start->id != lemin->final)
+                        break ;
                 }
-            }
         }
     }
 }
@@ -93,7 +90,7 @@ void            lemin_play(t_lemin *lemin)
             if (ants[i]->ant && !fin[i])
             {
                 printf("L%d-%s ", i + 1, ants[i]->name);
-                ants[i]->ant = 0;
+                ants[i]->id != lemin->final ? (ants[i]->ant = 0) : 0;
                 ants[i]->id == lemin->final ? (fin[i] = 1) : 0;
                 ants[i]->id == lemin->final ? lemin->size-- : 0;
                 ants[i] = get_next(lemin, ants[i]);
