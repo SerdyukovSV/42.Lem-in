@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-// # include "ft_printf.h"
+# include "ft_printf.h"
 
 # define BUFF_SIZE 8192
 

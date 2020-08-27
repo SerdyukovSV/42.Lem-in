@@ -27,10 +27,15 @@ SRCS 	:= main.c lem_read.c lem_validate.c \
 			pth_getpaths.c pth_search_path.c pth_utility.c \
 			lem_play.c lem_errors.c
 
+HEADER	:= includes/*.h
+
+vpath %.c srcs/
+vpath %.h includes/
+
 # Object files
 OBJF	:= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
 
-YELLOW 	:= \033[33;1m
+RED 	:= \033[31;1m
 GREEN 	:= \033[32;1m
 DBLUE 	:= \033[34m
 WHITE	:= \033[39;1m
@@ -48,19 +53,19 @@ $(TARGET): $(OBJF)
 	@$(CC) $^ -o $@ $(LIBFT)
 	@printf "\n$(WHITE)$(TARGET)$(EOC)    $(GREEN)compiling completed$(EOC)\n"
 
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADER)
 	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
 	@$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
 
 clean:
 	@rm -rf *.o obj includes/lemin.h.gch
 	@cd libft/ && make clean
-	@echo "$(WHITE)obj files$(EOC) $(YELLOW)removed$(EOC)"
+	@echo "$(RED)deleted:$(EOC) $(WHITE)obj files$(EOC)"
 
 fclean: clean
 	@rm -f $(TARGET)
 	@cd libft/ && make fclean
-	@echo "$(WHITE)$(TARGET)$(EOC)    $(YELLOW)removed$(EOC)"
+	@echo "$(RED)deleted:$(EOC) $(WHITE)$(TARGET)$(EOC)"
 
 re: fclean all
 
