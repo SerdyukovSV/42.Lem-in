@@ -46,7 +46,7 @@ obj:
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
-	@printf "\n$(WHITE)$(NAME)$(EOC) $(GREEN)  compiling completed$(EOC)\n"
+	@printf "\n$(GREEN)compiled: $(WHITE)$(NAME)$(EOC)\n"
 
 $(OBJ_DIR)%.o: %.c $(HEADER)
 	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
@@ -58,7 +58,7 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(RED)deleted:$(EOC) $(WHITE)$(NAME)$(EOC)"
+	@echo "$(RED)deleted: $(WHITE)$(NAME)$(EOC)"
 
 re: fclean all
 

@@ -73,6 +73,7 @@ static int		check_rooms(t_node **node)
 void			init_attributes(t_lemin *lemin)
 {
 	g_id = 0;
+	lemin->opt = 0;
 	lemin->ants = 0;
 	lemin->size = 0;
 	lemin->count = 0;

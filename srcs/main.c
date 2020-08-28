@@ -6,7 +6,7 @@
 /*   By: gartanis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/27 22:01:54 by gartanis          #+#    #+#             */
-/*   Updated: 2020/08/27 22:01:57 by gartanis         ###   ########.fr       */
+/*   Updated: 2020/08/28 19:13:52 by gartanis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,19 +52,23 @@ int			main(int ac, char **av)
 {
 	t_lemin	lemin;
 
+	init_attributes(&lemin);
 	if (ac > 1)
 	{
-		ft_printf("\e[1mUsage:\n[ %s < maps/file.map ]\e[0m\n", av[0]);
-		return (0);
+		if (!get_options(&lemin, av))
+			return (0);
 	}
-	init_attributes(&lemin);
+	if (lemin.opt & OPH)
+		return (print_usage(av[0]));
 	if (!(lemin.str = lemin_read(&lemin)))
 		ft_error(&lemin, ERR);
 	lemin_init(&lemin);
 	get_paths(&lemin);
 	print_lemin(lemin.str);
 	lemin.size = lemin.ants;
+	lemin.count = 0;
 	lemin_play(&lemin);
+	print_options(&lemin);
 	lemin_free(&lemin);
 	return (EXIT_SUCCESS);
 }

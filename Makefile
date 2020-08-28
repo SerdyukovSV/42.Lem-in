@@ -25,7 +25,7 @@ SRC_DIR	:= ./srcs/
 SRCS 	:= main.c lem_read.c lem_validate.c \
 			lem_init.c get_ants.c get_rooms.c get_links.c \
 			pth_getpaths.c pth_search_path.c pth_utility.c \
-			lem_play.c lem_errors.c
+			lem_play.c lem_errors.c lem_free.c options.c
 
 HEADER	:= includes/*.h
 
@@ -51,7 +51,7 @@ $(LIBFT):
 
 $(TARGET): $(OBJF)
 	@$(CC) $^ -o $@ $(LIBFT)
-	@printf "\n$(WHITE)$(TARGET)$(EOC)    $(GREEN)compiling completed$(EOC)\n"
+	@printf "\n$(GREEN)compiled: $(WHITE)$(TARGET)$(EOC)\n"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADER)
 	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
@@ -60,12 +60,12 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADER)
 clean:
 	@rm -rf *.o obj includes/lemin.h.gch
 	@cd libft/ && make clean
-	@echo "$(RED)deleted:$(EOC) $(WHITE)obj files$(EOC)"
+	@echo "$(RED)deleted: $(WHITE)obj files$(EOC)"
 
 fclean: clean
 	@rm -f $(TARGET)
 	@cd libft/ && make fclean
-	@echo "$(RED)deleted:$(EOC) $(WHITE)$(TARGET)$(EOC)"
+	@echo "$(RED)deleted: $(WHITE)$(TARGET)$(EOC)"
 
 re: fclean all
 

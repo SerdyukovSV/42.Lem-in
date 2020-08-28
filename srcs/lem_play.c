@@ -32,6 +32,9 @@ static void		set_flow(t_lemin *lemin, int flow)
 		ants -= lemin->paths[i]->flow;
 		i++;
 	}
+	i = -1;
+	while (lemin->paths[++i])
+		lemin->paths[i]->f = lemin->paths[i]->flow;
 }
 
 static t_node	*get_next(t_lemin *lemin, t_node *ants)
@@ -106,6 +109,7 @@ void			lemin_play(t_lemin *lemin)
 				ants[i] = get_next(lemin, ants[i]);
 			}
 		}
+		lemin->count++;
 		ft_printf("\n");
 	}
 }
