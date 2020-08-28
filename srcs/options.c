@@ -49,7 +49,7 @@ static void	print_paths(t_path **paths)
 int			print_usage(char *prg)
 {
 	ft_printf("\e[1mUsage:\e[0m\n");
-	ft_printf("./lem-in [-h] [-l] [-e] [-p] [-f] < maps/file.map\n");
+	ft_printf("%s [-h] [-l] [-e] [-p] [-f] < maps/file.map\n", prg);
 	ft_printf("\e[1mOptions:\e[0m\n");
 	ft_printf("   -h : To read the manual.\n");
 	ft_printf("   -l : Print line counter.\n");

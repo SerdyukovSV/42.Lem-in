@@ -61,7 +61,7 @@ static char	*nbr_conversion(intmax_t nbr, int *len)
 	*len = i;
 	if (nbr == INT64_MIN)
 		return (ft_strdup("9223372036854775808"));
-	if (!(result = ft_memalloc(i)))
+	if (!(result = ft_memalloc(i + 1)))
 		return (0);
 	(nbr < 0) ? nbr *= -1 : 0;
 	result[i] = '\0';

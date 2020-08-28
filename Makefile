@@ -41,21 +41,21 @@ DBLUE 	:= \033[34m
 WHITE	:= \033[39;1m
 EOC		:= \033[00m
 
-all: obj $(LIBFT) $(TARGET)
+all: obj $(TARGET)
 
 obj:
 	@mkdir -p $(OBJ_DIR)
 
-$(LIBFT):
-	@make -C $(LFT_DIR)
-
-$(TARGET): $(OBJF)
+$(TARGET): $(LIBFT) $(OBJF)
 	@$(CC) $^ -o $@ $(LIBFT)
 	@printf "\n$(GREEN)compiled: $(WHITE)$(TARGET)$(EOC)\n"
 
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADER)
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADER) Makefile
 	@printf "$(DBLUE) - Compiling $< into $@\r$(EOC)"
 	@$(CC) $(CFLAGS) -I $(INC) -I $(LFT_DIR)/includes -c $< -o $@
+
+$(LIBFT): FORCE
+	@make -C $(LFT_DIR)
 
 clean:
 	@rm -rf *.o obj includes/lemin.h.gch
@@ -68,5 +68,7 @@ fclean: clean
 	@echo "$(RED)deleted: $(WHITE)$(TARGET)$(EOC)"
 
 re: fclean all
+
+FORCE:
 
 .PHONY: clean fclean re all

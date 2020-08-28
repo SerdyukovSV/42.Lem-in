@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:32:58 by gartanis          #+#    #+#             */
-/*   Updated: 2020/07/15 22:15:05 by marvin           ###   ########.fr       */
+/*   Updated: 2020/08/28 22:18:26 by gartanis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 void				ft_strclr(char *s);
 void				ft_strdel(char **as);
-void        		ft_matrix_del(void **src);
+void				ft_matrix_del(void **src);
 int					ft_strequ(char const *s1, char const *s2);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));

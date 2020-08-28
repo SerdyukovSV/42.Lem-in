@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_mtx_free.c                                      :+:      :+:    :+:   */
+/*   ft_matrix_del.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gartanis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/24 14:06:43 by gartanis          #+#    #+#             */
-/*   Updated: 2020/08/24 14:06:46 by gartanis         ###   ########.fr       */
+/*   Created: 2020/08/28 22:17:28 by gartanis          #+#    #+#             */
+/*   Updated: 2020/08/28 22:17:31 by gartanis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-void        ft_matrix_del(void **src)
+void	ft_matrix_del(void **src)
 {
-    while (*src != NULL)
-    {
-        free(*src);
-        src += 1;
-    }
+	while (*src != NULL)
+	{
+		free(*src);
+		src += 1;
+	}
 }
