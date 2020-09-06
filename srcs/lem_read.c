@@ -6,11 +6,27 @@
 /*   By: gartanis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 18:44:59 by gartanis          #+#    #+#             */
-/*   Updated: 2020/07/08 18:47:38 by gartanis         ###   ########.fr       */
+/*   Updated: 2020/08/29 13:57:54 by gartanis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/lemin.h"
+
+static char	*is_invalid_char(t_lemin *lemin, char *str)
+{
+	int i;
+
+	i = -1;
+	while (str[++i])
+	{
+		if (str[i] < 0)
+		{
+			free(str);
+			ft_error(lemin, INVDCHAR);
+		}
+	}
+	return (str);
+}
 
 static char	**lem_split(char *str)
 {
@@ -23,12 +39,12 @@ static char	**lem_split(char *str)
 	if (!(tmp = malloc(sizeof(char *) * (i + 1))))
 		return (NULL);
 	i = 0;
-	while (*str)
+	while (str && *str)
 	{
 		tmp[i] = str;
 		if ((str = ft_strchr(str, '\n')))
 			*str = '\0';
-		if (*(str + 1) != '\0')
+		if (str && *(str + 1) && *(str + 1) != '\0')
 			str += 1;
 		i++;
 	}
@@ -45,7 +61,7 @@ char		**lemin_read(t_lemin *lemin)
 
 	s1 = NULL;
 	ft_bzero(str, sizeof(char) * (BUFF_SIZE + 1));
-	if ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) == 0)
+	if ((ret = read(STDIN_FILENO, str, BUFF_SIZE)) <= 0)
 		ft_error(lemin, EMPTYFILE);
 	str[ret] = '\0';
 	if ((s1 = ft_strdup(str)) == NULL)
@@ -61,5 +77,6 @@ char		**lemin_read(t_lemin *lemin)
 	}
 	if (is_emptyline(s1, BUFF_SIZE + 1))
 		ft_error(lemin, EMPTYLINE);
+	is_invalid_char(lemin, s1);
 	return (lem_split(s1));
 }

@@ -27,7 +27,8 @@ static char	*get_error(int code)
 		[NOARG] = "Missing arguments\e[0m",
 		[EMPTYLINE] = "Empty line\e[0m",
 		[DUPCOORD] = "Duplicate coordinates\e[0m",
-		[TOOMANYANT] = "Too many ants\e[0m"
+		[TOOMANYANT] = "Too many ants\e[0m",
+		[INVDCHAR] = "Invalid character\e[0m"
 	};
 
 	return (error[code]);

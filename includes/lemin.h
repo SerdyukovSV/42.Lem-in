@@ -43,9 +43,10 @@
 # define EMPTYLINE		(10)
 # define DUPCOORD		(11)
 # define TOOMANYANT		(12)
+# define INVDCHAR		(13)
 
-# define START			(13)
-# define END			(14)
+# define START			(14)
+# define END			(15)
 
 # define SIZE			(16384)
 # define MAX_ANTS		(99999)
